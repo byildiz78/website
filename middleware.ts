@@ -20,7 +20,7 @@ export function middleware(request: NextRequest) {
   // Content Security Policy ekle
   response.headers.set(
     'Content-Security-Policy',
-    "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.google-analytics.com https://www.googletagmanager.com https://cdn.gtranslate.net; connect-src 'self' https://www.google-analytics.com https://cdn.gtranslate.net; img-src 'self' data: https:; style-src 'self' 'unsafe-inline'; font-src 'self' data:;"
+    "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.google-analytics.com https://www.googletagmanager.com https://cdn.gtranslate.net; connect-src 'self' https://www.google-analytics.com https://cdn.gtranslate.net; img-src 'self' data: https:; style-src 'self' 'unsafe-inline'; font-src 'self' data: https://fonts.gstatic.com https://cdn.gtranslate.net;"
   );
   
   // API istekleri için rate limiting

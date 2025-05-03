@@ -2,7 +2,6 @@
 
 import React, { useState } from "react";
 import Image from "next/image";
-import Link from "next/link";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { 
@@ -217,10 +216,10 @@ export default function CozumlerPage() {
                 className="bg-white text-blue-600 hover:bg-blue-50"
                 asChild
               >
-                <Link href="/demo-talebi">
+                <a href="/demo-talebi">
                   Sizi Arayalım
                   <ArrowRight className="ml-2 h-5 w-5" />
-                </Link>
+                </a>
               </Button>
             </motion.div>
           </div>
@@ -285,10 +284,10 @@ export default function CozumlerPage() {
                         className="bg-blue-600 hover:bg-blue-700"
                         asChild
                       >
-                        <Link href="/demo-talebi">
+                        <a href="/demo-talebi">
                           Detaylı Bilgi Alın
                           <ArrowRight className="ml-2 h-5 w-5" />
-                        </Link>
+                        </a>
                       </Button>
                     </div>
                   </motion.div>
@@ -457,10 +456,10 @@ export default function CozumlerPage() {
                     className="bg-white text-blue-600 hover:bg-blue-50"
                     asChild
                   >
-                    <Link href="/demo-talebi">
+                    <a href="/demo-talebi">
                       Demo Talebi
                       <ArrowRight className="ml-2 h-5 w-5" />
-                    </Link>
+                    </a>
                   </Button>
                   <Button 
                     size="lg" 
@@ -468,9 +467,9 @@ export default function CozumlerPage() {
                     className="border-white text-white hover:bg-blue-700"
                     asChild
                   >
-                    <Link href="/iletisim">
+                    <a href="/iletisim">
                       Bize Ulaşın
-                    </Link>
+                    </a>
                   </Button>
                 </div>
               </div>

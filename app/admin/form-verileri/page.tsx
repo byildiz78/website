@@ -4,7 +4,6 @@ import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { useToast } from "@/hooks/use-toast";
-import Link from "next/link";
 
 interface FormData {
   name: string;
@@ -57,9 +56,9 @@ export default function FormVerileri() {
     <div className="container mx-auto py-10">
       <div className="flex justify-between items-center mb-8">
         <h1 className="text-3xl font-bold">Form Verileri</h1>
-        <Link href="/">
+        <a href="/">
           <Button variant="outline">Ana Sayfaya Dön</Button>
-        </Link>
+        </a>
       </div>
 
       {loading ? (

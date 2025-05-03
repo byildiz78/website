@@ -4,8 +4,7 @@ import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import { cn } from "@/lib/utils";
 import { ViewToggle } from "@/components/ui/view-toggle";
-import { GTranslateWidget } from "@/components/ui/gtranslate-widget";
-import {
+import { 
   NavigationMenu,
   NavigationMenuContent,
   NavigationMenuItem,
@@ -14,9 +13,10 @@ import {
   NavigationMenuTrigger,
 } from "@/components/ui/navigation-menu";
 import { 
+  ChevronRight, 
   Menu, 
   X, 
-  ChevronRight,
+  ChevronDown,
   ShoppingCart,
   Package,
   Users,
@@ -37,8 +37,8 @@ import {
   CreditCard,
   QrCode,
   Link as LinkIcon,
-  ChevronDown
 } from "lucide-react";
+import { GTranslateWidget } from "@/components/ui/gtranslate-widget";
 
 type NavItem = {
   title: string;
@@ -257,7 +257,7 @@ function Header() {
 
   const renderMenuItems = (items: NavItem[]) => {
     return items.map((item) => (
-      <div key={item.title} className="py-2">
+      <div key={item.title} className="py-2 relative z-[1000]">
         {item.children ? (
           <details className="group">
             <summary className="flex cursor-pointer items-center justify-between font-medium hover:text-blue-600 transition-colors">
@@ -329,16 +329,21 @@ function Header() {
     >
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center">
-          <a href="/" className="flex items-center">
-            <Image
-              src="/images/robotpos-logo.svg"
-              alt="robotPOS Logo"
-              width={150}
-              height={40}
-              className="h-10 w-auto"
-              priority
-            />
-          </a>
+          <div className="flex items-center">
+            <div className="mr-4">
+              <GTranslateWidget />
+            </div>
+            <a href="/" className="flex items-center">
+              <Image
+                src="/images/robotpos-logo.svg"
+                alt="robotPOS Logo"
+                width={150}
+                height={40}
+                className="h-10 w-auto"
+                priority
+              />
+            </a>
+          </div>
 
           {/* Desktop Navigation */}
           <div className="hidden lg:flex items-center space-x-1">
@@ -405,15 +410,12 @@ function Header() {
             </NavigationMenu>
 
             <div className="flex items-center gap-2 ml-4">
-              <GTranslateWidget />
               <ViewToggle />
             </div>
           </div>
 
           {/* Mobile Menu Button */}
           <div className="lg:hidden flex items-center gap-2">
-            <GTranslateWidget />
-            <ViewToggle />
             <button
               className="p-2 rounded-md hover:bg-gray-100 transition-colors"
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
@@ -425,23 +427,25 @@ function Header() {
                 <Menu className="w-6 h-6 text-gray-700" />
               )}
             </button>
+            <ViewToggle />
           </div>
         </div>
       </div>
 
       {/* Mobile Menu */}
-      <div
-        className={cn(
-          "fixed inset-0 top-[57px] bg-white z-40 lg:hidden overflow-y-auto transition-transform duration-300 transform",
-          mobileMenuOpen ? "translate-x-0" : "translate-x-full"
-        )}
-      >
-        <div className="container mx-auto px-4 py-4">
-          <div className="flex flex-col space-y-1">
-            {renderMenuItems(navItems)}
+      {mobileMenuOpen && (
+        <div className="mobile-menu-overlay">
+          <div className="container mx-auto px-4 py-4 mobile-menu-content">
+            <div className="flex flex-col space-y-1 mobile-menu-content">
+              {renderMenuItems(navItems)}
+            </div>
+            <div className="flex items-center gap-2 mt-4">
+              <ViewToggle />
+            </div>
           </div>
         </div>
-      </div>
+      )}
+     
     </header>
   );
 }

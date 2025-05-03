@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect } from "react";
+import React from "react";
 import Script from "next/script";
 
 export function GTranslateWidget() {
@@ -16,17 +16,11 @@ export function GTranslateWidget() {
               "default_language": "tr",
               "native_language_names": true,
               "url_structure": "sub_directory",
-              "languages": ["tr", "en", "ru", "ar"],
+              "languages": ["tr", "en", "ru", "az", "ar"],
               "wrapper_selector": ".gtranslate_wrapper",
               "switcher_horizontal_position": "inline",
               "float_switcher_open_direction": "bottom",
-              "flag_style": "3d",
-              "custom_domains": {
-                "en": "localhost:3000/en",
-                "ru": "localhost:3000/ru",
-                "ar": "localhost:3000/ar",
-                "tr": "localhost:3000"
-              }
+              "flag_style": "3d"
             }
           `,
         }}
@@ -36,6 +30,12 @@ export function GTranslateWidget() {
         src="https://cdn.gtranslate.net/widgets/latest/float.js"
         strategy="afterInteractive"
       />
+      <style jsx global>{`
+        /* GTranslate widget z-index ayarları */
+        .gt_float_switcher {
+          z-index: 49 !important; /* Header'ın z-index değerinden düşük */
+        }
+      `}</style>
     </>
   );
 }

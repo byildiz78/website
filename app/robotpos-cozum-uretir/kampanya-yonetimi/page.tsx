@@ -2,7 +2,6 @@
 
 import React from "react";
 import Image from "next/image";
-import Link from "next/link";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Percent, Tag, Calendar, Settings, BarChart3, Target, Clock, Gift } from "lucide-react";
@@ -89,10 +88,10 @@ export default function KampanyaYonetimiPage() {
                 className="bg-white text-blue-600 hover:bg-blue-50"
                 asChild
               >
-                <Link href="/demo-talebi">
+                <a href="/demo-talebi">
                   Demo Talebi
                   <ArrowRight className="ml-2 h-5 w-5" />
-                </Link>
+                </a>
               </Button>
             </motion.div>
           </div>
@@ -296,10 +295,10 @@ export default function KampanyaYonetimiPage() {
                     className="bg-white text-blue-600 hover:bg-blue-50"
                     asChild
                   >
-                    <Link href="/demo-talebi">
+                    <a href="/demo-talebi">
                       Demo Talebi
                       <ArrowRight className="ml-2 h-5 w-5" />
-                    </Link>
+                    </a>
                   </Button>
                   <Button 
                     size="lg" 
@@ -307,9 +306,9 @@ export default function KampanyaYonetimiPage() {
                     className="border-white text-white hover:bg-blue-700"
                     asChild
                   >
-                    <Link href="/iletisim">
+                    <a href="/iletisim">
                       Bize Ulaşın
-                    </Link>
+                    </a>
                   </Button>
                 </div>
               </div>

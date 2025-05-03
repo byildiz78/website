@@ -1,7 +1,6 @@
 "use client";
 
 import Image from "next/image";
-import Link from "next/link";
 import { Shield, Zap, PieChart, ArrowRight, Check } from "lucide-react";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
@@ -100,10 +99,10 @@ export default function POSPage() {
                 className="bg-white text-blue-600 hover:bg-blue-50 hover:scale-105 transform transition-all duration-300"
                 asChild
               >
-                <Link href="/demo-talebi">
+                <a href="/demo-talebi">
                   Sizi Arayalım
                   <ArrowRight className="ml-2 h-5 w-5" />
-                </Link>
+                </a>
               </Button>
             </motion.div>
           </div>
@@ -290,10 +289,10 @@ export default function POSPage() {
               className="bg-white text-blue-600 hover:bg-blue-50"
               asChild
             >
-              <Link href="/demo-talebi">
+              <a href="/demo-talebi">
                 Sizi Arayalım
                 <ArrowRight className="ml-2 h-5 w-5" />
-              </Link>
+              </a>
             </Button>
           </motion.div>
         </div>

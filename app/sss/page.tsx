@@ -6,7 +6,6 @@ import { motion } from "framer-motion";
 import { Search, ChevronDown, ShoppingCart, Building2, Monitor, Headphones, ArrowRight, Check } from "lucide-react";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
-import Link from "next/link";
 
 export default function FAQPage() {
   const [searchTerm, setSearchTerm] = useState("");
@@ -225,10 +224,10 @@ export default function FAQPage() {
               className="bg-white text-blue-600 hover:bg-blue-50"
               asChild
             >
-              <Link href="/demo-talebi">
+              <a href="/demo-talebi">
                 Sizi Arayalım
                 <ArrowRight className="ml-2 h-5 w-5" />
-              </Link>
+              </a>
             </Button>
           </motion.div>
         </div>

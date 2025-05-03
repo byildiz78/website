@@ -2,7 +2,6 @@
 
 import React from "react";
 import Image from "next/image";
-import Link from "next/link";
 import { motion } from "framer-motion";
 import { Check, ChevronRight, BarChart3, Users, Package, Percent, PieChart } from "lucide-react";
 import referansData from "@/public/files/referanslar.json";
@@ -232,13 +231,13 @@ export default function ZincirMagazaYonetimiPage() {
           </div>
           
           <div className="text-center mt-8">
-            <Link 
+            <a 
               href="/referanslar" 
               className="inline-flex items-center text-blue-600 hover:text-blue-800 font-medium"
             >
               Tüm referanslarımızı görüntüleyin
               <ChevronRight className="ml-1 h-4 w-4" />
-            </Link>
+            </a>
           </div>
         </div>
       </section>
@@ -254,18 +253,18 @@ export default function ZincirMagazaYonetimiPage() {
               robotPOS zincir mağaza yönetim çözümleri ile işletmenizi büyütün
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link
+              <a
                 href="/iletisim"
                 className="bg-white text-blue-600 hover:bg-blue-50 px-8 py-3 rounded-lg font-medium text-lg transition-colors"
               >
                 Bizimle İletişime Geçin
-              </Link>
-              <Link
+              </a>
+              <a
                 href="/demo-talebi"
                 className="bg-transparent text-white border-2 border-white hover:bg-white/10 px-8 py-3 rounded-lg font-medium text-lg transition-colors"
               >
                 Demo Talep Edin
-              </Link>
+              </a>
             </div>
           </div>
         </div>

@@ -2,7 +2,6 @@
 
 import React from "react";
 import Image from "next/image";
-import Link from "next/link";
 import { motion } from "framer-motion";
 import { Globe, Building2, Users, Cog } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -199,9 +198,9 @@ export default function AboutPage() {
               className="bg-blue-500 hover:bg-blue-600 text-white"
               asChild
             >
-              <Link href="/iletisim">
+              <a href="/iletisim">
                 Destek Alın
-              </Link>
+              </a>
             </Button>
           </div>
           <div className="relative rounded-[2rem] overflow-hidden shadow-2xl">

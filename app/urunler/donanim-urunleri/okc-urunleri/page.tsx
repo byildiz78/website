@@ -2,7 +2,6 @@
 
 import React from "react";
 import Image from "next/image";
-import Link from "next/link";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, CreditCard, Wifi, Zap, ShoppingCart, Shield } from "lucide-react";
@@ -89,10 +88,10 @@ export default function OkcUrunleriPage() {
                 className="bg-white text-blue-600 hover:bg-blue-50"
                 asChild
               >
-                <Link href="/demo-talebi">
+                <a href="/demo-talebi">
                   Fiyat Teklifi
                   <ArrowRight className="ml-2 h-5 w-5" />
-                </Link>
+                </a>
               </Button>
             </motion.div>
           </div>
@@ -327,10 +326,10 @@ className="w-full"
               className="bg-white text-blue-600 hover:bg-blue-50"
               asChild
             >
-              <Link href="/demo-talebi">
+              <a href="/demo-talebi">
                 Fiyat Teklifi Alın
                 <ArrowRight className="ml-2 h-5 w-5" />
-              </Link>
+              </a>
             </Button>
           </motion.div>
         </div>

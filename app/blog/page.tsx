@@ -1,7 +1,6 @@
 'use client';
 
 import React, { useEffect, useState } from 'react';
-import Link from 'next/link';
 import Image from 'next/image';
 import { format } from 'date-fns';
 import { tr } from 'date-fns/locale';
@@ -120,7 +119,7 @@ export default function BlogPage() {
                   <p className="featured-blog-excerpt">
                     {getExcerpt(blogPosts[0].content, 200)}
                   </p>
-                  <Link 
+                  <a 
                     href={`/${blogPosts[0].slug}`} 
                     className="mt-4 inline-flex items-center px-6 py-2 bg-white text-blue-700 rounded-full font-medium hover:bg-blue-50 transition-colors"
                   >
@@ -128,7 +127,7 @@ export default function BlogPage() {
                     <svg className="ml-2 w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                       <path fillRule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd"></path>
                     </svg>
-                  </Link>
+                  </a>
                 </div>
               </div>
             )}
@@ -139,7 +138,7 @@ export default function BlogPage() {
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 stagger-animation in-view">
                 {blogPosts.slice(1).map((post) => (
                   <article key={post.slug} className="blog-card h-full flex flex-col">
-                    <Link href={`/${post.slug}`} className="blog-card-image-container">
+                    <a href={`/${post.slug}`} className="blog-card-image-container">
                       <Image
                         src={getCoverImage(post)}
                         alt={post.title}
@@ -147,18 +146,18 @@ export default function BlogPage() {
                         sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                         className="blog-card-image"
                       />
-                    </Link>
+                    </a>
                     <div className="blog-card-content flex-grow flex flex-col">
                       <div className="blog-card-date">
                         {formatDate(post.date)}
                       </div>
-                      <Link href={`/${post.slug}`}>
+                      <a href={`/${post.slug}`}>
                         <h3 className="blog-card-title">{post.title}</h3>
-                      </Link>
+                      </a>
                       <p className="blog-card-excerpt flex-grow">
                         {getExcerpt(post.content)}
                       </p>
-                      <Link 
+                      <a 
                         href={`/${post.slug}`} 
                         className="mt-4 inline-flex items-center text-blue-600 hover:text-blue-800 font-medium"
                       >
@@ -166,7 +165,7 @@ export default function BlogPage() {
                         <svg className="ml-1 w-4 h-4 transition-transform group-hover:translate-x-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                           <path fillRule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd"></path>
                         </svg>
-                      </Link>
+                      </a>
                     </div>
                   </article>
                 ))}

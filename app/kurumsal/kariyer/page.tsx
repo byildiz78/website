@@ -2,7 +2,6 @@
 
 import React, { useState } from "react";
 import Image from "next/image";
-import Link from "next/link";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -418,13 +417,13 @@ export default function CareerPage() {
                     htmlFor="terms"
                     className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
                   >
-                    <Link 
+                    <a 
                       href="/kurumsal/aydinlatma-metni"
                       target="_blank"
                       className="text-blue-600 hover:text-blue-700 hover:underline"
                     >
                       Aydınlatma Metnini
-                    </Link>{" "}
+                    </a>{" "}
                     okudum, onaylıyorum
                   </label>
                   <p className="text-sm text-muted-foreground">

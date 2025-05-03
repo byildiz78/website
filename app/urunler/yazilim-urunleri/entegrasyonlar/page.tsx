@@ -2,7 +2,6 @@
 
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
-import Link from "next/link";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Link2 } from "lucide-react";
@@ -80,10 +79,10 @@ export default function EntegrasyonlarPage() {
                 className="bg-white text-blue-600 hover:bg-blue-50"
                 asChild
               >
-                <Link href="/demo-talebi">
+                <a href="/demo-talebi">
                   Sizi Arayalım
                   <ArrowRight className="ml-2 h-5 w-5" />
-                </Link>
+                </a>
               </Button>
             </motion.div>
           </div>
@@ -244,10 +243,10 @@ export default function EntegrasyonlarPage() {
               className="bg-white text-blue-600 hover:bg-blue-50"
               asChild
             >
-              <Link href="/demo-talebi">
+              <a href="/demo-talebi">
                 Sizi Arayalım
                 <ArrowRight className="ml-2 h-5 w-5" />
-              </Link>
+              </a>
             </Button>
           </motion.div>
         </div>

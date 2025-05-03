@@ -2,7 +2,6 @@
 
 import React from "react";
 import Image from "next/image";
-import Link from "next/link";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Utensils, Smartphone, Clock, Users, BarChart2, Calculator, Database, ClipboardList } from "lucide-react";
@@ -99,10 +98,10 @@ export default function IsVerimliligiPage() {
                 className="bg-white text-blue-600 hover:bg-blue-50"
                 asChild
               >
-                <Link href="/demo-talebi">
+                <a href="/demo-talebi">
                   sizi arayalım
                   <ArrowRight className="ml-2 h-5 w-5" />
-                </Link>
+                </a>
               </Button>
             </motion.div>
           </div>
@@ -314,10 +313,10 @@ export default function IsVerimliligiPage() {
               className="bg-white text-blue-600 hover:bg-blue-50"
               asChild
             >
-              <Link href="/demo-talebi">
+              <a href="/demo-talebi">
                 Sizi Arayalım
                 <ArrowRight className="ml-2 h-5 w-5" />
-              </Link>
+              </a>
             </Button>
           </motion.div>
         </div>

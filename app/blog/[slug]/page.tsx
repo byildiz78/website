@@ -2,11 +2,11 @@
 
 import React, { useEffect, useState } from 'react';
 import Image from 'next/image';
-import Link from 'next/link';
 import { format } from 'date-fns';
 import { tr } from 'date-fns/locale';
 import { Container } from '@/components/ui/container';
 import { PageHeader } from '@/components/ui/page-header';
+import Link from 'next/link'; // Link bileşeni için gerekli import eklendi
 
 interface BlogPost {
   title: string;
@@ -122,12 +122,12 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
             {error || 'Blog yazısı bulunamadı'}
           </h2>
           <p className="mb-8">Aradığınız içerik bulunamadı veya kaldırılmış olabilir.</p>
-          <Link 
+          <a 
             href="/blog" 
             className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-blue-600 hover:bg-blue-700"
           >
             Blog Ana Sayfasına Dön
-          </Link>
+          </a>
         </div>
       </Container>
     );
@@ -184,7 +184,7 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
           )}
           
           <div className="mt-12 pt-8 border-t border-gray-200">
-            <Link 
+            <a 
               href="/blog" 
               className="inline-flex items-center text-blue-600 hover:text-blue-800"
             >
@@ -192,7 +192,7 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
                 <path fillRule="evenodd" d="M9.707 14.707a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 1.414L7.414 9H15a1 1 0 110 2H7.414l2.293 2.293a1 1 0 010 1.414z" clipRule="evenodd"></path>
               </svg>
               Tüm Blog Yazılarına Dön
-            </Link>
+            </a>
           </div>
         </div>
       </Container>

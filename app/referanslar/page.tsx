@@ -177,7 +177,7 @@ export default function ReferencesPage() {
               Referanslarımız
             </h1>
             <p className="text-xl text-blue-50">
-              Onlar Artık, Tüm Şubelerinde robotPOS Kullanıyor...
+              bazı referanslarımız
             </p>
           </motion.div>
         </div>
@@ -188,7 +188,7 @@ export default function ReferencesPage() {
         <section className="py-8">
           <SectionHeader
             icon={Building2}
-            title="Zincir İşletmeler"
+            title="Zincir İşletmeler -Onlar Artık, Tüm Şubelerinde robotPOS Kullanıyor..."
             colorClass="text-blue-600"
           />
 
