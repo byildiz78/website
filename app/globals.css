@@ -2,6 +2,36 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Animasyonlar */
+@keyframes float-slow {
+  0%, 100% { transform: translateY(0) translateX(0); }
+  25% { transform: translateY(-10px) translateX(5px); }
+  50% { transform: translateY(-5px) translateX(10px); }
+  75% { transform: translateY(-15px) translateX(-5px); }
+}
+
+@keyframes float-medium {
+  0%, 100% { transform: translateY(0) translateX(0); }
+  25% { transform: translateY(-15px) translateX(-7px); }
+  50% { transform: translateY(-7px) translateX(15px); }
+  75% { transform: translateY(-20px) translateX(7px); }
+}
+
+@keyframes float-fast {
+  0%, 100% { transform: translateY(0) translateX(0); }
+  25% { transform: translateY(-20px) translateX(10px); }
+  50% { transform: translateY(-10px) translateX(-10px); }
+  75% { transform: translateY(-25px) translateX(-5px); }
+}
+
+@keyframes gradient-xy {
+  0% { background-position: 0% 0%; }
+  25% { background-position: 100% 0%; }
+  50% { background-position: 100% 100%; }
+  75% { background-position: 0% 100%; }
+  100% { background-position: 0% 0%; }
+}
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -328,6 +358,29 @@
 
 .featured-blog-excerpt {
   @apply text-gray-200 line-clamp-2 max-w-2xl;
+}
+
+/* Perspective sınıfı */
+.perspective-1000 {
+  perspective: 1000px;
+}
+
+/* Utility sınıfları */
+.animate-float-slow {
+  animation: float-slow 8s ease-in-out infinite;
+}
+
+.animate-float-medium {
+  animation: float-medium 6s ease-in-out infinite;
+}
+
+.animate-float-fast {
+  animation: float-fast 4s ease-in-out infinite;
+}
+
+.animate-gradient-xy {
+  animation: gradient-xy 15s ease infinite;
+  background-size: 400% 400%;
 }
 
 /* Mobil menü için özel stiller */

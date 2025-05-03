@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
 import { ArrowRight } from "lucide-react";
 import { useInView } from "react-intersection-observer";
 import Image from "next/image";
@@ -24,81 +24,146 @@ export function FeaturesGrid({ title, subtitle, features }: FeaturesGridProps) {
     triggerOnce: true,
     threshold: 0.1,
   });
+  
+  const [activeCard, setActiveCard] = useState<number | null>(null);
 
   return (
     <section className="py-12">
       <div ref={ref} className="container mx-auto px-4">
-        <div className="text-center mb-12">
-          <h2 className="section-title mb-4">{title}</h2>
+        <div className="text-center mb-14 relative">
+          {/* Ana başlık - Sade stil */}
+          <h2 className="section-title mb-3 font-bold text-gray-800">
+            {title}
+          </h2>
+          <div className="w-16 h-1 bg-blue-500 mx-auto mb-4 rounded-full"></div>
+          
+          {/* Alt başlık */}
           {subtitle && (
-            <p className="section-subtitle">{subtitle}</p>
+            <p className="section-subtitle max-w-2xl mx-auto text-gray-600">
+              {subtitle}
+            </p>
           )}
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {features.map((feature, index) => (
             <a 
               key={index} 
               href={feature.href} 
-              className="block no-underline"
+              className="block no-underline perspective-1000"
+              onMouseEnter={() => setActiveCard(index)}
+              onMouseLeave={() => setActiveCard(null)}
             >
               <div 
-                className={`group relative border border-gray-100 overflow-hidden bg-white shadow-md rounded-xl h-[300px] transform transition-all duration-500 hover:-translate-y-2 hover:shadow-xl cursor-pointer ${
+                className={`group relative overflow-hidden bg-white rounded-2xl h-[300px] transform transition-all duration-500 hover:scale-[1.03] hover:shadow-2xl cursor-pointer ${
                   inView ? 'animate-fadeIn' : 'opacity-0'
-                }`}
+                } ${activeCard === index ? 'rotate-y-[-5deg] shadow-2xl' : ''}`}
                 style={{ 
                   animationDelay: `${index * 100}ms`,
+                  transform: activeCard === index 
+                    ? `rotateY(-5deg) scale(1.03)` 
+                    : `rotateY(0) scale(1)`,
+                  transition: 'transform 0.5s ease, box-shadow 0.5s ease',
                 }}
               >
-                {/* Background Image with Balanced Overlay */}
-                <div className="absolute inset-0 w-full h-full rounded-xl overflow-hidden">
-                  {/* Gradient Overlay - More balanced to show image better */}
-                  <div className="absolute inset-0 bg-gradient-to-br from-gray-900/70 via-gray-800/50 to-gray-900/75 group-hover:from-gray-800/75 group-hover:via-gray-700/55 group-hover:to-gray-800/80 transition-all duration-500 z-10" />
-                  
-                  {/* Subtle Pattern */}
-                  <div className="absolute inset-0 bg-[url('/images/general/pattern.svg')] opacity-10 mix-blend-overlay z-20"></div>
-                  
-                  {/* Image with better visibility */}
+                {/* Glassmorphism Card Design */}
+                <div className="absolute inset-0 w-full h-full rounded-2xl overflow-hidden">
+                  {/* Background Image */}
                   <Image
                     src={feature.bgImage}
                     alt={feature.title}
                     fill
-                    className="object-cover group-hover:scale-105 transition-transform duration-700 filter brightness-75 contrast-110"
+                    className="object-cover transition-transform duration-700 scale-110 filter brightness-100"
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
+                    style={{
+                      transform: activeCard === index ? 'scale(1.15)' : 'scale(1.1)',
+                      transition: 'transform 0.7s ease-out'
+                    }}
                   />
+                  
+                  {/* Glassmorphism Effect */}
+                  <div 
+                    className="absolute inset-0 bg-white/30 backdrop-blur-md transition-all duration-500"
+                    style={{
+                      backdropFilter: activeCard === index ? 'blur(5px)' : 'blur(10px)',
+                    }}
+                  />
+                  
+                  {/* Colorful Border Gradient */}
+                  <div className={`absolute inset-0 p-[2px] rounded-2xl z-10 transition-opacity duration-500 ${activeCard === index ? 'opacity-100' : 'opacity-0 group-hover:opacity-100'}`}>
+                    <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-blue-400 via-purple-400 to-pink-400 animate-gradient-xy"></div>
+                  </div>
                 </div>
                 
-                {/* Content with improved styling for better readability */}
-                <div className="relative z-20 h-full flex flex-col p-6">
+                {/* Content with 3D effect */}
+                <div 
+                  className="relative z-20 h-full flex flex-col p-7 transition-all duration-500"
+                  style={{
+                    transform: activeCard === index ? 'translateY(-5px)' : 'translateY(0)',
+                  }}
+                >
+                  {/* Icon with floating effect */}
+                  <div 
+                    className="mb-5 bg-white/80 backdrop-blur-sm p-3 rounded-xl inline-block shadow-lg transition-all duration-500"
+                    style={{
+                      transform: activeCard === index ? 'rotate(3deg) scale(1.1)' : 'rotate(0) scale(1)',
+                    }}
+                  >
+                    {React.cloneElement(feature.icon as React.ReactElement, { 
+                      className: `w-7 h-7 ${activeCard === index ? 'text-blue-600' : 'text-blue-500'}` 
+                    })}
+                  </div>
+                  
                   <div className="flex-grow">
-                    {/* Decorative line */}
-                    <div className="w-12 h-1.5 bg-blue-400 rounded-full mb-4 group-hover:w-20 transition-all duration-300"></div>
-                    
-                    {/* Title with improved styling for better visibility */}
-                    <h3 className="text-xl font-bold text-white mb-3 group-hover:text-white transition-colors duration-300 drop-shadow-md">
+                    {/* Title with 3D effect */}
+                    <h3 className={`text-xl font-bold mb-3 transition-colors duration-300 ${activeCard === index ? 'text-blue-600' : 'text-gray-800'}`}>
                       {feature.title}
                     </h3>
                     
-                    {/* Description with improved styling for better readability */}
-                    <p className="text-white text-sm leading-relaxed line-clamp-3 drop-shadow-md font-medium">
+                    {/* Description with improved styling */}
+                    <p className="text-gray-700 text-sm leading-relaxed line-clamp-3">
                       {feature.description}
                     </p>
                   </div>
                   
-                  {/* Link with improved styling */}
-                  <div className="mt-4 pt-4 border-t border-white/30">
-                    <div className="inline-flex items-center text-white font-semibold group-hover:translate-x-1 transition-all duration-300 text-sm">
-                      <span className="border-b border-blue-300/70 group-hover:border-blue-300 pb-0.5">Daha Fazla Bilgi</span>
-                      <ArrowRight className="ml-1.5 h-4 w-4 transform group-hover:translate-x-1 transition-transform duration-300" />
+                  {/* Modern button */}
+                  <div className="mt-5">
+                    <div 
+                      className={`inline-flex items-center text-white text-sm font-medium px-4 py-2 rounded-lg transition-all duration-300 ${
+                        activeCard === index 
+                          ? 'bg-gradient-to-r from-blue-600 to-blue-700 translate-x-1 shadow-lg' 
+                          : 'bg-gradient-to-r from-blue-500 to-blue-600 group-hover:translate-x-1'
+                      }`}
+                    >
+                      <span>Keşfet</span>
+                      <ArrowRight className={`ml-1.5 h-4 w-4 transition-transform duration-300 ${activeCard === index ? 'translate-x-0.5' : ''}`} />
                     </div>
                   </div>
                 </div>
                 
-                {/* Enhanced decorative elements */}
-                <div className="absolute top-0 right-0 w-24 h-1.5 bg-gradient-to-l from-blue-400/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                <div className="absolute bottom-0 left-0 w-24 h-1.5 bg-gradient-to-r from-blue-400/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                <div className="absolute top-0 left-0 w-10 h-10 border-t-2 border-l-2 border-white/40 rounded-tl-lg opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                <div className="absolute bottom-0 right-0 w-10 h-10 border-b-2 border-r-2 border-white/40 rounded-br-lg opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                {/* Floating Particles */}
+                <div 
+                  className={`absolute top-1/4 right-1/4 w-2 h-2 bg-blue-400 rounded-full transition-all duration-700 animate-float-slow ${
+                    activeCard === index ? 'opacity-70' : 'opacity-0 group-hover:opacity-70'
+                  }`}
+                ></div>
+                <div 
+                  className={`absolute bottom-1/3 left-1/3 w-3 h-3 bg-purple-400 rounded-full transition-all duration-700 animate-float-medium ${
+                    activeCard === index ? 'opacity-70' : 'opacity-0 group-hover:opacity-70'
+                  }`}
+                ></div>
+                <div 
+                  className={`absolute top-1/2 right-1/3 w-2 h-2 bg-pink-400 rounded-full transition-all duration-700 animate-float-fast ${
+                    activeCard === index ? 'opacity-70' : 'opacity-0 group-hover:opacity-70'
+                  }`}
+                ></div>
+                
+                {/* Işık Efekti */}
+                <div 
+                  className={`absolute inset-0 bg-gradient-to-tr from-transparent via-white/5 to-white/20 opacity-0 transition-opacity duration-500 ${
+                    activeCard === index ? 'opacity-100' : 'group-hover:opacity-70'
+                  }`}
+                ></div>
               </div>
             </a>
           ))}

@@ -58,7 +58,7 @@ export const productFeatures = [
     bgImage: "/images/general/pos.jpg"
   },
   {
-    title: "QR Menü ve Sipariş",
+    title: "QR Menü ve Siparişşş",
     description: "Müşterilerinize dijital menü sunun ve mobil cihazlardan sipariş almayı kolaylaştırın.",
     icon: <Smartphone className="w-6 h-6 text-blue-600" />,
     href: "/robotpos-cozum-uretir/qr-menu-siparis",
