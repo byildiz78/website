@@ -32,6 +32,12 @@
   100% { background-position: 0% 0%; }
 }
 
+@keyframes wave {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
+  100% { transform: translateY(0); }
+}
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -381,6 +387,10 @@
 .animate-gradient-xy {
   animation: gradient-xy 15s ease infinite;
   background-size: 400% 400%;
+}
+
+.animate-wave {
+  animation: wave 2s ease-in-out infinite;
 }
 
 /* Mobil menü için özel stiller */

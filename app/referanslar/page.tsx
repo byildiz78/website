@@ -20,6 +20,7 @@ interface ReferenceCardProps {
     logo_yolu: string;
     sube_sayisi?: number;
     sehir?: string;
+    referans_tipi: string;
   };
   icon: LucideIcon;
   colorClass: string;
@@ -61,6 +62,7 @@ const SectionHeader = ({ icon: Icon, title, colorClass }: SectionHeaderProps) =>
 const ReferenceCard = ({ data, icon: Icon, colorClass }: ReferenceCardProps) => {
   const [count, setCount] = useState(0);
   const cardRef = useRef(null);
+  const isChainBusiness = data.referans_tipi === "Zincir İşletmeler";
 
   useEffect(() => {
     if (!data.sube_sayisi) return;
@@ -96,6 +98,52 @@ const ReferenceCard = ({ data, icon: Icon, colorClass }: ReferenceCardProps) => 
     return () => observer.disconnect();
   }, [data.sube_sayisi]);
 
+  // Zincir işletmeler için özel kart tasarımı
+  if (isChainBusiness) {
+    return (
+      <Card 
+        ref={cardRef} 
+        className="group overflow-hidden bg-white relative transform hover:-translate-y-2 transition-all duration-500"
+        style={{
+          boxShadow: "0 10px 30px -15px rgba(0, 0, 0, 0.1)",
+        }}
+      >
+        {/* Şube sayısı rozeti */}
+        {data.sube_sayisi && (
+          <div className="absolute top-0 right-0 bg-blue-600 text-white font-bold px-4 py-2 z-10 rounded-bl-lg shadow-md">
+            <span className="text-xl">{count}+</span> <span className="text-xs tracking-wider">ŞUBE</span>
+          </div>
+        )}
+        
+        {/* Logo alanı */}
+        <div className="pt-12 pb-6 px-6">
+          <div className="relative w-full h-40 mx-auto">
+            <Image
+              src={data.logo_yolu}
+              alt={data.adi}
+              fill
+              className="object-contain group-hover:scale-105 transition-transform duration-500"
+            />
+          </div>
+        </div>
+        
+        {/* Mavi çizgi */}
+        <div className="h-1 w-full bg-gradient-to-r from-blue-400 to-blue-600"></div>
+        
+        {/* İşletme adı */}
+        <div className="p-6 text-center bg-gray-50">
+          <h3 className="text-lg font-semibold text-gray-800">
+            {data.adi}
+          </h3>
+        </div>
+        
+        {/* Hover efekti - Parlama */}
+        <div className="absolute inset-0 bg-gradient-to-tr from-blue-500/5 via-white/0 to-blue-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
+      </Card>
+    );
+  }
+
+  // Diğer referans tipleri için mevcut kart tasarımı
   return (
     <Card ref={cardRef} className="group hover:shadow-xl transition-all duration-300 overflow-hidden bg-white">
       <div className="p-6 flex flex-col items-center">
@@ -188,7 +236,7 @@ export default function ReferencesPage() {
         <section className="py-8">
           <SectionHeader
             icon={Building2}
-            title="Zincir İşletmeler -Onlar Artık, Tüm Şubelerinde robotPOS Kullanıyor..."
+            title="Zincir İşletmeler"
             colorClass="text-blue-600"
           />
 
