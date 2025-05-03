@@ -1,4 +1,4 @@
-# RobotPOS Web Sitesi Yeniden Yapılandırma Planı
+# robotPOS Web Sitesi Yeniden Yapılandırma Planı
 
 ## Tamamlanan İşler
 - [x] Proje yapısı oluşturuldu
@@ -56,7 +56,7 @@
    - Birden fazla şubesi bulunan işletmeler için uzaktan yönetim çözümleri
 
 3. **Donanım Ürünleri**
-   - 7x24 kullanıma uygun endüstriyel donanım seçenekleri
+   - 7x16 kullanıma uygun endüstriyel donanım seçenekleri
    - Kesintisiz iş akışı sağlayan çözümler
 
 ### Ürün Özellikleri
@@ -73,10 +73,10 @@
 
 ### Diğer Önemli Bölümler
 
-- **Neden Robotpos?** - Ürün avantajları ve özellikleri
+- **Neden robotPOS?** - Ürün avantajları ve özellikleri
 - **Bizim İçin Ne Dediler?** - Müşteri görüşleri ve referanslar
 - **En İyi İşletmelerin Tercihi** - Referans müşteriler
-- **Rakamlarla Robotpos** - İstatistikler ve başarılar
+- **Rakamlarla robotPOS** - İstatistikler ve başarılar
 - **İletişim Bilgileri** - Adres, telefon, e-posta
 
 
@@ -107,7 +107,7 @@
 1. **Ana Sayfa**
    - Hero Slider
    - Ürün Kategorileri
-   - Neden Robotpos?
+   - Neden robotPOS?
    - Özellikler Grid'i
    - Müşteri Görüşleri
    - Referanslar

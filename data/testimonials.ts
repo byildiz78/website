@@ -1,7 +1,7 @@
 export const testimonials = [
   {
     id: 1,
-    quote: "RobotPOS, işletmemizin operasyonel verimliliğini önemli ölçüde artırdı. Özellikle stok yönetimi ve raporlama özellikleri sayesinde maliyetlerimizi daha iyi kontrol edebiliyoruz.",
+    quote: "robotPOS, işletmemizin operasyonel verimliliğini önemli ölçüde artırdı. Özellikle stok yönetimi ve raporlama özellikleri sayesinde maliyetlerimizi daha iyi kontrol edebiliyoruz.",
     author: "Ahmet Yılmaz",
     position: "İşletme Sahibi",
     company: "Cafe Istanbul",
@@ -9,7 +9,7 @@ export const testimonials = [
   },
   {
     id: 2,
-    quote: "5 şubeli zincir restoranımızı RobotPOS ile yönetiyoruz. Merkezi yönetim paneli sayesinde tüm şubelerimizi tek ekrandan izleyebiliyor ve karlılığımızı artırıyoruz.",
+    quote: "5 şubeli zincir restoranımızı robotPOS ile yönetiyoruz. Merkezi yönetim paneli sayesinde tüm şubelerimizi tek ekrandan izleyebiliyor ve karlılığımızı artırıyoruz.",
     author: "Ayşe Kaya",
     position: "Genel Müdür",
     company: "Lezzet Zinciri",
@@ -17,7 +17,7 @@ export const testimonials = [
   },
   {
     id: 3,
-    quote: "RobotPOS'un sadakat programı çözümü sayesinde müşteri bağlılığımızı önemli ölçüde artırdık. Tekrar eden müşteri oranımız %40'tan %70'e yükseldi!",
+    quote: "robotPOS'un sadakat programı çözümü sayesinde müşteri bağlılığımızı önemli ölçüde artırdık. Tekrar eden müşteri oranımız %40'tan %70'e yükseldi!",
     author: "Mehmet Öztürk",
     position: "Pazarlama Direktörü",
     company: "Burger House",

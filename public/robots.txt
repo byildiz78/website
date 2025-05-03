@@ -1,0 +1,33 @@
+User-agent: *
+Allow: /
+
+# Dil alt dizinlerine izin ver
+Allow: /en/
+Allow: /ru/
+Allow: /ar/
+
+# Özel sayfalar
+Allow: /blog/
+Allow: /urunler/
+Allow: /hakkimizda/
+Allow: /iletisim/
+Allow: /referanslar/
+Allow: /sss/
+Allow: /demo-talebi/
+
+# Sitemap
+Sitemap: https://www.robotpos.com/sitemap.xml
+
+# Medya dosyalarını crawl etme (isteğe bağlı, performans için)
+Disallow: /images/blog-images/
+Disallow: /*.jpg$
+Disallow: /*.jpeg$
+Disallow: /*.png$
+Disallow: /*.gif$
+Disallow: /*.svg$
+
+# Admin ve özel sayfaları engelle
+Disallow: /admin/
+Disallow: /api/
+Disallow: /_next/
+Disallow: /*?*

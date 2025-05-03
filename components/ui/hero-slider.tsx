@@ -1,8 +1,7 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useCallback } from "react";
 import { Button } from "@/components/ui/button";
-import Link from "next/link";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { useInView } from "react-intersection-observer";
 
@@ -11,8 +10,8 @@ interface Slide {
   title: string;
   description: string;
   image: string;
-  buttonText: string;
-  buttonLink: string;
+  buttonText?: string;
+  buttonLink?: string;
 }
 
 interface HeroSliderProps {
@@ -27,29 +26,30 @@ export function HeroSlider({ slides }: HeroSliderProps) {
     threshold: 0.1,
   });
 
-  useEffect(() => {
-    const timer = setInterval(() => {
-      nextSlide();
-    }, 5000);
-
-    return () => clearInterval(timer);
-  }, [currentSlide]);
-
-  const nextSlide = () => {
+  const nextSlide = useCallback(() => {
     if (!isTransitioning) {
       setIsTransitioning(true);
       setCurrentSlide((prev) => (prev === slides.length - 1 ? 0 : prev + 1));
       setTimeout(() => setIsTransitioning(false), 500);
     }
-  };
+  }, [isTransitioning, slides.length]);
 
-  const prevSlide = () => {
+  const prevSlide = useCallback(() => {
     if (!isTransitioning) {
       setIsTransitioning(true);
       setCurrentSlide((prev) => (prev === 0 ? slides.length - 1 : prev - 1));
       setTimeout(() => setIsTransitioning(false), 500);
     }
-  };
+  }, [isTransitioning, slides.length]);
+
+  // Otomatik geçiş için useEffect, bağımlılık dizisi boş
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentSlide((prev) => (prev === slides.length - 1 ? 0 : prev + 1));
+    }, 7000);
+
+    return () => clearInterval(timer);
+  }, []); // Boş bağımlılık dizisi
 
   return (
     <div ref={ref} className="relative h-[500px] md:h-[600px] overflow-hidden">
@@ -75,21 +75,23 @@ export function HeroSlider({ slides }: HeroSliderProps) {
                 {slide.title}
               </h1>
               <p 
-                className={`text-lg md:text-xl max-w-3xl mx-auto mb-8 transition-all duration-1000 delay-200 ${
+                className={`text-lg md:text-xl max-w-3xl mx-auto ${slide.buttonText ? 'mb-8' : 'mb-0'} transition-all duration-1000 delay-200 ${
                   inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
                 }`}
               >
                 {slide.description}
               </p>
-              <Button 
-                size="lg"
-                className={`bg-blue-600 hover:bg-blue-700 text-white transition-all duration-1000 delay-400 ${
-                  inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
-                }`}
-                asChild
-              >
-                <Link href={slide.buttonLink}>{slide.buttonText}</Link>
-              </Button>
+              {slide.buttonText && slide.buttonLink && (
+                <Button 
+                  size="lg"
+                  className={`bg-blue-600 hover:bg-blue-700 text-white transition-all duration-1000 delay-400 ${
+                    inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
+                  }`}
+                  asChild
+                >
+                  <a href={slide.buttonLink}>{slide.buttonText}</a>
+                </Button>
+              )}
             </div>
           </div>
         </div>

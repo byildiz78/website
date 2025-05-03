@@ -23,7 +23,7 @@ export function SolutionsSection({ className }: SolutionsSectionProps) {
               inView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
             }`}>
               <h2 className="section-title mb-4">
-                Neden <span className="text-blue-600">RobotPOS</span>?
+                Neden <span className="text-blue-600">robotPOS</span>?
               </h2>
               <p className="section-subtitle">
                 En Kolay, En Hızlı, En Sorunsuz Restoran Otomasyonu ve Yönetim Sistemi
@@ -58,14 +58,14 @@ export function SolutionsSection({ className }: SolutionsSectionProps) {
                 <div className="absolute inset-0 bg-gradient-to-tr from-blue-500/20 via-transparent to-blue-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                 <img 
                   src="/images/rs5-min.webp" 
-                  alt="RobotPOS Kullanımı" 
+                  alt="robotPOS Kullanımı" 
                   className="w-full h-auto relative z-10"
                 />
                 <div className="absolute inset-0 bg-gradient-to-tr from-white/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
               </div>
             </div>
             <div className="absolute -bottom-6 -right-6 bg-blue-600 text-white p-6 rounded-2xl shadow-lg max-w-xs hidden md:block transform group-hover:translate-x-2 group-hover:-translate-y-2 transition-transform duration-500">
-              <p className="font-semibold text-lg mb-2">20 Yıllık Deneyim</p>
+              <p className="font-semibold text-lg mb-2">22 Yıllık Deneyim</p>
               <p className="text-sm opacity-90">
                 2003'ten beri restoran ve cafe sektörüne özel çözümler üretiyoruz.
               </p>

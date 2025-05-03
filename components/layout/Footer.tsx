@@ -1,5 +1,4 @@
 import React from "react";
-import Link from "next/link";
 import { 
   PhoneCall, 
   Mail, 
@@ -16,20 +15,20 @@ const footerLinks = [
   {
     title: "Ürünler",
     links: [
-      { name: "Satış Noktası (POS)", href: "/urunler/satis-noktasi" },
-      { name: "Stok Maliyet Yönetimi", href: "/urunler/stok-maliyet-yonetimi" },
-      { name: "Sadakat ve Kazanç", href: "/urunler/sadakat-ve-kazanc" },
-      { name: "Arttırıcı Çözümler", href: "/urunler/arttirici-cozumler" },
-      { name: "İş Verimliliği", href: "/urunler/is-verimliligi" },
+      { name: "Satış Noktası (POS)", href: "/urunler/yazilim-urunleri/satis-noktasi-pos" },
+      { name: "Stok Maliyet Yönetimi", href: "/urunler/yazilim-urunleri/stok-maliyet-yonetimi" },
+      { name: "Sadakat ve Kazanç Arttırıcı Çözümler", href: "/urunler/yazilim-urunleri/sadakat-ve-kazanc-arttirici-cozumler" },
+      { name: "İş Verimliliği", href: "/urunler/yazilim-urunleri/is-verimliligi" },
+      { name: "Zincir Mağaza Yönetimi", href: "/urunler/yazilim-urunleri/zincir-magaza-yonetimi" },
     ],
   },
   {
     title: "Kurumsal",
     links: [
-      { name: "Hakkımızda", href: "/kurumsal/hakkimizda" },
+      { name: "Hakkımızda", href: "/hakkimizda" },
       { name: "Referanslarımız", href: "/referanslar" },
-      { name: "Müşteri Görüşleri", href: "/kurumsal/musteri-gorusleri" },
-      { name: "Bizden Haberler", href: "/haberler" },
+      { name: "Müşteri Görüşleri", href: "/musteri-gorusleri" },
+      { name: "Haberler", href: "/haberler" },
       { name: "Kariyer", href: "/kurumsal/kariyer" },
     ],
   },
@@ -38,19 +37,19 @@ const footerLinks = [
     links: [
       { name: "SSS", href: "/sss" },
       { name: "İletişim", href: "/iletisim" },
-      { name: "Müşteri Desteği", href: "/musteri" },
+      { name: "QR Menü Sipariş", href: "/robotpos-cozum-uretir/qr-menu-siparis" },
       { name: "Gizlilik Politikası", href: "/kurumsal/gizlilik-politikasi" },
-      { name: "Kullanım Koşulları", href: "/kurumsal/kullanim-kosullari" },
+      { name: "Aydınlatma Metni", href: "/kurumsal/aydinlatma-metni" },
     ],
   },
 ];
 
 const socialLinks = [
-  { icon: Facebook, href: "https://facebook.com/robotpos" },
-  { icon: Twitter, href: "https://twitter.com/robotpos" },
-  { icon: Instagram, href: "https://instagram.com/robotpos" },
-  { icon: Linkedin, href: "https://linkedin.com/company/robotpos" },
-  { icon: Youtube, href: "https://youtube.com/robotpos" },
+  { icon: Facebook, href: "https://facebook.com/robotPOS" },
+  { icon: Twitter, href: "https://twitter.com/robotPOS" },
+  { icon: Instagram, href: "https://instagram.com/robotPOS" },
+  { icon: Linkedin, href: "https://linkedin.com/company/robotPOS" },
+  { icon: Youtube, href: "https://youtube.com/robotPOS" },
 ];
 
 export default function Footer() {
@@ -64,13 +63,13 @@ export default function Footer() {
           {/* Company Info */}
           <div className="lg:col-span-2 space-y-8">
             <div>
-              <Link href="/" className="inline-block">
+              <a href="/" className="inline-block">
                 <span className="text-2xl font-bold bg-gradient-to-r from-blue-400 to-blue-600 bg-clip-text text-transparent">
-                  RobotPOS
+                  robotPOS
                 </span>
-              </Link>
+              </a>
               <p className="text-gray-400 mt-4 leading-relaxed">
-                RobotPOS, café, restoran işletmelerine yönelik yenilikçi yazılım ve donanım çözümleri sunan öncü bir POS ve işletme yönetim sistemidir.
+                robotPOS, café, restoran işletmelerine yönelik yenilikçi yazılım ve donanım çözümleri sunan öncü bir POS ve işletme yönetim sistemidir.
               </p>
             </div>
             
@@ -79,20 +78,20 @@ export default function Footer() {
                 <div className="bg-gray-800 p-2 rounded-lg group-hover:bg-blue-600/10 transition-colors">
                   <PhoneCall className="h-5 w-5" />
                 </div>
-                <span className="ml-3">0850 123 45 67</span>
+                <span className="ml-3">0850 811 0 456</span>
               </div>
               <div className="flex items-center text-gray-400 hover:text-blue-400 transition-colors group">
                 <div className="bg-gray-800 p-2 rounded-lg group-hover:bg-blue-600/10 transition-colors">
                   <Mail className="h-5 w-5" />
                 </div>
-                <span className="ml-3">info@robotpos.com</span>
+                <span className="ml-3">info@robotPOS.com</span>
               </div>
               <div className="flex items-start text-gray-400 hover:text-blue-400 transition-colors group">
                 <div className="bg-gray-800 p-2 rounded-lg group-hover:bg-blue-600/10 transition-colors mt-1">
                   <MapPin className="h-5 w-5" />
                 </div>
                 <span className="ml-3">
-                  Yıldız Teknik Üniversitesi Teknopark, Davutpaşa Kampüsü, No: 7, 34220 Esenler/İstanbul
+                 Adres: Aydınevler Mah. Durak Sokak No:19 Maltepe/İstanbul
                 </span>
               </div>
             </div>
@@ -108,13 +107,13 @@ export default function Footer() {
               <ul className="space-y-3">
                 {section.links.map((link) => (
                   <li key={link.name}>
-                    <Link
+                    <a
                       href={link.href}
                       className="text-gray-400 hover:text-blue-400 transition-colors flex items-center group"
                     >
                       <span className="w-1.5 h-1.5 rounded-full bg-gray-600 group-hover:bg-blue-400 transition-colors mr-2"></span>
                       {link.name}
-                    </Link>
+                    </a>
                   </li>
                 ))}
               </ul>
@@ -142,7 +141,7 @@ export default function Footer() {
             })}
           </div>
           <div className="text-gray-500 text-sm">
-            © {new Date().getFullYear()} RobotPOS. Tüm hakları saklıdır.
+            {new Date().getFullYear()} robotPOS. Tüm hakları saklıdır.
           </div>
         </div>
       </div>

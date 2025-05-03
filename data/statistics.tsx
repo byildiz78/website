@@ -14,14 +14,14 @@ export const statistics = [
     icon: <Cog className="h-8 w-8" />,
   },
   {
-    value: 3000,
+    value: 4000,
     label: "Şubede Aktif",
     suffix: "+",
     icon: <Building2 className="h-8 w-8" />,
   },
   {
-    value: 10,
-    label: "Çoklu Şube",
+    value: 80,
+    label: "Zincir Marka",
     suffix: "+",
     icon: <Users className="h-8 w-8" />,
   },

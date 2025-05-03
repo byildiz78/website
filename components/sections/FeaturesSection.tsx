@@ -2,67 +2,8 @@
 
 import React from "react";
 import { useInView } from "react-intersection-observer";
-import { ShoppingCart, Users, Package, Truck, Smartphone, Percent, CreditCard, FileText } from "lucide-react";
-import Link from "next/link";
-import { Card } from "@/components/ui/card";
-
-interface Feature {
-  icon: React.ReactNode;
-  title: string;
-  description: string;
-  link: string;
-}
-
-const features: Feature[] = [
-  {
-    icon: <ShoppingCart className="w-6 h-6" />,
-    title: "Tezgah Satış",
-    description: "Hızlı ve kolay satış işlemleri",
-    link: "/urunler/tezgah-satis"
-  },
-  {
-    icon: <Users className="w-6 h-6" />,
-    title: "Self Servis",
-    description: "Müşteri odaklı sipariş sistemi",
-    link: "/urunler/self-servis"
-  },
-  {
-    icon: <Package className="w-6 h-6" />,
-    title: "Sadakat Yönetimi",
-    description: "Müşteri bağlılığını artırın",
-    link: "/urunler/sadakat-yonetimi"
-  },
-  {
-    icon: <Truck className="w-6 h-6" />,
-    title: "Paket Servis",
-    description: "Teslimat süreçlerini yönetin",
-    link: "/urunler/paket-servis"
-  },
-  {
-    icon: <Smartphone className="w-6 h-6" />,
-    title: "QR Menü Sipariş",
-    description: "Dijital menü ve sipariş alma",
-    link: "/urunler/qr-menu"
-  },
-  {
-    icon: <Percent className="w-6 h-6" />,
-    title: "Kampanya Yönetimi",
-    description: "Satışları artırıcı kampanyalar",
-    link: "/urunler/kampanya-yonetimi"
-  },
-  {
-    icon: <CreditCard className="w-6 h-6" />,
-    title: "Ön Ödemeli Satış",
-    description: "Ön ödemeli kart sistemleri",
-    link: "/urunler/on-odemeli-satis"
-  },
-  {
-    icon: <FileText className="w-6 h-6" />,
-    title: "Alakart Servis",
-    description: "Masa servis yönetimi",
-    link: "/urunler/alakart-servis"
-  }
-];
+import { whyChooseUs } from "@/data/whyChooseUs";
+import { ArrowRight } from "lucide-react";
 
 export function FeaturesSection() {
   const { ref, inView } = useInView({
@@ -71,65 +12,81 @@ export function FeaturesSection() {
   });
 
   return (
-    <section className="py-24 bg-gradient-to-b from-white to-gray-50">
+    <section className="py-16 bg-gradient-to-b from-white to-blue-50/50">
       <div ref={ref} className="container mx-auto px-4">
-        <div className="text-center mb-16">
-          <h2 className="section-title mb-4">
-            Robotpos <span className="text-gray-600">Çözüm Üretir!</span>
-          </h2>
-          <p className="section-subtitle">
-            İhtiyaçlarınızı tek bir çatı altında çözüme kavuşturuyoruz.
-          </p>
+        {/* Header with improved visual hierarchy */}
+        <div className="text-center max-w-3xl mx-auto mb-12">
+          <div className={`transition-all duration-1000 ${
+            inView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+          }`}>
+            <h2 className="section-title mb-4 relative inline-block">
+              Neden <span className="text-blue-600 font-bold">robotPOS</span>?
+              <div className="absolute -bottom-2 left-0 right-0 h-1 bg-blue-600 rounded-full transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left"></div>
+            </h2>
+            <p className="section-subtitle text-gray-600 max-w-2xl mx-auto">
+              En Kolay, En Hızlı, En Sorunsuz Restoran Otomasyonu ve Yönetim Sistemi
+            </p>
+          </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {features.map((feature, index) => (
-            <Card 
-              key={index}
-              className={`group hover-lift hover-glow border-none bg-white/50 backdrop-blur-sm ${
-                inView ? 'animate-fadeIn' : 'opacity-0'
-              }`}
-              style={{ animationDelay: `${index * 100}ms` }}
-            >
-              <Link href={feature.link} className="block p-6">
-                <div className="mb-4 flex items-center justify-between">
-                  <div className="bg-blue-100 p-3 rounded-lg group-hover:bg-blue-600 transition-colors duration-300">
-                    <div className="text-blue-600 group-hover:text-white transition-colors duration-300">
-                      {feature.icon}
-                    </div>
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+          {/* Left side - Feature cards in a 2x2 grid */}
+          <div className="lg:col-span-7 grid grid-cols-1 md:grid-cols-2 gap-6">
+            {whyChooseUs.map((item, index) => (
+              <a 
+                href={item.link}
+                key={index} 
+                className={`group bg-white rounded-xl p-6 shadow-sm hover:shadow-lg hover:bg-blue-50/30 transition-all duration-300 transform hover:-translate-y-1 ${
+                  inView ? 'animate-fadeIn' : 'opacity-0'
+                }`}
+                style={{ animationDelay: `${index * 100}ms` }}
+              >
+                <div className="flex flex-col h-full">
+                  <div className="bg-blue-100/50 p-3 rounded-lg w-12 h-12 flex items-center justify-center mb-4 group-hover:bg-blue-100 transition-colors">
+                    {item.icon}
                   </div>
-                  <svg 
-                    className="w-5 h-5 text-gray-400 group-hover:text-blue-600 transform translate-x-0 group-hover:translate-x-2 transition-all duration-300" 
-                    fill="none" 
-                    viewBox="0 0 24 24" 
-                    stroke="currentColor"
-                  >
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                  </svg>
+                  <h3 className="font-semibold text-lg mb-2 group-hover:text-blue-600 transition-colors">
+                    {item.title}
+                  </h3>
+                  <p className="text-gray-600 text-sm leading-relaxed flex-grow">
+                    {item.description}
+                  </p>
+                  <div className="mt-4 text-blue-500 flex items-center text-sm font-medium opacity-0 group-hover:opacity-100 transition-opacity">
+                    <span>Daha Fazla</span>
+                    <ArrowRight className="h-4 w-4 ml-1 transform group-hover:translate-x-1 transition-transform" />
+                  </div>
                 </div>
-                <h3 className="text-lg font-semibold mb-2 group-hover:text-blue-600 transition-colors duration-300">
-                  {feature.title}
-                </h3>
-                <p className="text-gray-600 text-sm">
-                  {feature.description}
-                </p>
-              </Link>
-            </Card>
-          ))}
-        </div>
+              </a>
+            ))}
+          </div>
 
-        <div className={`mt-16 text-center transition-all duration-1000 ${
-          inView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
-        }`}>
-          <Link 
-            href="/iletisim"
-            className="inline-flex items-center justify-center px-8 py-3 text-lg font-medium text-white bg-blue-600 rounded-lg hover:bg-blue-700 transition-colors duration-300"
-          >
-            Ücretsiz Demo İçin Sizi Arayalım
-            <svg className="w-5 h-5 ml-2" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-            </svg>
-          </Link>
+          {/* Right side - Image with floating info card */}
+          <div className={`lg:col-span-5 relative transition-all duration-1000 ${
+            inView ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-10'
+          }`}>
+            <div className="relative">
+              {/* Background glow effect */}
+              <div className="absolute -inset-4 bg-blue-100/30 rounded-[2rem] blur-xl group-hover:blur-2xl transition-all duration-500"></div>
+              
+              {/* Main image container with hover effects */}
+              <div className="relative rounded-[2rem] overflow-hidden transition-all duration-500 group-hover:scale-[1.02] group-hover:shadow-xl">
+                <div className="absolute inset-0 bg-gradient-to-tr from-blue-500/20 via-transparent to-blue-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                <img 
+                  src="/images/general/rs5-min.webp" 
+                  alt="robotPOS Kullanımı" 
+                  className="w-full h-auto relative z-10"
+                />
+              </div>
+            </div>
+            
+            {/* Floating info card */}
+            <div className="absolute -bottom-6 -right-6 bg-blue-600 text-white p-5 rounded-2xl shadow-lg max-w-xs hidden md:block transform group-hover:translate-x-2 group-hover:-translate-y-2 transition-transform duration-500">
+              <p className="font-semibold text-lg mb-2">22 Yıllık Deneyim</p>
+              <p className="text-sm opacity-90">
+                2003'ten beri restoran ve cafe sektörüne özel çözümler üretiyoruz.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </section>

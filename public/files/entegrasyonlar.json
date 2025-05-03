@@ -1,0 +1,154 @@
+[
+    {
+      "ad": "Yemeksepeti",
+      "aciklama": "Yemeksepeti siparişleriniz otomatik olarak sistemimize aktarılmaktadır",
+      "logoUrl": "https://i0.wp.com/www.robotPOS.com/wp-content/uploads/2019/05/yemek-sepeti-logo.png"
+    },
+    {
+      "ad": "Migros Yemek",
+      "aciklama": "Migros Yemek üzerinden gelen siparişleriniz anında sisteme entegre olur",
+      "logoUrl": "https://placehold.co/400x200/orange/white?text=Migros+Yemek"
+    },
+    {
+      "ad": "Getir",
+      "aciklama": "Getir uygulaması üzerinden gelen siparişlerin otomatik entegrasyonu",
+      "logoUrl": "https://placehold.co/400x200/purple/white?text=Getir"
+    },
+    {
+      "ad": "Getir Çarşı Entegrasyonu",
+      "aciklama": "Getir Çarşı platformu ile işletmenin mevcut sistemleri arasında entegrasyon sağlayan yazılım",
+      "logoUrl": "https://placehold.co/400x200/purple/white?text=Getir+Carsi"
+    },
+    {
+      "ad": "Trendyol Market Entegrasyonu",
+      "aciklama": "Trendyol Market platformu ile işletmenin mevcut sistemleri arasında entegrasyon sağlayan yazılım",
+      "logoUrl": "https://placehold.co/400x200/orange/white?text=Trendyol+Market"
+    },
+    {
+      "ad": "Fuudy",
+      "aciklama": "Fuudy platformu ile tam entegrasyon, sipariş ve ödeme takibi",
+      "logoUrl": "https://placehold.co/400x200/red/white?text=Fuudy"
+    },
+    {
+      "ad": "Siparişim",
+      "aciklama": "Siparişim platformundan gelen siparişler otomatik olarak mutfağa iletilir",
+      "logoUrl": "https://placehold.co/400x200/blue/white?text=Siparisim"
+    },
+    {
+      "ad": "Trendyol Yemek",
+      "aciklama": "Trendyol Yemek platformu ile gerçek zamanlı sipariş entegrasyonu",
+      "logoUrl": "https://placehold.co/400x200/orange/white?text=Trendyol+Yemek"
+    },
+    {
+      "ad": "GMP3",
+      "aciklama": "Yeni Nesil ÖKC' ler ile kablolu entegrasyon",
+      "logoUrl": "https://i0.wp.com/www.robotPOS.com/wp-content/uploads/2019/05/IMG_4405.png"
+    },
+    {
+      "ad": "Hopi",
+      "aciklama": "Paracık Kazanabilir, kullanabilir, Hopi pay ile mobil ödeme yapabilirsiniz",
+      "logoUrl": "https://i0.wp.com/www.robotPOS.com/wp-content/uploads/2019/05/hopi-boyner.png"
+    },
+    {
+      "ad": "TSM",
+      "aciklama": "Yeni Nesil ÖKC' ler ile Kablosuz entegrasyon. Masa Başı ve Paket Servis Ödeme Entegrasyonu",
+      "logoUrl": "https://i0.wp.com/www.robotPOS.com/wp-content/uploads/2019/05/iwe280.jpg"
+    },
+    {
+      "ad": "ComoSense",
+      "aciklama": "Mobil Sadakat Yönetimi Çözümleri",
+      "logoUrl": "https://i0.wp.com/www.robotPOS.com/wp-content/uploads/2019/05/como-logo.jpg"
+    },
+    {
+      "ad": "Jet Link",
+      "aciklama": "Facebook messenger üzerinden Paket Servis Siparişi",
+      "logoUrl": "https://i0.wp.com/www.robotPOS.com/wp-content/uploads/2019/05/jetlink-share-logo.png"
+    },
+    {
+      "ad": "NKolay Sanal Ödeme",
+      "aciklama": "Karekod ile Sanal Ödeme",
+      "logoUrl": "https://i0.wp.com/www.robotPOS.com/wp-content/uploads/2019/05/nkolay.png"
+    },
+   
+   
+    {
+      "ad": "LOGO Entegrasyonu",
+      "aciklama": "LOGO ERP sisteminin diğer iş uygulamalarıyla entegrasyonunu sağlayan çözüm",
+      "logoUrl": "https://placehold.co/400x200/blue/white?text=LOGO"
+    },
+    {
+      "ad": "SAP Entegrasyonu",
+      "aciklama": "SAP ERP sisteminin diğer iş uygulamalarıyla entegrasyonunu sağlayan kapsamlı çözüm",
+      "logoUrl": "https://placehold.co/400x200/blue/white?text=SAP"
+    },
+    {
+      "ad": "Mikro Entegrasyonu",
+      "aciklama": "Mikro ERP sisteminin diğer iş uygulamalarıyla entegrasyonunu sağlayan çözüm",
+      "logoUrl": "https://placehold.co/400x200/blue/white?text=Mikro"
+    },
+    {
+      "ad": "Oracle Entegrasyonu",
+      "aciklama": "Oracle ERP sisteminin diğer iş uygulamalarıyla entegrasyonunu sağlayan güçlü çözüm",
+      "logoUrl": "https://placehold.co/400x200/red/white?text=Oracle"
+    },
+    {
+      "ad": "Luca Entegrasyonu",
+      "aciklama": "Luca muhasebe ve finans yazılımının diğer iş uygulamalarıyla entegrasyonunu sağlayan çözüm",
+      "logoUrl": "https://placehold.co/400x200/green/white?text=Luca"
+    },
+    {
+      "ad": "Paket Taxi",
+      "aciklama": "Paket Siparişlerin Pakettaxi tarafından Teslimi",
+      "logoUrl": "https://i0.wp.com/www.robotPOS.com/wp-content/uploads/2019/05/pakettaxii.png"
+    },
+    {
+      "ad": "Paketle Entegrasyonu",
+      "aciklama": "Paketle teslimat hizmeti ile işletmenin mevcut sistemleri arasında entegrasyon sağlayan yazılım",
+      "logoUrl": "https://placehold.co/400x200/green/white?text=Paketle"
+    },
+    {
+      "ad": "Hemen Yolda Entegrasyonu",
+      "aciklama": "Hemen Yolda kurye hizmeti ile işletmenin mevcut sistemleri arasında entegrasyon sağlayan yazılım",
+      "logoUrl": "https://placehold.co/400x200/black/white?text=Hemen+Yolda"
+    },
+    {
+      "ad": "Vigo Entegrasyonu",
+      "aciklama": "Vigo kurye hizmeti ile işletmenin mevcut sistemleri arasında entegrasyon sağlayan yazılım",
+      "logoUrl": "https://placehold.co/400x200/blue/white?text=Vigo"
+    },
+    {
+      "ad": "PackUpp Fast Delivery",
+      "aciklama": "PackUpp hızlı teslimat hizmeti ile işletmenin mevcut sistemleri arasında entegrasyon sağlayan yazılım",
+      "logoUrl": "https://placehold.co/400x200/red/white?text=PackUpp"
+    },
+    {
+      "ad": "Drive Through Entegrasyonu",
+      "aciklama": "Drive Through sistemleri ile işletmenin mevcut sistemleri arasında entegrasyon sağlayan yazılım",
+      "logoUrl": "https://placehold.co/400x200/green/white?text=Drive+Through"
+    },
+    {
+      "ad": "Fastpay Entegrasyonu",
+      "aciklama": "Fastpay mobil ödeme sistemi ile işletmenin mevcut sistemleri arasında entegrasyon sağlayan yazılım",
+      "logoUrl": "https://placehold.co/400x200/blue/white?text=Fastpay"
+    },
+    {
+      "ad": "Paycell Entegrasyonu",
+      "aciklama": "Paycell mobil ödeme sistemi ile işletmenin mevcut sistemleri arasında entegrasyon sağlayan yazılım",
+      "logoUrl": "https://placehold.co/400x200/orange/white?text=Paycell"
+    },
+    {
+      "ad": "Paye Entegrasyonu",
+      "aciklama": "Paye mobil ödeme sistemi ile işletmenin mevcut sistemleri arasında entegrasyon sağlayan yazılım",
+      "logoUrl": "https://placehold.co/400x200/purple/white?text=Paye"
+    },
+    {
+      "ad": "Gastropay Entegrasyonu",
+      "aciklama": "Gastropay ödeme çözümü ile işletmenin mevcut sistemleri arasında entegrasyon sağlayan yazılım",
+      "logoUrl": "https://placehold.co/400x200/green/white?text=Gastropay"
+    },
+    {
+      "ad": "Zubizu Entegrasyonu",
+      "aciklama": "Zubizu sadakat ve ödeme platformu ile işletmenin mevcut sistemleri arasında entegrasyon sağlayan yazılım",
+      "logoUrl": "https://placehold.co/400x200/blue/white?text=Zubizu"
+    }
+]

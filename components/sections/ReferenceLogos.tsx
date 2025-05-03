@@ -1,35 +1,109 @@
 "use client";
 
-import React from "react";
+import React, { useRef, useEffect } from "react";
 import Image from "next/image";
 import { Separator } from "@/components/ui/separator";
 import { useInView } from "react-intersection-observer";
 import { cn } from "@/lib/utils";
+import referansData from "@/public/files/referanslar.json";
 
-interface ReferenceLogo {
+// Define types for reference data
+type ReferansData = {
+  referans_tipi: string;
+  adi: string;
+  logo_yolu: string;
+  sube_sayisi?: number;
+  sehir?: string;
+};
+
+type ReferenceData = {
   id: number;
   name: string;
   logo: string;
   branchCount?: number;
-}
+};
 
 interface ReferenceLogosProps {
   title?: string;
   subtitle?: string;
-  logos: ReferenceLogo[];
   className?: string;
+  logos?: Array<ReferansData | ReferenceData>;
+}
+
+// Type guards
+function isReferansData(data: any): data is ReferansData {
+  return 'adi' in data && 'logo_yolu' in data;
+}
+
+function isReferenceData(data: any): data is ReferenceData {
+  return 'name' in data && 'logo' in data;
 }
 
 export function ReferenceLogos({
-  title,
-  subtitle,
-  logos,
+  title = "En İyi İşletmelerin Tercihi",
+  subtitle = "Türkiye'nin önde gelen markalarının tercihi robotPOS",
   className,
+  logos,
 }: ReferenceLogosProps) {
   const { ref, inView } = useInView({
     triggerOnce: true,
     threshold: 0.1,
   });
+
+  const scrollContainerRef = useRef<HTMLDivElement>(null);
+  const animationRef = useRef<number>();
+
+  // Get chain businesses and sort by branch count
+  const chainBusinesses = logos 
+    ? logos
+    : referansData
+        .filter(ref => ref.referans_tipi === "Zincir İşletmeler")
+        .sort((a, b) => (b.sube_sayisi || 0) - (a.sube_sayisi || 0));
+
+  useEffect(() => {
+    const scrollContainer = scrollContainerRef.current;
+    if (!scrollContainer) return;
+
+    let scrollAmount = 0;
+    const speed = 1; // Adjust speed as needed
+
+    const scroll = () => {
+      scrollAmount += speed;
+      scrollContainer.scrollLeft = scrollAmount;
+
+      // Reset scroll position when reaching the end
+      if (scrollAmount >= (scrollContainer.scrollWidth - scrollContainer.clientWidth)) {
+        scrollAmount = 0;
+      }
+
+      animationRef.current = requestAnimationFrame(scroll);
+    };
+
+    // Start scrolling animation
+    animationRef.current = requestAnimationFrame(scroll);
+
+    // Pause on hover
+    const handleMouseEnter = () => {
+      if (animationRef.current) {
+        cancelAnimationFrame(animationRef.current);
+      }
+    };
+
+    const handleMouseLeave = () => {
+      animationRef.current = requestAnimationFrame(scroll);
+    };
+
+    scrollContainer.addEventListener('mouseenter', handleMouseEnter);
+    scrollContainer.addEventListener('mouseleave', handleMouseLeave);
+
+    return () => {
+      if (animationRef.current) {
+        cancelAnimationFrame(animationRef.current);
+      }
+      scrollContainer.removeEventListener('mouseenter', handleMouseEnter);
+      scrollContainer.removeEventListener('mouseleave', handleMouseLeave);
+    };
+  }, []);
 
   return (
     <section className={cn("py-24", className)}>
@@ -43,30 +117,44 @@ export function ReferenceLogos({
           </div>
         )}
 
-        <div className="flex flex-wrap justify-center gap-8 md:gap-12">
-          {logos.map((logo, index) => (
+        {/* Scrollable Container */}
+        <div 
+          ref={scrollContainerRef}
+          className="flex overflow-x-auto hide-scrollbar gap-8 px-4 py-4"
+          style={{
+            scrollbarWidth: 'none',
+            msOverflowStyle: 'none',
+            WebkitOverflowScrolling: 'touch',
+          }}
+        >
+          {/* Double the items for seamless scrolling */}
+          {[...chainBusinesses, ...chainBusinesses].map((business, index) => (
             <div 
-              key={logo.id} 
-              className={`group relative transition-all duration-1000 ${
+              key={`${isReferansData(business) ? business.adi : isReferenceData(business) ? business.name : ''}-${index}`} 
+              className={`flex-shrink-0 group transition-all duration-1000 relative ${
                 inView 
                   ? 'opacity-100 translate-y-0' 
                   : 'opacity-0 translate-y-10'
               }`}
-              style={{ transitionDelay: `${index * 100}ms` }}
+              style={{ 
+                transitionDelay: `${index * 100}ms`,
+                width: '200px'
+              }}
             >
-              <div className="w-32 h-20 md:w-40 md:h-24 relative flex items-center justify-center grayscale hover:grayscale-0 transition-all duration-300">
+              <div className="w-full h-32 relative flex items-center justify-center transition-all duration-300">
                 <Image
-                  src={logo.logo}
-                  alt={logo.name}
+                  src={isReferansData(business) ? business.logo_yolu : isReferenceData(business) ? business.logo : ''}
+                  alt={isReferansData(business) ? business.adi : isReferenceData(business) ? business.name : 'Reference Logo'}
                   fill
-                  sizes="(max-width: 768px) 128px, 160px"
+                  sizes="200px"
                   style={{ objectFit: "contain" }}
                 />
               </div>
-              {logo.branchCount && (
-                <div className="absolute -bottom-2 left-0 right-0 mx-auto w-max opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              {((isReferansData(business) && business.sube_sayisi) || 
+                (isReferenceData(business) && business.branchCount)) && (
+                <div className="absolute -bottom-2 left-0 right-0 mx-auto w-max">
                   <div className="bg-blue-600 text-white text-xs px-2 py-1 rounded-full">
-                    {logo.branchCount} Şube
+                    {isReferansData(business) ? business.sube_sayisi : isReferenceData(business) ? business.branchCount : 0}+ Şube
                   </div>
                 </div>
               )}
@@ -99,6 +187,12 @@ export function ReferenceLogos({
           </a>
         </div>
       </div>
+
+      <style jsx>{`
+        .hide-scrollbar::-webkit-scrollbar {
+          display: none;
+        }
+      `}</style>
     </section>
   );
 }

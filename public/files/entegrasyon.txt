@@ -1,0 +1,245 @@
+Entegrasyonlar
+​
+01.01. Yeni Nesil OKC Entegrasyon Yazılımı
+Yeni nesil ödeme kaydedici cihazların (OKC) mevcut sistemlerle sorunsuz entegrasyonunu sağlayan yazılım. Yasal gerekliliklere uyumu kolaylaştırır ve işlemlerin hızlı bir şekilde kaydedilmesini sağlar.
+
+​
+02. ERP Entegrasyonları
+​
+02.01. LOGO Entegrasyonu
+LOGO ERP sisteminin diğer iş uygulamalarıyla entegrasyonunu sağlayan çözüm. Veri senkronizasyonu ve iş süreçlerinin optimizasyonunu destekleyerek işletme verimliliğini artırır.
+
+​
+02.02. SAP Entegrasyonu
+SAP ERP sisteminin diğer iş uygulamalarıyla entegrasyonunu sağlayan kapsamlı çözüm. Kurumsal süreçlerin bütünleşik yönetimini mümkün kılarak büyük ölçekli işletmelere destek olur.
+
+​
+02.03. Mikro Entegrasyonu
+Mikro ERP sisteminin diğer iş uygulamalarıyla entegrasyonunu sağlayan çözüm. Özellikle küçük ve orta ölçekli işletmeler için tasarlanmış, kullanımı kolay bir entegrasyon sunar.
+
+​
+02.04. Oracle Entegrasyonu
+Oracle ERP sisteminin diğer iş uygulamalarıyla entegrasyonunu sağlayan güçlü çözüm. Büyük ölçekli işletmeler için kapsamlı entegrasyon imkanı sunarak veri analitiği ve iş zekası süreçlerini güçlendirir.
+
+​
+02.05. Luca Entegrasyonu
+Luca muhasebe ve finans yazılımının diğer iş uygulamalarıyla entegrasyonunu sağlayan çözüm. Finansal süreçlerin optimizasyonuna yardımcı olarak, muhasebe işlemlerini otomatikleştirir ve hata riskini azaltır.
+
+​
+03. Pazaryeri Entegrasyonları
+​
+03.01. Yemek Sepeti Entegrasyon Yazılımı
+Yemek Sepeti platformu ile işletmenin mevcut sistemleri arasında entegrasyon sağlayan yazılım. Sipariş yönetimini otomatikleştirir, menü güncellemelerini kolaylaştırır ve satış raporlamalarını merkezi hale getirir.
+
+Entegrasyon Dökümanı
+Yemek Sepeti Entegrasyon Dökümanı için tıklayınız />
+
+​
+03.02. Yemek Sepeti Mahalle Entegrasyon Yazılımı
+Yemek Sepeti’nin mahalle bazlı hizmetleri için özel olarak tasarlanmış entegrasyon yazılımı. Yerel işletmelerin platformla etkileşimini kolaylaştırır ve mahalle ölçeğinde sipariş yönetimini optimize eder.
+
+​
+03.03. Getir Yemek Entegrasyon Yazılımı
+Getir Yemek platformu ile işletmenin mevcut sistemleri arasında entegrasyon sağlayan yazılım. Sipariş ve teslimat süreçlerini optimize ederek, hızlı ve doğru sipariş işleme imkanı sunar.
+
+​
+03.04. Getir Çarşı Entegrasyon Yazılımı
+Getir Çarşı platformu ile işletmenin mevcut sistemleri arasında entegrasyon sağlayan yazılım. Market ve perakende satışlarını destekleyerek, stok yönetimi ve fiyatlandırma süreçlerini otomatikleştirir.
+
+Entegrasyon Dökümanı
+Getir Çarşı Entegrasyon Dökümanı için tıklayınız />
+
+​
+03.05. Trendyol Yemek Entegrasyon Yazılımı
+Trendyol Yemek platformu ile işletmenin mevcut sistemleri arasında entegrasyon sağlayan yazılım. Yemek siparişlerinin yönetimini kolaylaştırır ve platform üzerindeki menü güncellemelerini otomatikleştirir.
+
+​
+03.06. Trendyol Market Entegrasyon Yazılımı
+Trendyol Market platformu ile işletmenin mevcut sistemleri arasında entegrasyon sağlayan yazılım. Market ürünlerinin satışını ve stok yönetimini destekler, fiyat ve ürün bilgisi güncellemelerini otomatikleştirir.
+
+Entegrasyon Dökümanı
+Trendyol Entegrasyon Dökümanı için tıklayınız />
+
+​
+03.07. Fuudy Entegrasyon Yazılımı
+Fuudy yemek sipariş platformu ile işletmenin mevcut sistemleri arasında entegrasyon sağlayan yazılım. Sipariş akışını otomatikleştirir ve platform üzerindeki restoran profilinin yönetimini kolaylaştırır.
+
+Entegrasyon Dökümanı
+Fuudy Entegrasyon Dökümanı için tıklayınız />
+
+​
+03.08. Migros Yemek Entegrasyon Yazılımı
+Migros Yemek platformu ile işletmenin mevcut sistemleri arasında entegrasyon sağlayan yazılım. Migros müşterilerine yönelik yemek siparişlerini yönetir ve Migros’un sadakat programıyla entegrasyon sağlar.
+
+​
+04. Teslimat Kurye Entegrasyonları
+​
+04.01. Paketle Entegrasyon Yazılımı
+Paketle teslimat hizmeti ile işletmenin mevcut sistemleri arasında entegrasyon sağlayan yazılım. Teslimat süreçlerini optimize eder, rota planlamasını iyileştirir ve gerçek zamanlı teslimat takibi sunar.
+
+​
+04.02. Hemen Yolda Entegrasyon Yazılımı
+Hemen Yolda kurye hizmeti ile işletmenin mevcut sistemleri arasında entegrasyon sağlayan yazılım. Hızlı teslimat imkanı sunar ve kurye atama süreçlerini otomatikleştirir.
+
+Entegrasyon Dökümanı
+Entegrasyon Dökümanı için tıklayınız />
+
+​
+04.03. Paket Taxi Entegrasyon Yazılımı
+Paket Taxi teslimat hizmeti ile işletmenin mevcut sistemleri arasında entegrasyon sağlayan yazılım. Esnek teslimat çözümleri sunar ve müşteri bilgilendirme süreçlerini iyileştirir.
+
+​
+04.04. Vigo Entegrasyon Yazılımı
+Vigo kurye hizmeti ile işletmenin mevcut sistemleri arasında entegrasyon sağlayan yazılım. Teslimat operasyonlarını dijitalleştirir ve kurye performans analizini kolaylaştırır.
+
+​
+04.05. PackUpp Fast Delivery Entegrasyon Yazılımı
+PackUpp hızlı teslimat hizmeti ile işletmenin mevcut sistemleri arasında entegrasyon sağlayan yazılım. Ultrafast teslimat süreçlerini optimize eder ve gerçek zamanlı stok senkronizasyonu sağlar.
+
+​
+04.06. Drive Through Entegrasyon Yazılımı
+Drive Through sistemleri ile işletmenin mevcut sistemleri arasında entegrasyon sağlayan yazılım. Araçtan sipariş alma ve teslim etme süreçlerini optimize ederek hızlı servis imkanı sunar.
+
+Entegrasyon Dökümanı
+Drive Through Entegrasyon Dökümanı için tıklayınız />
+
+​
+05. Mobil Ödeme Entegrasyonları
+​
+05.01. Fastpay Entegrasyon Yazılımı
+Fastpay mobil ödeme sistemi ile işletmenin mevcut sistemleri arasında entegrasyon sağlayan yazılım. Hızlı ve güvenli mobil ödemeleri mümkün kılar, işlem raporlamalarını kolaylaştırır.
+
+​
+05.02. Hopi Entegrasyon Yazılımı
+Hopi sadakat ve ödeme platformu ile işletmenin mevcut sistemleri arasında entegrasyon sağlayan yazılım. Müşteri sadakat programlarını yönetir ve Hopi üzerinden yapılan ödemeleri işler.
+
+​
+05.03. Paycell Entegrasyon Yazılımı
+Paycell mobil ödeme sistemi ile işletmenin mevcut sistemleri arasında entegrasyon sağlayan yazılım. Mobil cüzdan ödemelerini kolaylaştırır ve işlem güvenliğini artırır.
+
+Entegrasyon Dökümanı
+Paycell Entegrasyon Dökümanı için tıklayınız />
+
+​
+05.03.01 Paye Entegrasyon Yazılımı
+Paye mobil ödeme sistemi ile işletmenin mevcut sistemleri arasında entegrasyon sağlayan yazılım. Mobil cüzdan ödemelerini kolaylaştırır ve işlem güvenliğini artırır.
+
+Entegrasyon Dökümanı
+Paye Entegrasyon Dökümanı için tıklayınız />
+
+​
+05.04. Omerd Entegrasyon Yazılımı
+Omerd ödeme çözümleri ile işletmenin mevcut sistemleri arasında entegrasyon sağlayan yazılım. Çoklu ödeme kanallarını tek bir platformda birleştirir ve ödeme süreçlerini optimize eder.
+
+Entegrasyon Dökümanı
+Omerd CRM Entegrasyon Dökümanı için tıklayınız />
+
+​
+05.05. N Kolay Entegrasyon Yazılımı
+N Kolay ödeme sistemi ile işletmenin mevcut sistemleri arasında entegrasyon sağlayan yazılım. Banka entegrasyonlarını kolaylaştırır ve çeşitli ödeme yöntemlerini tek bir arayüzde toplar.
+
+​
+05.06. Gastropay Entegrasyon Yazılımı
+Gastropay ödeme çözümü ile işletmenin mevcut sistemleri arasında entegrasyon sağlayan yazılım. Restoran ve kafeler için özelleştirilmiş ödeme süreçlerini yönetir ve sadakat programlarıyla entegre çalışır.
+
+​
+05.07. Zubizu Entegrasyonu
+Zubizu sadakat ve ödeme platformu ile işletmenin mevcut sistemleri arasında entegrasyon sağlayan yazılım. Müşteri sadakat programlarını yönetir ve Zubizu üzerinden yapılan ödemeleri işler.
+
+Entegrasyon Dökümanı
+Zubizu Entegrasyon Dökümanı için tıklayınız />
+
+​
+06. Diğer Entegrasyonlarımız
+​
+06.01 Ticimax Entegrasyon Yazılımı
+Ticimax e-ticaret platformu ile işletmenin mevcut sistemleri arasında entegrasyon sağlayan yazılım. Online satış kanallarını yönetir ve stok senkronizasyonunu otomatikleştirir.
+
+Entegrasyon Dökümanı
+Ticimax Entegrasyon Dökümanı için tıklayınız />
+
+​
+06.02. Restajet Entegrasyon Yazılımı
+Restajet rezervasyon sistemi ile işletmenin mevcut sistemleri arasında entegrasyon sağlayan yazılım. Restoran rezervasyonlarını yönetir ve müşteri verilerini senkronize eder.
+
+Entegrasyon Dökümanı
+Restajet Entegrasyon Dökümanı için tıklayınız />
+
+​
+06.03. Hepsi Ekspress Entegrasyon Yazılımı
+Hepsi Ekspress teslimat hizmeti ile işletmenin mevcut sistemleri arasında entegrasyon sağlayan yazılım. Hızlı teslimat süreçlerini optimize eder ve sipariş takibini kolaylaştırır.
+
+​
+06.04. Frink Entegrasyon Yazılımı
+Frink iş yönetim platformu ile işletmenin mevcut sistemleri arasında entegrasyon sağlayan yazılım. İş akışlarını otomatikleştirir ve departmanlar arası iletişimi güçlendirir.
+
+​
+06.05. Jetlink Entegrasyon Yazılımı
+Jetlink müşteri iletişim platformu ile işletmenin mevcut sistemleri arasında entegrasyon sağlayan yazılım. Çoklu kanal müşteri iletişimini merkezi hale getirir ve müşteri verilerini senkronize eder.
+
+​
+06.06. İstanbul Havalimanı ERP Entegrasyon Yazılımı
+İstanbul Havalimanı ERP sistemi ile işletmenin mevcut sistemleri arasında entegrasyon sağlayan yazılım. Havalimanı operasyonlarını optimize eder ve veri akışını düzenler.
+
+Entegrasyon Dökümanı
+Tumiçtur Havalimanı Entegrasyon Dökümanı için tıklayınız />
+
+​
+06.07. Sabiha Gökçen Havaalanı ERP Entegrasyon Yazılımı
+Sabiha Gökçen Havaalanı ERP sistemi ile işletmenin mevcut sistemleri arasında entegrasyon sağlayan yazılım. Havaalanı yönetim süreçlerini iyileştirir ve veri analitiğini güçlendirir.
+
+​
+06.08. Havi Entegrasyon Yazılımı
+Havi lojistik yönetim sistemi ile işletmenin mevcut sistemleri arasında entegrasyon sağlayan yazılım. Tedarik zinciri yönetimini optimize eder ve lojistik süreçleri iyileştirir.
+
+​
+06.09. Saha Robotik Servis Robotu Entegrasyon Yazılımı
+Saha Robotik servis robotları ile işletmenin mevcut sistemleri arasında entegrasyon sağlayan yazılım. Robot operasyonlarını yönetir ve müşteri hizmetlerini otomatikleştirir.
+
+Entegrasyon Dökümanı
+Saha Robotik Entegrasyon Dökümanı için tıklayınız />
+
+​
+06.10. E-Logo Entegrasyon Yazılımı
+E-Logo e-dönüşüm çözümleri ile işletmenin mevcut sistemleri arasında entegrasyon sağlayan yazılım. E-fatura, e-arşiv, e-irsaliye gibi yasal elektronik belge süreçlerini otomatikleştirir ve uyum süreçlerini kolaylaştırır.
+
+Entegrasyon Dökümanı
+E-Logo Entegrasyon Dökümanı için tıklayınız />
+
+​
+06.11. Bonobo Kullanım Dokümanı
+Bonobo entegrasyon platformunun kullanımını detaylı bir şekilde anlatan dokümantasyon. Kullanıcılara adım adım rehberlik eder, yaygın senaryoları açıklar ve en iyi uygulamaları paylaşır. Bu, bir yazılım olmaktan ziyade bir kullanım kılavuzudur.
+
+Entegrasyon Dökümanı
+Bonobo Entegrasyon Dökümanı için tıklayınız />
+
+​
+06.12. Nescafe Kahve Otomatı Entegrasyonu
+Nescafe kahve otomatları ile işletmenin mevcut sistemleri arasında entegrasyon sağlayan yazılım. Otomatların stok takibini, bakım programlamasını ve satış verilerinin analizini otomatikleştirir. İçecek tercihlerini izleyerek personalize kampanyalar oluşturmayı sağlar.
+
+Entegrasyon Dökümanı
+Nescafe Qr Entegrasyon Dökümanı için tıklayınız />
+
+​
+06.13. Practicall Entegrasyon Yazılımı
+Practicall çağrı merkezi yazılımı ile işletmenin mevcut sistemleri arasında entegrasyon sağlayan çözüm. Müşteri hizmetleri süreçlerini optimize eder, çağrı kayıtlarını merkezi bir sistemde toplar ve analiz edilmesini kolaylaştırır.
+
+​
+06.14. Terazi Entegrasyon Yazılımı
+Elektronik teraziler ile işletmenin mevcut sistemleri arasında entegrasyon sağlayan yazılım. Ağırlık bazlı ürünlerin satış ve stok yönetimini otomatikleştirir, fiyatlandırma güncellemelerini kolaylaştırır ve hatalı ölçümleri minimize eder.
+
+Entegrasyon Dökümanı
+Terazi Entegrasyon Dökümanı için tıklayınız />
+
+​
+06.15. Togg truemore Entegrasyonu
+Trumore, müşterilerine bir uygulama vasıtasıyla, farklı ödeme yöntemleri sunan ödeme platformudur.
+Entegrasyon Dökümanı
+Togg Truemore Entegrasyon Dökümanı için tıklayınız />
+
+​
+06.16. Web Sipariş Sitesi Entegrasyon Yazılımı
+İşletmenin web tabanlı sipariş sitesi ile mevcut sistemleri arasında entegrasyon sağlayan yazılım. Online siparişlerin doğrudan işletme sistemlerine aktarılmasını sağlar, stok yönetimini otomatikleştirir ve müşteri verilerinin merkezi bir şekilde yönetilmesine olanak tanır. E-ticaret operasyonlarını optimize eder ve omnichannel satış stratejilerini destekler.
+
+Entegrasyon Dökümanı
+Web Sipariş Entegrasyon Dökümanı için tıklayınız />

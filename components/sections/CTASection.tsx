@@ -2,7 +2,6 @@
 
 import React from "react";
 import { Button } from "@/components/ui/button";
-import Link from "next/link";
 import { useInView } from "react-intersection-observer";
 
 interface CTASectionProps {
@@ -31,7 +30,7 @@ export function CTASection({
 
   const backgroundStyle = backgroundImage
     ? {
-        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(${backgroundImage})`,
+        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${backgroundImage})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
       }
@@ -39,42 +38,42 @@ export function CTASection({
 
   const bgColorClass = backgroundImage
     ? ""
-    : "bg-gradient-to-r from-blue-600 to-blue-800";
+    : "bg-gradient-to-r from-blue-500 to-blue-700";
 
   return (
     <section
       ref={ref}
-      className={`py-24 text-white ${bgColorClass}`}
+      className={`py-16 text-white ${bgColorClass}`}
       style={backgroundStyle}
     >
       <div className="container mx-auto px-4 text-center">
         <div className={`transition-all duration-1000 ${
           inView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
         }`}>
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 max-w-3xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 max-w-3xl mx-auto">
             {title}
           </h2>
           {subtitle && (
-            <p className="text-xl opacity-90 mb-8 max-w-2xl mx-auto">
+            <p className="text-lg opacity-90 mb-6 max-w-2xl mx-auto">
               {subtitle}
             </p>
           )}
           <div className="flex flex-col md:flex-row items-center justify-center space-y-4 md:space-y-0 md:space-x-4">
             <Button
-              size="lg"
-              className="bg-white text-blue-700 hover:bg-gray-100 min-w-[200px]"
+              size="default"
+              className="bg-white text-blue-600 hover:bg-gray-100 px-6"
               asChild
             >
-              <Link href={buttonLink}>{buttonText}</Link>
+              <a href={buttonLink}>{buttonText}</a>
             </Button>
             {secondaryButtonText && secondaryButtonLink && (
               <Button
-                size="lg"
+                size="default"
                 variant="outline"
-                className="border-white text-white hover:bg-white hover:text-blue-700 min-w-[200px]"
+                className="border-white text-white hover:bg-white hover:text-blue-600 px-6"
                 asChild
               >
-                <Link href={secondaryButtonLink}>{secondaryButtonText}</Link>
+                <a href={secondaryButtonLink}>{secondaryButtonText}</a>
               </Button>
             )}
           </div>
