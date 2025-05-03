@@ -3,13 +3,13 @@ export const heroSlides = [
     id: 1,
     title: "Cafe ve Restoranlar İçin En İyi POS Çözümü",
     description: "robotPOS ile işletmenizi daha verimli yönetin, satışlarınızı arttırın ve müşteri memnuniyetini maksimize edin.",
-    image: "/images/slider/robotPOSSlide.jpg"
+    image: "/images/slider/slide.jpg"
   },
   {
     id: 2,
     title: "Zincir Mağazalarınızı Tek Merkezden Yönetin",
     description: "Çoklu şube yönetimini kolaylaştıran merkezi yönetim paneli ile tüm şubelerinize hakim olun.",
-    image: "/images/slider/robotPOSSlide2.jpg"
+    image: "/images/slider/slide2.jpg"
   },
   {
     id: 3,
@@ -21,7 +21,7 @@ export const heroSlides = [
     id: 4,
     title: "Müşteri Memnuniyetini Artırın",
     description: "Gelişmiş müşteri yönetimi ve sadakat programları ile müşterilerinizi daha iyi tanıyın ve memnuniyeti artırın.",
-    image: "/images/slider/robotPOSSlide4.jpg"
+    image: "/images/slider/slide4.jpg"
   },
   {
     id: 5,
