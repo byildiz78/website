@@ -5,6 +5,7 @@ import { FeaturesGrid } from "@/components/sections/FeaturesGrid";
 import { SectionDivider } from "@/components/ui/section-divider";
 import { CTASection } from "@/components/sections/CTASection";
 import { ViewToggle } from "@/components/ui/view-toggle";
+import Head from "next/head";
 
 import { heroSlides } from "@/data/heroSlides";
 import { productFeatures } from "@/data/features";
@@ -15,9 +16,18 @@ export default function Home() {
 
   return (
     <div className="min-h-screen">
-      {/* Hero Section */}
-      <section className="h-[400px]">
-        <HeroSlider slides={heroSlides} />
+      {/* Hero Section - LCP Optimization */}
+      <section className="h-[400px] relative">
+        {/* Preload LCP image - Next.js Head içinde */}
+        <Head>
+          <link 
+            rel="preload" 
+            as="image" 
+            href={heroSlides[0].image} 
+            fetchPriority="high" 
+          />
+        </Head>
+        <HeroSlider slides={heroSlides} priority={true} />
       </section>
 
       {/* View Toggle */}

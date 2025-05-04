@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState, useEffect, useCallback } from "react";
+import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { useInView } from "react-intersection-observer";
@@ -18,15 +19,47 @@ interface Slide {
 
 interface HeroSliderProps {
   slides: Slide[];
+  priority?: boolean;
 }
 
-export function HeroSlider({ slides }: HeroSliderProps) {
+export function HeroSlider({ slides, priority = false }: HeroSliderProps) {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [isTransitioning, setIsTransitioning] = useState(false);
+  const [imagesLoaded, setImagesLoaded] = useState(false);
   const { ref, inView } = useInView({
     triggerOnce: true,
     threshold: 0.1,
   });
+
+  // Görselleri önceden yükle
+  useEffect(() => {
+    const preloadImages = async () => {
+      try {
+        // İlk görseli öncelikli olarak yükle
+        const firstImage = new window.Image();
+        firstImage.src = slides[0].image;
+        firstImage.onload = () => setImagesLoaded(true);
+
+        // Diğer görselleri arka planda yükle
+        const imagePromises = slides.slice(1).map((slide) => {
+          return new Promise((resolve, reject) => {
+            const img = new window.Image();
+            img.src = slide.image;
+            img.onload = resolve;
+            img.onerror = reject;
+          });
+        });
+
+        await Promise.all(imagePromises);
+      } catch (error) {
+        console.error("Görsel yükleme hatası:", error);
+      }
+    };
+
+    if (typeof window !== 'undefined') {
+      preloadImages();
+    }
+  }, [slides]);
 
   const nextSlide = useCallback(() => {
     if (!isTransitioning) {
@@ -51,98 +84,122 @@ export function HeroSlider({ slides }: HeroSliderProps) {
     }, 7000);
 
     return () => clearInterval(timer);
-  }, []); // Boş bağımlılık dizisi
+  }, [slides.length]);
+
+  // Klavye ile gezinme için
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === "ArrowLeft") prevSlide();
+      if (e.key === "ArrowRight") nextSlide();
+    };
+
+    window.addEventListener("keydown", handleKeyDown);
+    return () => window.removeEventListener("keydown", handleKeyDown);
+  }, [nextSlide, prevSlide]);
 
   return (
-    <div ref={ref} className="relative h-[500px] md:h-[600px] overflow-hidden">
-      {/* Use the reusable ExperienceBadge component */}
-      <ExperienceBadge position="top-right" />
-
-      {slides.map((slide, index) => (
-        <div
-          key={slide.id}
-          className={`absolute inset-0 transition-opacity duration-500 ${
-            currentSlide === index ? "opacity-100" : "opacity-0"
-          }`}
-          style={{
-            backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(${slide.image})`,
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-          }}
-        >
-          {slide.video && (
-            <video
-              autoPlay
-              loop
-              muted
-              playsInline
-              className="absolute inset-0 w-full h-full object-cover"
-              style={{ filter: "brightness(0.7)" }}
-            >
-              <source src={slide.video} type="video/webm" />
-            </video>
-          )}
-          <div className="absolute inset-0 bg-gradient-to-r from-gray-900/40 to-black/30" />
-          <div className="absolute inset-0 flex items-center justify-center">
-            <div className="container mx-auto px-4 text-center text-white">
-              <h1 
-                className={`text-4xl md:text-5xl lg:text-6xl font-bold mb-4 transition-all duration-1000 ${
-                  inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
-                }`}
-              >
-                {slide.title}
-              </h1>
-              <p 
-                className={`text-lg md:text-xl max-w-3xl mx-auto ${slide.buttonText ? 'mb-8' : 'mb-0'} transition-all duration-1000 delay-200 ${
-                  inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
-                }`}
-              >
-                {slide.description}
-              </p>
-              {slide.buttonText && slide.buttonLink && (
-                <Button 
-                  size="lg"
-                  className={`bg-blue-600 hover:bg-blue-700 text-white transition-all duration-1000 delay-400 ${
-                    inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
-                  }`}
-                  asChild
-                >
-                  <a href={slide.buttonLink}>{slide.buttonText}</a>
-                </Button>
+    <div className="relative h-full overflow-hidden" ref={ref}>
+      {/* Slider içeriği */}
+      <div className="absolute inset-0">
+        {slides.map((slide, index) => (
+          <div
+            key={slide.id}
+            className={`absolute inset-0 transition-opacity duration-500 ${
+              index === currentSlide ? "opacity-100" : "opacity-0"
+            }`}
+            style={{ zIndex: index === currentSlide ? 10 : 0 }}
+          >
+            {/* Arka plan görseli - LCP için optimize edilmiş */}
+            <div className="absolute inset-0 bg-black">
+              {slide.image && (
+                <div className="relative h-full w-full">
+                  <Image
+                    src={slide.image}
+                    alt={slide.title}
+                    fill
+                    sizes="100vw"
+                    className="object-cover"
+                    priority={priority && index === 0}
+                    quality={index === 0 ? 90 : 75}
+                    loading={index === 0 ? "eager" : "lazy"}
+                  />
+                  <div className="absolute inset-0 bg-black/40"></div>
+                </div>
               )}
             </div>
-          </div>
-        </div>
-      ))}
 
-      {/* Navigation Buttons */}
+            {/* Video arka plan (varsa) */}
+            {slide.video && (
+              <div className="absolute inset-0 z-10">
+                <video
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                  className="h-full w-full object-cover"
+                  preload={index === 0 ? "auto" : "none"}
+                >
+                  <source src={slide.video} type="video/mp4" />
+                </video>
+                <div className="absolute inset-0 bg-black/40"></div>
+              </div>
+            )}
+
+            {/* İçerik */}
+            <div className="relative z-20 flex h-full items-center justify-center px-4 text-center">
+              <div className="max-w-4xl">
+                <h1 className="mb-4 text-3xl font-bold text-white md:text-5xl lg:text-6xl">
+                  {slide.title}
+                </h1>
+                <p className="mb-6 text-lg text-gray-200 md:text-xl">
+                  {slide.description}
+                </p>
+                {slide.buttonText && slide.buttonLink && (
+                  <Button asChild size="lg">
+                    <a href={slide.buttonLink}>{slide.buttonText}</a>
+                  </Button>
+                )}
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+
+      {/* Deneyim rozeti */}
+      <div className="absolute right-8 top-8 z-30">
+        <ExperienceBadge />
+      </div>
+
+      {/* Gezinme okları */}
       <button
         onClick={prevSlide}
-        className="absolute left-4 top-1/2 -translate-y-1/2 bg-black/30 hover:bg-black/50 text-white p-2 rounded-full transition-colors"
-        aria-label="Previous slide"
+        className="absolute left-4 top-1/2 z-30 -translate-y-1/2 rounded-full bg-black/30 p-2 text-white transition-all hover:bg-black/50"
+        aria-label="Önceki slayt"
       >
         <ChevronLeft className="h-6 w-6" />
       </button>
       <button
         onClick={nextSlide}
-        className="absolute right-4 top-1/2 -translate-y-1/2 bg-black/30 hover:bg-black/50 text-white p-2 rounded-full transition-colors"
-        aria-label="Next slide"
+        className="absolute right-4 top-1/2 z-30 -translate-y-1/2 rounded-full bg-black/30 p-2 text-white transition-all hover:bg-black/50"
+        aria-label="Sonraki slayt"
       >
         <ChevronRight className="h-6 w-6" />
       </button>
 
-      {/* Slide Indicators */}
-      <div className="absolute bottom-6 left-1/2 -translate-x-1/2 flex space-x-2">
+      {/* İlerleme göstergesi */}
+      <div className="absolute bottom-4 left-0 right-0 z-30 flex justify-center space-x-2">
         {slides.map((_, index) => (
           <button
             key={index}
-            onClick={() => setCurrentSlide(index)}
-            className={`w-2 h-2 rounded-full transition-all duration-300 ${
-              currentSlide === index
-                ? "bg-white w-8"
-                : "bg-white/50 hover:bg-white/75"
+            onClick={() => {
+              setIsTransitioning(true);
+              setCurrentSlide(index);
+              setTimeout(() => setIsTransitioning(false), 500);
+            }}
+            className={`h-2 w-8 rounded-full transition-all ${
+              index === currentSlide ? "bg-white" : "bg-white/50"
             }`}
-            aria-label={`Go to slide ${index + 1}`}
+            aria-label={`Slayt ${index + 1}`}
           />
         ))}
       </div>

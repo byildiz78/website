@@ -6,11 +6,15 @@ const nextConfig = {
   },
   images: {
     domains: ["images.unsplash.com", "via.placeholder.com"],
-    unoptimized: true,
+    unoptimized: false, // Görüntü optimizasyonunu etkinleştir
+    formats: ['image/webp'], // WebP formatını kullan
+    deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048, 3840], // Responsive görüntü boyutları
+    imageSizes: [16, 32, 48, 64, 96, 128, 256, 384], // Daha küçük görüntü boyutları
+    minimumCacheTTL: 60, // 60 saniye minimum önbellek süresi
   },
-  // Disable webpack cache to resolve restoration issues
+  // Webpack cache'i etkinleştir - performans için önemli
   webpack: (config) => {
-    config.cache = false;
+    // Webpack cache'i etkinleştir (false yerine)
     return config;
   },
   // Expose environment variables to the browser
@@ -49,7 +53,7 @@ const nextConfig = {
           destination: '/:slug',
         },
         // Diğer diller için gerekirse buraya ekleyebilirsiniz
-      ]
+      ],
     };
   },
 };
