@@ -40,7 +40,7 @@ function isReferenceData(data: any): data is ReferenceData {
 }
 
 export function ReferenceLogos({
-  title = "En İyi İşletmelerin Tercihi",
+  title = "",
   subtitle = "Türkiye'nin önde gelen markalarının tercihi robotPOS",
   className,
   logos,

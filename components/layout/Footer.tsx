@@ -31,6 +31,7 @@ const footerLinks = [
       { name: "Müşteri Görüşleri", href: "/musteri-gorusleri" },
       { name: "Haberler", href: "/haberler" },
       { name: "Kariyer", href: "/kurumsal/kariyer" },
+      { name: "Çözüm Ortaklığı Başvuru", href: "/kurumsal/cozumortagi-basvuru" },
     ],
   },
   {

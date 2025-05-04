@@ -8,7 +8,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Checkbox } from "@/components/ui/checkbox";
 import { Label } from "@/components/ui/label";
-import { Upload, Users2, Briefcase, GraduationCap } from "lucide-react";
+import { Upload, Users2, Briefcase, GraduationCap, ExternalLink } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 import { Modal } from "@/components/ui/modal";
 
@@ -254,6 +254,35 @@ export default function CareerPage() {
               </p>
             </motion.div>
 
+            {/* Kariyer.net Link */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              className="bg-gradient-to-r from-blue-600 to-blue-700 rounded-xl p-8 shadow-lg text-white"
+            >
+              <div className="flex items-start gap-4">
+                <div className="bg-white/20 p-3 rounded-lg">
+                  <ExternalLink className="w-6 h-6 text-white" />
+                </div>
+                <div>
+                  <h3 className="text-xl font-bold mb-2">Açık Pozisyonlar</h3>
+                  <p className="mb-4">
+                    Mevcut iş ilanlarımızı incelemek ve başvuru yapmak için Kariyer.net sayfamızı ziyaret edebilirsiniz.
+                  </p>
+                  <a 
+                    href="https://www.kariyer.net/is-ilanlari?fpi=39412&hc=T" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 bg-white text-blue-600 hover:bg-blue-50 transition-colors px-4 py-2 rounded-lg font-medium"
+                  >
+                    <span>Kariyer.net İlanlarımız</span>
+                    <ExternalLink className="w-4 h-4" />
+                  </a>
+                </div>
+              </div>
+            </motion.div>
+
             {/* Why Join Us */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -297,7 +326,7 @@ export default function CareerPage() {
                 </div>
                 <h3 className="font-semibold mb-2">Sosyal İmkanlar</h3>
                 <p className="text-gray-600 text-sm">
-                  Zengin yan haklar ve sosyal aktiviteler
+                  Yan haklar ve sosyal aktiviteler
                 </p>
               </div>
             </motion.div>
@@ -331,123 +360,150 @@ export default function CareerPage() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="bg-white rounded-xl shadow-xl p-8"
+            className="bg-white rounded-xl shadow-2xl p-8 border border-blue-100 relative overflow-hidden"
           >
-            <h2 className="text-2xl font-semibold mb-6">
-              Başvuru <span className="text-blue-600">Formu</span>
-            </h2>
+            {/* Decorative elements */}
+            <div className="absolute -top-10 -right-10 w-40 h-40 bg-blue-50 rounded-full opacity-70"></div>
+            <div className="absolute -bottom-10 -left-10 w-40 h-40 bg-blue-50 rounded-full opacity-70"></div>
+            <div className="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-blue-400 to-blue-600"></div>
             
-            <form onSubmit={handleSubmit} className="space-y-6">
-              <div className="space-y-2">
-                <Label htmlFor="name">Ad, Soyad</Label>
-                <Input
-                  id="name"
-                  type="text"
-                  placeholder="Adınız ve soyadınız"
-                  required
-                  value={formData.name}
-                  onChange={handleChange}
-                />
-              </div>
-
-              <div className="space-y-2">
-                <Label htmlFor="phone">Telefon</Label>
-                <Input
-                  id="phone"
-                  type="tel"
-                  placeholder="Telefon numaranız"
-                  required
-                  value={formData.phone}
-                  onChange={handleChange}
-                />
-              </div>
-
-              <div className="space-y-2">
-                <Label htmlFor="email">E-mail</Label>
-                <Input
-                  id="email"
-                  type="email"
-                  placeholder="E-mail adresiniz"
-                  required
-                  value={formData.email}
-                  onChange={handleChange}
-                />
-              </div>
-
-              <div className="space-y-2">
-                <Label htmlFor="message">Mesaj</Label>
-                <Textarea
-                  id="message"
-                  placeholder="Kendinizi kısaca tanıtın"
-                  className="min-h-[120px]"
-                  value={formData.message}
-                  onChange={handleChange}
-                />
-              </div>
-
-              <div className="space-y-2">
-                <Label htmlFor="cv">CV Yükle</Label>
-                <div className="flex items-center gap-4">
-                  <Button
-                    type="button"
-                    variant="outline"
-                    onClick={() => document.getElementById('cv')?.click()}
-                    className="flex items-center gap-2"
-                  >
-                    <Upload className="w-4 h-4" />
-                    {cvFile ? cvFile.name : "CV Dosyası Seç"}
-                  </Button>
-                  <input
-                    id="cv"
-                    type="file"
-                    accept=".pdf,.doc,.docx"
-                    onChange={handleFileChange}
-                    className="hidden"
+            <div className="relative z-10">
+              <h2 className="text-3xl font-bold mb-2 text-blue-800">
+                Başvuru <span className="text-blue-600 relative">
+                  Formu
+                  <span className="absolute bottom-1 left-0 w-full h-1 bg-blue-200"></span>
+                </span>
+              </h2>
+              <p className="text-gray-600 mb-6">Ekibimize katılmak için başvurunuzu yapın</p>
+              
+              <form onSubmit={handleSubmit} className="space-y-6">
+                <div className="space-y-2 relative group">
+                  <Label htmlFor="name" className="text-gray-700 font-medium">Ad, Soyad</Label>
+                  <Input
+                    id="name"
+                    type="text"
+                    placeholder="Adınız ve soyadınız"
+                    required
+                    value={formData.name}
+                    onChange={handleChange}
+                    className="border-gray-300 hover:border-blue-400 focus:border-blue-500 transition-colors shadow-sm h-12 text-base"
                   />
+                  <div className="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-500 group-hover:w-full transition-all duration-300"></div>
                 </div>
-                <p className="text-sm text-gray-500">
-                  PDF, DOC veya DOCX formatında dosya yükleyebilirsiniz (max. 10MB)
-                </p>
-              </div>
 
-              <div className="flex items-start space-x-2">
-                <Checkbox id="terms" required />
-                <div className="grid gap-1.5 leading-none">
-                  <label
-                    htmlFor="terms"
-                    className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
-                  >
-                    <a 
-                      href="/kurumsal/aydinlatma-metni"
-                      target="_blank"
-                      className="text-blue-600 hover:text-blue-700 hover:underline"
+                <div className="space-y-2 relative group">
+                  <Label htmlFor="phone" className="text-gray-700 font-medium">Telefon</Label>
+                  <Input
+                    id="phone"
+                    type="tel"
+                    placeholder="Telefon numaranız"
+                    required
+                    value={formData.phone}
+                    onChange={handleChange}
+                    className="border-gray-300 hover:border-blue-400 focus:border-blue-500 transition-colors shadow-sm h-12 text-base"
+                  />
+                  <div className="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-500 group-hover:w-full transition-all duration-300"></div>
+                </div>
+
+                <div className="space-y-2 relative group">
+                  <Label htmlFor="email" className="text-gray-700 font-medium">E-mail</Label>
+                  <Input
+                    id="email"
+                    type="email"
+                    placeholder="E-mail adresiniz"
+                    required
+                    value={formData.email}
+                    onChange={handleChange}
+                    className="border-gray-300 hover:border-blue-400 focus:border-blue-500 transition-colors shadow-sm h-12 text-base"
+                  />
+                  <div className="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-500 group-hover:w-full transition-all duration-300"></div>
+                </div>
+
+                <div className="space-y-2 relative group">
+                  <Label htmlFor="message" className="text-gray-700 font-medium">Mesaj</Label>
+                  <Textarea
+                    id="message"
+                    placeholder="Kendinizi kısaca tanıtın"
+                    className="min-h-[120px] border-gray-300 hover:border-blue-400 focus:border-blue-500 transition-colors shadow-sm text-base"
+                    value={formData.message}
+                    onChange={handleChange}
+                  />
+                  <div className="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-500 group-hover:w-full transition-all duration-300"></div>
+                </div>
+
+                <div className="space-y-2 relative group">
+                  <Label htmlFor="cv" className="text-gray-700 font-medium">CV Yükle</Label>
+                  <div className="flex items-center gap-4">
+                    <Button
+                      type="button"
+                      variant="outline"
+                      onClick={() => document.getElementById('cv')?.click()}
+                      className="flex items-center gap-2 border-gray-300 hover:border-blue-400 hover:bg-blue-50 transition-all h-12 text-base"
                     >
-                      Aydınlatma Metnini
-                    </a>{" "}
-                    okudum, onaylıyorum
-                  </label>
-                  <p className="text-sm text-muted-foreground">
-                    Kişisel verileriniz başvurunuzun değerlendirilmesi amacıyla işlenecektir
-                  </p>
-                </div>
-              </div>
-
-              <Button
-                type="submit"
-                className="w-full bg-blue-600 hover:bg-blue-700 text-white"
-                size="lg"
-                disabled={loading}
-              >
-                {loading ? (
-                  <div className="flex items-center space-x-2">
-                    <div className="w-4 h-4 rounded-full border-2 border-white border-t-transparent animate-spin"></div>
-                    <span>Gönderiliyor...</span>
+                      <Upload className="w-5 h-5 text-blue-500" />
+                      <span className="truncate max-w-[200px]">{cvFile ? cvFile.name : "CV Dosyası Seç"}</span>
+                    </Button>
+                    <input
+                      id="cv"
+                      type="file"
+                      accept=".pdf,.doc,.docx"
+                      onChange={handleFileChange}
+                      className="hidden"
+                    />
                   </div>
-                ) : (
-                  "Başvuruyu Gönder"
-                )}
-              </Button>
-            </form>
+                  <p className="text-sm text-gray-500">
+                    PDF, DOC veya DOCX formatında dosya yükleyebilirsiniz (max. 10MB)
+                  </p>
+                  <div className="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-500 group-hover:w-full transition-all duration-300"></div>
+                </div>
+
+                <div className="flex items-start space-x-2 group">
+                  <Checkbox id="terms" required className="data-[state=checked]:bg-blue-600 data-[state=checked]:border-blue-600" />
+                  <div className="grid gap-1.5 leading-none">
+                    <label
+                      htmlFor="terms"
+                      className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+                    >
+                      <a 
+                        href="/kurumsal/aydinlatma-metni"
+                        target="_blank"
+                        className="text-blue-600 hover:text-blue-700 hover:underline"
+                      >
+                        Aydınlatma Metnini
+                      </a>{" "}
+                      okudum, onaylıyorum
+                    </label>
+                    <p className="text-sm text-muted-foreground">
+                      Kişisel verileriniz başvurunuzun değerlendirilmesi amacıyla işlenecektir
+                    </p>
+                  </div>
+                </div>
+
+                <Button
+                  type="submit"
+                  className="w-full bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white font-medium py-3 rounded-lg shadow-lg hover:shadow-blue-200 transition-all duration-300 h-14 text-lg"
+                  disabled={loading}
+                >
+                  {loading ? (
+                    <div className="flex items-center justify-center space-x-2">
+                      <div className="w-5 h-5 rounded-full border-2 border-white border-t-transparent animate-spin"></div>
+                      <span>Gönderiliyor...</span>
+                    </div>
+                  ) : (
+                    <div className="flex items-center justify-center space-x-2">
+                      <span>Başvuruyu Gönder</span>
+                      <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                        <path fillRule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
+                      </svg>
+                    </div>
+                  )}
+                </Button>
+                
+                <div className="text-center text-sm text-gray-500 mt-2">
+                  Bilgileriniz gizlilik politikamız kapsamında korunmaktadır
+                </div>
+              </form>
+            </div>
           </motion.div>
         </div>
       </div>

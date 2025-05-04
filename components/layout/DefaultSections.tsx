@@ -27,7 +27,7 @@ export function DefaultSections() {
       <SectionDivider />
       
       <ReferenceLogos 
-        title="En İyi İşletmelerin Tercihi" 
+        title="" 
         subtitle="Türkiye'nin önde gelen markalarının tercihi robotPOS"
         logos={chainBusinesses}
         className="bg-[#F0F7FF]"

@@ -3,7 +3,7 @@
 import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { Phone, Mail, MapPin, Building2, User, MessageSquare, Globe } from "lucide-react";
+import { Phone, Mail, MapPin, Building2, User, MessageSquare, Globe, Clock } from "lucide-react";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
@@ -96,6 +96,14 @@ const cities = [
   "Diğer"
 ];
 
+const timeRanges = [
+  "09:00 - 12:00",
+  "12:00 - 15:00",
+  "15:00 - 18:00",
+  "18:00 sonrası",
+  "Herhangi bir zaman"
+];
+
 const contactInfo = [
   {
     icon: <Phone className="h-6 w-6" />,
@@ -149,6 +157,7 @@ export default function ContactPage() {
     phone: '',
     email: '',
     city: '',
+    timeRange: '',
     message: ''
   });
   
@@ -165,15 +174,15 @@ export default function ContactPage() {
     setFormData(prev => ({ ...prev, [name]: value }));
   };
   
-  const handleCityChange = (value: string) => {
-    setFormData(prev => ({ ...prev, city: value }));
+  const handleSelectChange = (name: string, value: string) => {
+    setFormData(prev => ({ ...prev, [name]: value }));
   };
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
     // Form doğrulama
-    if (!formData.name || !formData.company || !formData.phone || !formData.email || !formData.city) {
+    if (!formData.name || !formData.company || !formData.phone || !formData.email || !formData.city || !formData.timeRange) {
       // Modal ile hata göster
       setModalProps({
         title: "Hata!",
@@ -236,6 +245,7 @@ export default function ContactPage() {
           phone: '',
           email: '',
           city: '',
+          timeRange: '',
           message: '',
         });
       } else {
@@ -377,122 +387,166 @@ export default function ContactPage() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.6 }}
-              className="bg-white rounded-xl shadow-xl p-8"
+              className="bg-white rounded-xl shadow-2xl p-8 border border-blue-100 relative overflow-hidden"
             >
-              <h2 className="text-2xl font-semibold mb-6">
-                Sizi <span className="text-blue-600">Arayalım</span>
-              </h2>
+              {/* Decorative elements */}
+              <div className="absolute -top-10 -right-10 w-40 h-40 bg-blue-50 rounded-full opacity-70"></div>
+              <div className="absolute -bottom-10 -left-10 w-40 h-40 bg-blue-50 rounded-full opacity-70"></div>
+              <div className="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-blue-400 to-blue-600"></div>
               
-              <form onSubmit={handleSubmit} className="grid md:grid-cols-2 gap-6">
-                <div className="relative">
-                  <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
-                    <User className="h-5 w-5 text-gray-400" />
-                  </div>
-                  <Input
-                    type="text"
-                    name="name"
-                    value={formData.name}
-                    onChange={handleChange}
-                    placeholder="İsminiz"
-                    className="pl-10"
-                    required
-                  />
-                </div>
+              <div className="relative z-10">
+                <h2 className="text-3xl font-bold mb-2 text-blue-800">
+                  Sizi <span className="text-blue-600 relative">
+                    Arayalım
+                    <span className="absolute bottom-1 left-0 w-full h-1 bg-blue-200"></span>
+                  </span>
+                </h2>
+                <p className="text-gray-600 mb-6">Bilgilerinizi bırakın, uzman ekibimiz size ulaşsın</p>
                 
-                <div className="relative">
-                  <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
-                    <Building2 className="h-5 w-5 text-gray-400" />
+                <form onSubmit={handleSubmit} className="grid md:grid-cols-2 gap-6">
+                  <div className="relative group">
+                    <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                      <User className="h-5 w-5 text-gray-400 group-hover:text-blue-500 transition-colors" />
+                    </div>
+                    <Input
+                      type="text"
+                      name="name"
+                      value={formData.name}
+                      onChange={handleChange}
+                      placeholder="İsminiz"
+                      className="pl-10 border-gray-300 hover:border-blue-400 focus:border-blue-500 transition-colors shadow-sm h-12 text-base"
+                      required
+                    />
+                    <div className="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-500 group-hover:w-full transition-all duration-300"></div>
                   </div>
-                  <Input
-                    type="text"
-                    name="company"
-                    value={formData.company}
-                    onChange={handleChange}
-                    placeholder="Firma Adı"
-                    className="pl-10"
-                    required
-                  />
-                </div>
-                
-                <div className="relative">
-                  <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
-                    <Phone className="h-5 w-5 text-gray-400" />
+                  
+                  <div className="relative group">
+                    <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                      <Building2 className="h-5 w-5 text-gray-400 group-hover:text-blue-500 transition-colors" />
+                    </div>
+                    <Input
+                      type="text"
+                      name="company"
+                      value={formData.company}
+                      onChange={handleChange}
+                      placeholder="Firma Adı"
+                      className="pl-10 border-gray-300 hover:border-blue-400 focus:border-blue-500 transition-colors shadow-sm h-12 text-base"
+                      required
+                    />
+                    <div className="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-500 group-hover:w-full transition-all duration-300"></div>
                   </div>
-                  <Input
-                    type="tel"
-                    name="phone"
-                    value={formData.phone}
-                    onChange={handleChange}
-                    placeholder="Telefon"
-                    className="pl-10"
-                    required
-                  />
-                </div>
-                
-                <div className="relative">
-                  <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
-                    <Mail className="h-5 w-5 text-gray-400" />
+                  
+                  <div className="relative group">
+                    <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                      <Phone className="h-5 w-5 text-gray-400 group-hover:text-blue-500 transition-colors" />
+                    </div>
+                    <Input
+                      type="tel"
+                      name="phone"
+                      value={formData.phone}
+                      onChange={handleChange}
+                      placeholder="Telefon"
+                      className="pl-10 border-gray-300 hover:border-blue-400 focus:border-blue-500 transition-colors shadow-sm h-12 text-base"
+                      required
+                    />
+                    <div className="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-500 group-hover:w-full transition-all duration-300"></div>
                   </div>
-                  <Input
-                    type="email"
-                    name="email"
-                    value={formData.email}
-                    onChange={handleChange}
-                    placeholder="E-mail Adresiniz"
-                    className="pl-10"
-                    required
-                  />
-                </div>
-                
-                <div className="relative">
-                  <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
-                    <MapPin className="h-5 w-5 text-gray-400" />
+                  
+                  <div className="relative group">
+                    <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                      <Mail className="h-5 w-5 text-gray-400 group-hover:text-blue-500 transition-colors" />
+                    </div>
+                    <Input
+                      type="email"
+                      name="email"
+                      value={formData.email}
+                      onChange={handleChange}
+                      placeholder="E-mail Adresiniz"
+                      className="pl-10 border-gray-300 hover:border-blue-400 focus:border-blue-500 transition-colors shadow-sm h-12 text-base"
+                      required
+                    />
+                    <div className="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-500 group-hover:w-full transition-all duration-300"></div>
                   </div>
-                  <Select onValueChange={handleCityChange} value={formData.city}>
-                    <SelectTrigger className="pl-10">
-                      <SelectValue placeholder="Şehir Seçiniz" />
-                    </SelectTrigger>
-                    <SelectContent>
-                      {cities.map((city) => (
-                        <SelectItem key={city} value={city}>
-                          {city}
-                        </SelectItem>
-                      ))}
-                    </SelectContent>
-                  </Select>
-                </div>
-                
-                <div className="relative md:col-span-2">
-                  <div className="absolute top-3 left-3 pointer-events-none">
-                    <MessageSquare className="h-5 w-5 text-gray-400" />
+                  
+                  <div className="relative group">
+                    <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                      <MapPin className="h-5 w-5 text-gray-400 group-hover:text-blue-500 transition-colors" />
+                    </div>
+                    <Select onValueChange={(value) => handleSelectChange('city', value)} value={formData.city}>
+                      <SelectTrigger className="pl-10 border-gray-300 hover:border-blue-400 focus:border-blue-500 transition-colors shadow-sm h-12 text-base">
+                        <SelectValue placeholder="Şehir Seçiniz" />
+                      </SelectTrigger>
+                      <SelectContent className="max-h-[300px]">
+                        {cities.map((city) => (
+                          <SelectItem key={city} value={city}>
+                            {city}
+                          </SelectItem>
+                        ))}
+                      </SelectContent>
+                    </Select>
+                    <div className="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-500 group-hover:w-full transition-all duration-300"></div>
                   </div>
-                  <Textarea
-                    name="message"
-                    value={formData.message}
-                    onChange={handleChange}
-                    placeholder="Mesajınız"
-                    className="pl-10 min-h-[120px]"
-                  />
-                </div>
-                
-                <div className="md:col-span-2">
-                  <Button
-                    type="submit"
-                    className="w-full bg-blue-600 hover:bg-blue-700 text-white"
-                    size="lg"
-                    disabled={loading}
-                  >
-                    {loading ? (
-                      <div className="flex items-center space-x-2">
-                        <div className="w-4 h-4 rounded-full border-2 border-white border-t-transparent animate-spin"></div>
-                        <span>Gönderiliyor...</span>
-                      </div>
-                    ) : (
-                      "Gönder"
-                    )}
-                  </Button>
-                </div>
-              </form>
+                  
+                  <div className="relative group">
+                    <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                      <Clock className="h-5 w-5 text-gray-400 group-hover:text-blue-500 transition-colors" />
+                    </div>
+                    <Select onValueChange={(value) => handleSelectChange('timeRange', value)} value={formData.timeRange}>
+                      <SelectTrigger className="pl-10 border-gray-300 hover:border-blue-400 focus:border-blue-500 transition-colors shadow-sm h-12 text-base">
+                        <SelectValue placeholder="Zaman Aralığı Seçiniz" />
+                      </SelectTrigger>
+                      <SelectContent className="max-h-[300px]">
+                        {timeRanges.map((timeRange) => (
+                          <SelectItem key={timeRange} value={timeRange}>
+                            {timeRange}
+                          </SelectItem>
+                        ))}
+                      </SelectContent>
+                    </Select>
+                    <div className="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-500 group-hover:w-full transition-all duration-300"></div>
+                  </div>
+                  
+                  <div className="relative md:col-span-2 group">
+                    <div className="absolute top-3 left-3 pointer-events-none">
+                      <MessageSquare className="h-5 w-5 text-gray-400 group-hover:text-blue-500 transition-colors" />
+                    </div>
+                    <Textarea
+                      name="message"
+                      value={formData.message}
+                      onChange={handleChange}
+                      placeholder="Mesajınız"
+                      className="pl-10 min-h-[120px] border-gray-300 hover:border-blue-400 focus:border-blue-500 transition-colors shadow-sm text-base"
+                    />
+                    <div className="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-500 group-hover:w-full transition-all duration-300"></div>
+                  </div>
+                  
+                  <div className="md:col-span-2">
+                    <Button
+                      type="submit"
+                      className="w-full bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white font-medium py-3 rounded-lg shadow-lg hover:shadow-blue-200 transition-all duration-300 h-14 text-lg"
+                      disabled={loading}
+                    >
+                      {loading ? (
+                        <div className="flex items-center justify-center space-x-2">
+                          <div className="w-5 h-5 rounded-full border-2 border-white border-t-transparent animate-spin"></div>
+                          <span>Gönderiliyor...</span>
+                        </div>
+                      ) : (
+                        <div className="flex items-center justify-center space-x-2">
+                          <span>Gönder</span>
+                          <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path fillRule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
+                          </svg>
+                        </div>
+                      )}
+                    </Button>
+                  </div>
+                  
+                  <div className="md:col-span-2 text-center text-sm text-gray-500 mt-2">
+                    Bilgileriniz gizlilik politikamız kapsamında korunmaktadır
+                  </div>
+                </form>
+              </div>
             </motion.div>
 
             {/* Solution Partners */}

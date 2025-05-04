@@ -23,7 +23,11 @@ function validateInput(data: any) {
     phone: data.phone ? sanitizeInput(data.phone) : '',
     company: data.company ? sanitizeInput(data.company) : '',
     city: data.city ? sanitizeInput(data.city) : '',
+    timeRange: data.timeRange ? sanitizeInput(data.timeRange) : '',
+    businessType: data.businessType ? sanitizeInput(data.businessType) : '',
+    experience: data.experience ? sanitizeInput(data.experience) : '',
     message: data.message ? sanitizeInput(data.message) : '',
+    subject: data.subject ? sanitizeInput(data.subject) : 'Web Sitesi Formu Dolduruldu',
   };
   
   return { valid: true, data: sanitizedData };
@@ -130,6 +134,18 @@ export async function POST(req: NextRequest) {
                 <p>${data.city || 'Belirtilmemiş'}</p>
               </div>
               <div class="field">
+                <p class="label">Zaman Aralığı:</p>
+                <p>${data.timeRange || 'Belirtilmemiş'}</p>
+              </div>
+              <div class="field">
+                <p class="label">İş Türü:</p>
+                <p>${data.businessType || 'Belirtilmemiş'}</p>
+              </div>
+              <div class="field">
+                <p class="label">Deneyim:</p>
+                <p>${data.experience || 'Belirtilmemiş'}</p>
+              </div>
+              <div class="field">
                 <p class="label">Mesaj:</p>
                 <p>${data.message || 'Mesaj belirtilmemiş'}</p>
               </div>
@@ -148,7 +164,7 @@ export async function POST(req: NextRequest) {
       const mailOptions = {
         from: `"${process.env.SMTP_DISPLAY_NAME || 'RobotPOS Web Sitesi'}" <${process.env.SMTP_USER_NAME}>`,
         to: 'info@robotpos.com',
-        subject: 'Web Sitesi Formu Dolduruldu',
+        subject: data.subject || 'Web Sitesi Formu Dolduruldu',
         html: htmlContent,
         replyTo: data.email,
       };

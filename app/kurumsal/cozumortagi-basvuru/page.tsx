@@ -1,13 +1,15 @@
 "use client";
 
-import { useState } from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
-import { Phone, Mail, Building2, User, MapPin, MessageSquare, Clock } from "lucide-react";
+import { Checkbox } from "@/components/ui/checkbox";
+import { Label } from "@/components/ui/label";
+import { Phone, Mail, Building2, User, MapPin, MessageSquare, Briefcase, Clock } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 import { Modal } from "@/components/ui/modal";
 
@@ -104,16 +106,35 @@ const timeRanges = [
   "Herhangi bir zaman"
 ];
 
-const features = [
-  { title: "7/16 Destek", description: "Teknik destek ekibimiz her zaman yanınızda" },
-  { title: "Kolay Kullanım", description: "15 dakikada öğrenin, hemen kullanmaya başlayın" },
-  { title: "Ücretsiz Kurulum", description: "Kurulum ve eğitim tamamen ücretsiz" },
+const businessTypes = [
+  "Yazılım Şirketi",
+  "Donanım Şirketi",
+  "Sistem Entegratörü",
+  "Danışmanlık Şirketi",
+  "Bireysel Danışman",
+  "Diğer"
 ];
 
-export default function DemoRequestPage() {
+const benefits = [
+
+  {
+    title: "Teknik Destek",
+    description: "satış destek ve eğitim desteği"
+  },
+  {
+    title: "Pazarlama Desteği",
+    description: "Satışlarınızı artırmak için pazarlama materyalleri ve stratejileri"
+  },
+  {
+    title: "Özel Fiyatlandırma",
+    description: "Çözüm ortaklarına özel fiyatlandırma avantajları"
+  }
+];
+
+export default function PartnerApplicationPage() {
   const [loading, setLoading] = useState(false);
   const { toast } = useToast();
-
+  
   // Modal state
   const [modalOpen, setModalOpen] = useState(false);
   const [modalProps, setModalProps] = useState({
@@ -121,15 +142,17 @@ export default function DemoRequestPage() {
     description: '',
     contentVariant: 'default' as 'default' | 'success' | 'error' | 'loading'
   });
-
+  
   const [formData, setFormData] = useState({
-    name: "",
-    company: "",
-    phone: "",
-    email: "",
-    city: "",
-    timeRange: "",
-    message: ""
+    name: '',
+    company: '',
+    phone: '',
+    email: '',
+    city: '',
+    timeRange: '',
+    businessType: '',
+    experience: '',
+    message: ''
   });
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -145,7 +168,7 @@ export default function DemoRequestPage() {
     e.preventDefault();
 
     // Form doğrulama
-    if (!formData.name || !formData.company || !formData.phone || !formData.email || !formData.city || !formData.timeRange) {
+    if (!formData.name || !formData.company || !formData.phone || !formData.email || !formData.city || !formData.timeRange || !formData.businessType) {
       // Modal ile hata göster
       setModalProps({
         title: "Hata!",
@@ -155,7 +178,7 @@ export default function DemoRequestPage() {
       setModalOpen(true);
       return;
     }
-
+    
     // E-posta doğrulama
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailRegex.test(formData.email)) {
@@ -168,9 +191,9 @@ export default function DemoRequestPage() {
       setModalOpen(true);
       return;
     }
-
+    
     setLoading(true);
-
+    
     // Gönderim başladı modalı göster
     setModalProps({
       title: "Gönderiliyor...",
@@ -185,7 +208,10 @@ export default function DemoRequestPage() {
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify(formData),
+        body: JSON.stringify({
+          ...formData,
+          subject: "Çözüm Ortaklığı Başvurusu"
+        }),
       });
 
       const data = await response.json();
@@ -195,8 +221,8 @@ export default function DemoRequestPage() {
         setModalProps({
           title: "Başarılı!",
           description: data.emailSent
-            ? "Form başarıyla gönderildi ve e-posta iletildi. En kısa sürede sizinle iletişime geçeceğiz."
-            : "Form başarıyla kaydedildi. En kısa sürede sizinle iletişime geçeceğiz.",
+            ? "Başvurunuz başarıyla gönderildi ve e-posta iletildi. En kısa sürede sizinle iletişime geçeceğiz."
+            : "Başvurunuz başarıyla kaydedildi. En kısa sürede sizinle iletişime geçeceğiz.",
           contentVariant: "success"
         });
         setModalOpen(true);
@@ -209,7 +235,9 @@ export default function DemoRequestPage() {
           email: '',
           city: '',
           timeRange: '',
-          message: '',
+          businessType: '',
+          experience: '',
+          message: ''
         });
       } else {
         // Hata modalı göster
@@ -247,7 +275,7 @@ export default function DemoRequestPage() {
         >
           <Image
             src="/images/general/res-1-min.webp"
-            alt="robotPOS Demo"
+            alt="robotPOS Çözüm Ortaklığı"
             fill
             className="object-cover"
             priority
@@ -262,10 +290,10 @@ export default function DemoRequestPage() {
             className="max-w-2xl"
           >
             <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
-              robotPOS ile tanışmak ister misiniz?
+              Çözüm Ortaklığı Başvuru
             </h1>
             <p className="text-xl text-blue-50">
-              Katma değerli çözümlerimiz ile tanışmak ve size nasıl faydalı olabileceğimiz konusunu değerlendirmek üzere bizim ile iletişime geçebilirsiniz.
+              robotPOS'un yenilikçi çözümlerini müşterilerinize sunarak birlikte büyüyelim
             </p>
           </motion.div>
         </div>
@@ -273,29 +301,39 @@ export default function DemoRequestPage() {
 
       <div className="container mx-auto px-4 -mt-20 relative z-20">
         <div className="grid lg:grid-cols-3 gap-8">
-          {/* Features */}
+          {/* Info Section */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.4 }}
             className="lg:col-span-1 space-y-6"
           >
-            {features.map((feature, index) => (
+            <div className="bg-white rounded-xl p-6 shadow-lg">
+              <h2 className="text-xl font-bold text-blue-800 mb-4">Çözüm Ortaklarımız Arıyoruz</h2>
+              <p className="text-gray-600 mb-4">
+                robotPOS olarak, katma değerli çözümlerimizin tanıtımı, satışı ve satış sonrası desteklerinde birlikte çalışabileceğimiz sektör profesyonellerine kapımız açık.
+              </p>
+              <p className="text-gray-600">
+                Güçlü teknolojik altyapımız ve yenilikçi ürünlerimiz ile müşterilerinize değer katarken, birlikte büyüyelim.
+              </p>
+            </div>
+
+            {benefits.map((benefit, index) => (
               <div
                 key={index}
                 className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow"
               >
                 <h3 className="text-lg font-semibold text-blue-600 mb-2">
-                  {feature.title}
+                  {benefit.title}
                 </h3>
                 <p className="text-gray-600">
-                  {feature.description}
+                  {benefit.description}
                 </p>
               </div>
             ))}
           </motion.div>
 
-          {/* Contact Form */}
+          {/* Application Form */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -309,12 +347,12 @@ export default function DemoRequestPage() {
             
             <div className="relative z-10">
               <h2 className="text-3xl font-bold mb-2 text-blue-800">
-                Sizi <span className="text-blue-600 relative">
-                  Arayalım
+                Başvuru <span className="text-blue-600 relative">
+                  Formu
                   <span className="absolute bottom-1 left-0 w-full h-1 bg-blue-200"></span>
                 </span>
               </h2>
-              <p className="text-gray-600 mb-6">Bilgilerinizi bırakın, uzman ekibimiz size ulaşsın</p>
+              <p className="text-gray-600 mb-6">Çözüm ortağımız olmak için başvurunuzu yapın</p>
 
               <form onSubmit={handleSubmit} className="grid md:grid-cols-2 gap-6">
                 <div className="relative group">
@@ -425,6 +463,43 @@ export default function DemoRequestPage() {
                   <div className="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-500 group-hover:w-full transition-all duration-300"></div>
                 </div>
 
+                <div className="relative group">
+                  <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                    <Briefcase className="h-5 w-5 text-gray-400 group-hover:text-blue-500 transition-colors" />
+                  </div>
+                  <Select
+                    value={formData.businessType}
+                    onValueChange={(value) => handleSelectChange('businessType', value)}
+                  >
+                    <SelectTrigger className="pl-10 border-gray-300 hover:border-blue-400 focus:border-blue-500 transition-colors shadow-sm h-12 text-base">
+                      <SelectValue placeholder="İş Alanınız" />
+                    </SelectTrigger>
+                    <SelectContent>
+                      {businessTypes.map((type) => (
+                        <SelectItem key={type} value={type}>
+                          {type}
+                        </SelectItem>
+                      ))}
+                    </SelectContent>
+                  </Select>
+                  <div className="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-500 group-hover:w-full transition-all duration-300"></div>
+                </div>
+
+                <div className="relative group">
+                  <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                    <Building2 className="h-5 w-5 text-gray-400 group-hover:text-blue-500 transition-colors" />
+                  </div>
+                  <Input
+                    type="text"
+                    name="experience"
+                    value={formData.experience}
+                    onChange={handleChange}
+                    placeholder="Sektör Deneyiminiz (Yıl)"
+                    className="pl-10 border-gray-300 hover:border-blue-400 focus:border-blue-500 transition-colors shadow-sm h-12 text-base"
+                  />
+                  <div className="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-500 group-hover:w-full transition-all duration-300"></div>
+                </div>
+
                 <div className="relative md:col-span-2 group">
                   <div className="absolute top-3 left-3 pointer-events-none">
                     <MessageSquare className="h-5 w-5 text-gray-400 group-hover:text-blue-500 transition-colors" />
@@ -433,7 +508,7 @@ export default function DemoRequestPage() {
                     name="message"
                     value={formData.message}
                     onChange={handleChange}
-                    placeholder="Mesajınız"
+                    placeholder="Mesajınız ve çözüm ortaklığı ile ilgili beklentileriniz"
                     className="pl-10 min-h-[120px] border-gray-300 hover:border-blue-400 focus:border-blue-500 transition-colors shadow-sm text-base"
                   />
                   <div className="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-500 group-hover:w-full transition-all duration-300"></div>
@@ -452,7 +527,7 @@ export default function DemoRequestPage() {
                       </div>
                     ) : (
                       <div className="flex items-center justify-center space-x-2">
-                        <span>Gönder</span>
+                        <span>Başvuruyu Gönder</span>
                         <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
                           <path fillRule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
                         </svg>

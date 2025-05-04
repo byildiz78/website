@@ -204,6 +204,12 @@ const navItems: NavItem[] = [
             description: "robotPOS'ta kariyer fırsatları",
             icon: <Briefcase className="w-5 h-5 text-blue-600" />,
           },
+          {
+            title: "Çözüm Ortaklığı Başvuru",
+            href: "/kurumsal/cozumortagi-basvuru",
+            description: "robotPOS çözüm ortağı olmak için başvurun",
+            icon: <Briefcase className="w-5 h-5 text-blue-600" />,
+          },
         ]
       }
     ],
