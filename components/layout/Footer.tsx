@@ -20,6 +20,7 @@ const footerLinks = [
       { name: "Sadakat ve Kazanç Arttırıcı Çözümler", href: "/urunler/yazilim-urunleri/sadakat-ve-kazanc-arttirici-cozumler" },
       { name: "İş Verimliliği", href: "/urunler/yazilim-urunleri/is-verimliligi" },
       { name: "Zincir Mağaza Yönetimi", href: "/urunler/yazilim-urunleri/zincir-magaza-yonetimi" },
+      { name: "Entegrasyonlar", href: "/urunler/yazilim-urunleri/entegrasyonlar" },
     ],
   },
   {

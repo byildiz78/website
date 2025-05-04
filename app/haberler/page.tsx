@@ -13,7 +13,8 @@ import {
   ChevronLeft, 
   ChevronRight,
   Share2,
-  Bookmark
+  Bookmark,
+  ExternalLink
 } from "lucide-react";
 import { format } from "date-fns";
 import { tr } from "date-fns/locale";
@@ -42,7 +43,7 @@ export default function NewsPage() {
         console.log('Fetching Instagram posts...');
         
         // Fetch Instagram posts using our API route
-        const response = await fetch('/api/instagram?fields=id,media_url,permalink,caption,timestamp&limit=36');
+        const response = await fetch('/api/instagram?fields=id,media_url,permalink,caption,timestamp&limit=144');
         
         console.log('Instagram API response status:', response.status);
         
@@ -253,6 +254,16 @@ export default function NewsPage() {
               <p className="text-gray-600 max-w-2xl mx-auto">
                 Sosyal medya hesaplarımızdan son paylaşımlarımızı takip edin
               </p>
+              <a 
+                href="https://www.instagram.com/robotPOS" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 mt-4 text-white bg-gradient-to-r from-purple-500 via-pink-500 to-orange-500 hover:from-purple-600 hover:via-pink-600 hover:to-orange-600 px-6 py-2 rounded-full font-medium transition-all duration-300"
+              >
+                <Instagram className="w-5 h-5" />
+                Instagram'da Takip Et
+                <ExternalLink className="w-4 h-4" />
+              </a>
             </motion.div>
           </div>
 
@@ -322,9 +333,9 @@ export default function NewsPage() {
                 ))}
               </div>
               
-              {/* Load More Button */}
-              {visiblePosts < posts.length && (
-                <div className="text-center mt-12">
+              {/* Load More Button and Follow on Instagram */}
+              <div className="flex flex-col md:flex-row items-center justify-center gap-4 mt-12">
+                {visiblePosts < posts.length && (
                   <Button
                     onClick={loadMorePosts}
                     className="bg-gradient-to-r from-blue-500 to-blue-700 hover:from-blue-600 hover:to-blue-800 text-white px-8 py-3 rounded-full transition-all duration-300 flex items-center gap-2"
@@ -332,8 +343,19 @@ export default function NewsPage() {
                     <span>Daha Fazla Göster</span>
                     <ChevronDown className="w-4 h-4" />
                   </Button>
-                </div>
-              )}
+                )}
+                
+                <a 
+                  href="https://www.instagram.com/robotPOS" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 px-8 py-3 rounded-full font-medium transition-all duration-300 bg-gradient-to-r from-purple-500 via-pink-500 to-orange-500 hover:from-purple-600 hover:via-pink-600 hover:to-orange-600 text-white"
+                >
+                  <Instagram className="w-5 h-5" />
+                  <span>Instagram'da Takip Et</span>
+                  <ExternalLink className="w-4 h-4" />
+                </a>
+              </div>
             </>
           )}
         </div>
@@ -428,12 +450,24 @@ export default function NewsPage() {
                     <Bookmark className="w-6 h-6 text-gray-700 dark:text-gray-300 hover:text-yellow-500 transition-colors cursor-pointer" />
                   </div>
                   
-                  <div className="mt-3 text-sm text-gray-500 dark:text-gray-400">
-                    {selectedIndex !== -1 && (
-                      <p>
-                        {selectedIndex + 1} / {posts.length}
-                      </p>
-                    )}
+                  <div className="mt-3 text-sm text-gray-500 dark:text-gray-400 flex justify-between items-center">
+                    <p>
+                      {selectedIndex !== -1 && (
+                        <span>
+                          {selectedIndex + 1} / {posts.length}
+                        </span>
+                      )}
+                    </p>
+                    <a 
+                      href={selectedPost.permalink} 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1 text-blue-500 hover:text-blue-600 transition-colors"
+                      onClick={(e) => e.stopPropagation()}
+                    >
+                      <span>Instagram'da Görüntüle</span>
+                      <ExternalLink className="w-3 h-3" />
+                    </a>
                   </div>
                 </div>
               </div>

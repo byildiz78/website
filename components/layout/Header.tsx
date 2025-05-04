@@ -37,6 +37,8 @@ import {
   CreditCard,
   QrCode,
   Link as LinkIcon,
+  Cpu,
+  HardDrive,
 } from "lucide-react";
 import { GTranslateWidget } from "@/components/ui/gtranslate-widget";
 
@@ -46,6 +48,7 @@ type NavItem = {
   description?: string;
   icon?: React.ReactNode;
   children?: NavItem[];
+  category?: 'software' | 'hardware';
 };
 
 const navItems: NavItem[] = [
@@ -58,54 +61,63 @@ const navItems: NavItem[] = [
         href: "#",
         description: "Restoran ve cafe işletmeleri için kapsamlı yazılım çözümleri",
         icon: <Monitor className="w-5 h-5 text-blue-600" />,
+        category: 'software',
         children: [
           {
             title: "Satış Noktası (POS)",
             href: "/urunler/yazilim-urunleri/satis-noktasi-pos",
             description: "Her tip gıda işletmesinde kullanılabilen POS sistemi",
             icon: <ShoppingCart className="w-5 h-5 text-blue-600" />,
+            category: 'software',
           },
           {
             title: "Stok Maliyet Yönetimi",
             href: "/urunler/yazilim-urunleri/stok-maliyet-yonetimi",
             description: "Stok ve maliyet takibi için kapsamlı çözümler",
             icon: <Package className="w-5 h-5 text-blue-600" />,
+            category: 'software',
           },
           {
             title: "Sadakat ve Kazanç Arttırıcı Çözümler",
             href: "/urunler/yazilim-urunleri/sadakat-ve-kazanc-arttirici-cozumler",
             description: "Müşteri sadakat programları ve kazanç artırıcı çözümler",
             icon: <Users className="w-5 h-5 text-blue-600" />,
+            category: 'software',
           },
           {
             title: "İş Verimliliği",
             href: "/urunler/yazilim-urunleri/is-verimliligi",
             description: "İş süreçlerinizi optimize eden çözümler",
             icon: <Clock className="w-5 h-5 text-blue-600" />,
+            category: 'software',
           },
           {
             title: "Raporlama ve Analiz",
             href: "/urunler/yazilim-urunleri/raporlama-ve-analiz",
             description: "Kapsamlı raporlama ve analiz araçları",
             icon: <BarChart2 className="w-5 h-5 text-blue-600" />,
+            category: 'software',
           },
           {
             title: "Zincir Mağaza Yönetimi",
             href: "/urunler/yazilim-urunleri/zincir-magaza-yonetimi",
             description: "Çoklu şube yönetimi için entegre çözümler",
             icon: <Building2 className="w-5 h-5 text-blue-600" />,
+            category: 'software',
           },
           {
             title: "QR Menü",
             href: "/robotpos-cozum-uretir/qr-menu-siparis",
             description: "Dijital menü ve mobil sipariş çözümleri",
             icon: <QrCode className="w-5 h-5 text-blue-600" />,
+            category: 'software',
           },
           {
             title: "Entegrasyonlar",
             href: "/urunler/yazilim-urunleri/entegrasyonlar",
             description: "3. parti yazılımlarla entegrasyon seçenekleri",
             icon: <LinkIcon className="w-5 h-5 text-blue-600" />,
+            category: 'software',
           },
         ]
       },
@@ -113,31 +125,36 @@ const navItems: NavItem[] = [
         title: "Donanım Ürünleri",
         href: "#",
         description: "Restoran ve cafe işletmeleri için özel donanım çözümleri",
-        icon: <Tablet className="w-5 h-5 text-blue-600" />,
+        icon: <HardDrive className="w-5 h-5 text-orange-600" />,
+        category: 'hardware',
         children: [
           {
             title: "Dokunmatik Terminal",
             href: "/urunler/donanim-urunleri/dokunmatik-terminal",
             description: "Profesyonel dokunmatik POS terminalleri",
-            icon: <Monitor className="w-5 h-5 text-blue-600" />,
+            icon: <Monitor className="w-5 h-5 text-orange-600" />,
+            category: 'hardware',
           },
           {
             title: "Mobil Terminaller",
             href: "/urunler/donanim-urunleri/mobil-terminaller",
             description: "Garson el terminalleri ve mobil POS cihazları",
-            icon: <MobilePhone className="w-5 h-5 text-blue-600" />,
+            icon: <MobilePhone className="w-5 h-5 text-orange-600" />,
+            category: 'hardware',
           },
           {
             title: "ÖKC Ürünleri",
             href: "/urunler/donanim-urunleri/okc-urunleri",
             description: "Yeni nesil ödeme kaydedici cihazlar",
-            icon: <CreditCard className="w-5 h-5 text-blue-600" />,
+            icon: <CreditCard className="w-5 h-5 text-orange-600" />,
+            category: 'hardware',
           },
           {
             title: "Self Servis Kiosk",
             href: "/urunler/donanim-urunleri/self-servis-kiosk",
             description: "Self servis sipariş kioskları",
-            icon: <Monitor className="w-5 h-5 text-blue-600" />,
+            icon: <Cpu className="w-5 h-5 text-orange-600" />,
+            category: 'hardware',
           },
         ]
       }
@@ -176,7 +193,7 @@ const navItems: NavItem[] = [
             icon: <Info className="w-5 h-5 text-blue-600" />,
           },
           {
-            title: "Restoran Yazılımı Makaleleri",
+            title: "Restoran Makaleleri",
             href: "/blog",
             description: "Sektörel bilgi ve makaleler",
             icon: <FileText className="w-5 h-5 text-blue-600" />,
@@ -200,8 +217,8 @@ const navItems: NavItem[] = [
 
 const ListItem = React.forwardRef<
   React.ElementRef<"a">,
-  React.ComponentPropsWithoutRef<"a"> & { icon?: React.ReactNode }
->(({ className, title, children, icon, href, ...props }, ref) => {
+  React.ComponentPropsWithoutRef<"a"> & { icon?: React.ReactNode; category?: 'software' | 'hardware' }
+>(({ className, title, children, icon, href, category, ...props }, ref) => {
   return (
     <li>
       <NavigationMenuLink asChild>
@@ -210,22 +227,33 @@ const ListItem = React.forwardRef<
           ref={ref}
           className={cn(
             "group block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors",
-            "hover:bg-blue-50 hover:text-blue-600",
-            "focus:bg-blue-50 focus:text-blue-600",
+            category === 'hardware' 
+              ? "hover:bg-orange-50 hover:text-orange-600 focus:bg-orange-50 focus:text-orange-600" 
+              : "hover:bg-blue-50 hover:text-blue-600 focus:bg-blue-50 focus:text-blue-600",
             className
           )}
           {...props}
         >
           <div className="flex items-center gap-2">
             {icon && (
-              <div className="p-1 rounded-md bg-blue-50 group-hover:bg-blue-100 transition-colors">
+              <div className={cn(
+                "p-1 rounded-md transition-colors",
+                category === 'hardware' 
+                  ? "bg-orange-50 group-hover:bg-orange-100" 
+                  : "bg-blue-50 group-hover:bg-blue-100"
+              )}>
                 {icon}
               </div>
             )}
             <div>
               <div className="text-sm font-medium leading-none mb-1">{title}</div>
               {children && (
-                <p className="line-clamp-2 text-xs leading-snug text-muted-foreground group-hover:text-blue-600/70">
+                <p className={cn(
+                  "line-clamp-2 text-xs leading-snug text-muted-foreground",
+                  category === 'hardware' 
+                    ? "group-hover:text-orange-600/70" 
+                    : "group-hover:text-blue-600/70"
+                )}>
                   {children}
                 </p>
               )}
@@ -269,7 +297,10 @@ function Header() {
                 <li key={child.title}>
                   {child.children ? (
                     <details className="group">
-                      <summary className="flex cursor-pointer items-center justify-between text-sm hover:text-blue-600 transition-colors py-2">
+                      <summary className={cn(
+                        "flex cursor-pointer items-center justify-between text-sm transition-colors py-2",
+                        child.category === 'hardware' ? "hover:text-orange-600" : "hover:text-blue-600"
+                      )}>
                         <div className="flex items-center gap-2">
                           {child.icon}
                           <span>{child.title}</span>
@@ -281,7 +312,10 @@ function Header() {
                           <li key={subChild.title}>
                             <a
                               href={subChild.href}
-                              className="flex items-center gap-2 py-2 text-sm hover:text-blue-600 transition-colors"
+                              className={cn(
+                                "flex items-center gap-2 py-2 text-sm transition-colors",
+                                subChild.category === 'hardware' ? "hover:text-orange-600" : "hover:text-blue-600"
+                              )}
                               onClick={() => setMobileMenuOpen(false)}
                             >
                               {subChild.icon}
@@ -294,7 +328,10 @@ function Header() {
                   ) : (
                     <a
                       href={child.href}
-                      className="flex items-center gap-2 py-2 text-sm hover:text-blue-600 transition-colors"
+                      className={cn(
+                        "flex items-center gap-2 py-2 text-sm transition-colors",
+                        child.category === 'hardware' ? "hover:text-orange-600" : "hover:text-blue-600"
+                      )}
                       onClick={() => setMobileMenuOpen(false)}
                     >
                       {child.icon}
@@ -363,15 +400,35 @@ function Header() {
                       <NavigationMenuContent>
                         <div className="w-[600px] p-4 bg-white rounded-lg shadow-lg border border-gray-100">
                           {item.children.map((category) => (
-                            <div key={category.title} className="mb-4 last:mb-0">
-                              <div className="flex items-center gap-2 mb-2">
+                            <div key={category.title} className="mb-6 last:mb-0">
+                              <div className={cn(
+                                "flex items-center gap-2 mb-3 pb-2",
+                                category.category === 'hardware' 
+                                  ? "border-b border-orange-200" 
+                                  : "border-b border-blue-200"
+                              )}>
                                 {category.icon && (
-                                  <div className="p-1.5 rounded-md bg-blue-100">
+                                  <div className={cn(
+                                    "p-2 rounded-md",
+                                    category.category === 'hardware' 
+                                      ? "bg-orange-100" 
+                                      : "bg-blue-100"
+                                  )}>
                                     {category.icon}
                                   </div>
                                 )}
                                 <div>
-                                  <h3 className="text-sm font-semibold text-gray-900">{category.title}</h3>
+                                  <h3 className={cn(
+                                    "text-sm font-bold",
+                                    category.category === 'hardware' 
+                                      ? "text-orange-700" 
+                                      : "text-blue-700"
+                                  )}>
+                                    {category.title}
+                                  </h3>
+                                  {category.description && (
+                                    <p className="text-xs text-gray-500">{category.description}</p>
+                                  )}
                                 </div>
                               </div>
                               <div className="grid grid-cols-2 gap-2">
@@ -381,6 +438,7 @@ function Header() {
                                     title={child.title}
                                     href={child.href}
                                     icon={child.icon}
+                                    category={child.category}
                                   >
                                     {child.description}
                                   </ListItem>
@@ -408,44 +466,47 @@ function Header() {
                 )}
               </NavigationMenuList>
             </NavigationMenu>
-
-            <div className="flex items-center gap-2 ml-4">
-              <ViewToggle />
-            </div>
+            <a 
+              href="/demo-talebi" 
+              className="ml-2 inline-flex h-10 items-center justify-center rounded-md bg-blue-600 px-6 text-sm font-medium text-white shadow transition-colors hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-2"
+            >
+              Sizi Arayalım
+            </a>
           </div>
 
           {/* Mobile Menu Button */}
-          <div className="lg:hidden flex items-center gap-2">
-            <button
-              className="p-2 rounded-md hover:bg-gray-100 transition-colors"
-              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              aria-label={mobileMenuOpen ? "Menüyü Kapat" : "Menüyü Aç"}
-            >
-              {mobileMenuOpen ? (
-                <X className="w-6 h-6 text-gray-700" />
-              ) : (
-                <Menu className="w-6 h-6 text-gray-700" />
-              )}
-            </button>
-            <ViewToggle />
-          </div>
+          <button
+            className="lg:hidden p-2 rounded-md hover:bg-gray-100 focus:outline-none"
+            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+          >
+            {mobileMenuOpen ? (
+              <X className="w-6 h-6 text-gray-700" />
+            ) : (
+              <Menu className="w-6 h-6 text-gray-700" />
+            )}
+          </button>
         </div>
       </div>
 
       {/* Mobile Menu */}
       {mobileMenuOpen && (
-        <div className="mobile-menu-overlay">
-          <div className="container mx-auto px-4 py-4 mobile-menu-content">
-            <div className="flex flex-col space-y-1 mobile-menu-content">
+        <div className="lg:hidden fixed inset-0 z-[999] bg-black/20 backdrop-blur-sm mobile-menu-overlay">
+          <div className="absolute top-[60px] right-0 w-full max-w-sm h-[calc(100vh-60px)] bg-white shadow-xl overflow-y-auto mobile-menu-content">
+            <div className="p-4">
               {renderMenuItems(navItems)}
-            </div>
-            <div className="flex items-center gap-2 mt-4">
-              <ViewToggle />
+              <div className="mt-6 pt-6 border-t border-gray-200">
+                <a
+                  href="/demo-talebi"
+                  className="block w-full py-3 px-4 rounded-md bg-blue-600 text-center font-medium text-white hover:bg-blue-700 transition-colors"
+                  onClick={() => setMobileMenuOpen(false)}
+                >
+                  Sizi Arayalım
+                </a>
+              </div>
             </div>
           </div>
         </div>
       )}
-     
     </header>
   );
 }

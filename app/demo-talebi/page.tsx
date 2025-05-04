@@ -97,7 +97,7 @@ const cities = [
 ];
 
 const features = [
-  { title: "7/24 Destek", description: "Teknik destek ekibimiz her zaman yanınızda" },
+  { title: "7/16 Destek", description: "Teknik destek ekibimiz her zaman yanınızda" },
   { title: "Kolay Kullanım", description: "15 dakikada öğrenin, hemen kullanmaya başlayın" },
   { title: "Ücretsiz Kurulum", description: "Kurulum ve eğitim tamamen ücretsiz" },
 ];
