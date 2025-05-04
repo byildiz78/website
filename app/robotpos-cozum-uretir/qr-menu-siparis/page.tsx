@@ -98,7 +98,7 @@ export default function QrMenuSiparisPage() {
                 asChild
               >
                 <a href="/demo-talebi">
-                  Demo Talebi
+                  Sizi Arayalım
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </a>
               </Button>

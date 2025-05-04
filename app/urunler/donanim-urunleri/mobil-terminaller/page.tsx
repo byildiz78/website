@@ -5,6 +5,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Smartphone, Cpu, Battery, Wifi, Shield } from "lucide-react";
+import { PageHero } from "@/components/ui/page-hero";
 
 const features = [
   {
@@ -55,61 +56,28 @@ export default function MobilTerminallerPage() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative h-[400px] flex items-center overflow-hidden">
-        <motion.div 
-          initial={{ scale: 1.2, opacity: 0.8 }}
-          animate={{ scale: 1, opacity: 1 }}
-          transition={{ duration: 1.5 }}
-          className="absolute inset-0 z-0"
+      <PageHero
+        title="Mobil Terminal"
+        subtitle=""
+        backgroundImage="/images/general/mobilterminal.png"
+      >
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.6 }}
         >
-          <Image
-            src="/images/general/mobilterminal.png"
-            alt="Mobil Terminaller"
-            fill
-            className="object-cover"
-            priority
-          />
-          <div className="absolute inset-0 bg-gradient-to-r from-blue-900/90 to-black/70" />
+          <Button 
+            size="lg"
+            className="bg-white text-blue-600 hover:bg-blue-50"
+            asChild
+          >
+            <a href="/demo-talebi">
+              Sizi Arayalım
+              <ArrowRight className="ml-2 h-5 w-5" />
+            </a>
+          </Button>
         </motion.div>
-        <div className="container relative z-10 mx-auto px-4">
-          <div className="max-w-2xl">
-            <motion.h1
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.2 }}
-              className="text-4xl md:text-5xl font-bold mb-4 text-white"
-            >
-              Mobil Terminaller
-            </motion.h1>
-            <motion.p
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.4 }}
-              className="text-xl mb-6 text-blue-50"
-            >
-              İşletmenizde hızlı ve esnek sipariş alma imkanı sunan mobil çözümler
-            </motion.p>
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.6 }}
-            >
-              <Button 
-                size="lg"
-                className="bg-white text-blue-600 hover:bg-blue-50"
-                asChild
-              >
-                <a href="/demo-talebi">
-                  Fiyat Teklifi
-                  <ArrowRight className="ml-2 h-5 w-5" />
-                </a>
-              </Button>
-            </motion.div>
-          </div>
-        </div>
-      </section>
-
-      {/* Features Grid */}
+      </PageHero>{/* Features Grid */}
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">

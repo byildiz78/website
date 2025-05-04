@@ -6,6 +6,7 @@ import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, BarChart2, FileText, PieChart, LineChart, TrendingUp, Smartphone } from "lucide-react";
 import { ScreenshotGallery } from "@/components/ui/screenshot-gallery";
+import { PageHero } from "@/components/ui/page-hero";
 
 const benefits = [
   "İşletme verilerinize her yerden erişin",
@@ -30,66 +31,28 @@ export default function RaporlamaVeAnalizPage() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative h-[400px] flex items-center overflow-hidden">
-        <motion.div 
-          initial={{ scale: 1.2, opacity: 0.8 }}
-          animate={{ scale: 1, opacity: 1 }}
-          transition={{ duration: 1.5 }}
-          className="absolute inset-0 z-0"
+      <PageHero
+        title="Raporlama ve Analiz"
+        subtitle="Yapay Zeka Destekli Merkezi Raporlama Araçları"
+        backgroundImage="/images/raporlama-analiz/ai-analiz-video.webm"
+      >
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.6 }}
         >
-          <div className="absolute inset-0 flex items-center justify-center">
-            <video
-              src="/images/raporlama-analiz/ai-analiz-video.webm"
-              autoPlay
-              loop
-              muted
-              playsInline
-              className="absolute w-full h-full object-cover"
-              style={{ filter: "brightness(0.5)" }}
-            />
-          </div>
-          <div className="absolute inset-0 bg-gradient-to-r from-gray-900/70 to-black/60" />
+          <Button 
+            size="lg"
+            className="bg-white text-blue-600 hover:bg-blue-50"
+            asChild
+          >
+            <a href="/demo-talebi">
+              Sizi Arayalım
+              <ArrowRight className="ml-2 h-5 w-5" />
+            </a>
+          </Button>
         </motion.div>
-        <div className="container relative z-10 mx-auto px-4">
-          <div className="max-w-2xl">
-            <motion.h1
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.2 }}
-              className="text-4xl md:text-5xl font-bold mb-4 text-white"
-            >
-              Raporlama ve Analiz
-            </motion.h1>
-            <motion.p
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.4 }}
-              className="text-xl mb-6 text-blue-50"
-            >
-              Yapay Zeka Destekli Merkezi Raporlama Araçları
-
-            </motion.p>
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.6 }}
-            >
-              <Button 
-                size="lg"
-                className="bg-white text-blue-600 hover:bg-blue-50"
-                asChild
-              >
-                <a href="/demo-talebi">
-                  Sizi Arayalım
-                  <ArrowRight className="ml-2 h-5 w-5" />
-                </a>
-              </Button>
-            </motion.div>
-          </div>
-        </div>
-      </section>
-
-      {/* Detaylı Raporlama Section */}
+      </PageHero>{/* Detaylı Raporlama Section */}
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-12 items-center">

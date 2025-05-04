@@ -11,6 +11,7 @@ import { Label } from "@/components/ui/label";
 import { Upload, Users2, Briefcase, GraduationCap, ExternalLink } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 import { Modal } from "@/components/ui/modal";
+import { PageHero } from "@/components/ui/page-hero";
 
 export default function CareerPage() {
   const [loading, setLoading] = useState(false);
@@ -198,38 +199,11 @@ export default function CareerPage() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative h-[300px] overflow-hidden">
-        <motion.div 
-          initial={{ scale: 1.2, opacity: 0.8 }}
-          animate={{ scale: 1, opacity: 1 }}
-          transition={{ duration: 1.5 }}
-          className="absolute inset-0"
-        >
-          <Image
-            src="/images/general/ofis.webp"
-            alt="robotPOS Kariyer"
-            fill
-            className="object-cover"
-            priority
-          />
-          <div className="absolute inset-0 bg-gradient-to-r from-blue-900/90 to-black/70" />
-        </motion.div>
-        <div className="container relative z-10 h-full mx-auto px-4 flex items-center">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.2 }}
-            className="max-w-2xl"
-          >
-            <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
-              Kariyer
-            </h1>
-            <p className="text-xl text-blue-50">
-              Ekibimize katılın, geleceği birlikte şekillendirelim
-            </p>
-          </motion.div>
-        </div>
-      </section>
+      <PageHero
+        title="Kariyer"
+        subtitle="Ekibimize katılın, geleceği birlikte şekillendirelim"
+        backgroundImage="/images/general/ofis.webp"
+      />
 
       <div className="container mx-auto px-4 py-16">
         <div className="grid lg:grid-cols-2 gap-16">

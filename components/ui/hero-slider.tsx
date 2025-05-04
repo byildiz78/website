@@ -4,6 +4,7 @@ import React, { useState, useEffect, useCallback } from "react";
 import { Button } from "@/components/ui/button";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { useInView } from "react-intersection-observer";
+import { ExperienceBadge } from "@/components/ui/experience-badge";
 
 interface Slide {
   id: number;
@@ -54,6 +55,9 @@ export function HeroSlider({ slides }: HeroSliderProps) {
 
   return (
     <div ref={ref} className="relative h-[500px] md:h-[600px] overflow-hidden">
+      {/* Use the reusable ExperienceBadge component */}
+      <ExperienceBadge position="top-right" />
+
       {slides.map((slide, index) => (
         <div
           key={slide.id}

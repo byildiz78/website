@@ -12,6 +12,7 @@ import { Label } from "@/components/ui/label";
 import { Phone, Mail, Building2, User, MapPin, MessageSquare, Briefcase, Clock } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 import { Modal } from "@/components/ui/modal";
+import { PageHero } from "@/components/ui/page-hero";
 
 const cities = [
   "İstanbul",
@@ -266,38 +267,11 @@ export default function PartnerApplicationPage() {
   return (
     <div className="min-h-screen pt-20">
       {/* Hero Section */}
-      <section className="relative h-[300px] overflow-hidden">
-        <motion.div
-          initial={{ scale: 1.2, opacity: 0.8 }}
-          animate={{ scale: 1, opacity: 1 }}
-          transition={{ duration: 1.5 }}
-          className="absolute inset-0"
-        >
-          <Image
-            src="/images/general/res-1-min.webp"
-            alt="robotPOS Çözüm Ortaklığı"
-            fill
-            className="object-cover"
-            priority
-          />
-          <div className="absolute inset-0 bg-gradient-to-r from-blue-900/90 to-black/70" />
-        </motion.div>
-        <div className="container relative z-10 h-full mx-auto px-4 flex items-center">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.2 }}
-            className="max-w-2xl"
-          >
-            <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
-              Çözüm Ortaklığı Başvuru
-            </h1>
-            <p className="text-xl text-blue-50">
-              robotPOS'un yenilikçi çözümlerini müşterilerinize sunarak birlikte büyüyelim
-            </p>
-          </motion.div>
-        </div>
-      </section>
+      <PageHero
+        title="Çözüm Ortaklığı Başvuru"
+        subtitle="robotPOS'un yenilikçi çözümlerini müşterilerinize sunarak birlikte büyüyelim"
+        backgroundImage="/images/general/res-1-min.webp"
+      />
 
       <div className="container mx-auto px-4 -mt-20 relative z-20">
         <div className="grid lg:grid-cols-3 gap-8">
