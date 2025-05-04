@@ -28,5 +28,12 @@ export const heroSlides = [
     title: "Restoranınızı Yapay Zeka Çağına Hazırlıyoruz",
     description: "Yapay zeka destekli analiz ve öngörüler ile işletmenizi geleceğe taşıyın, müşteri davranışlarını önceden tahmin edin.",
     image: "/images/general/restaurant-ai.webp"
+  },
+  {
+    id: 6,
+    title: "Yapay Zeka Destekli Merkezi Raporlama Araçları",
+    description: "Günlük dilde sorgulamalar yapın, verilerinizi anında analiz edin ve işletmeniz için değerli içgörüler elde edin.",
+    image: "/images/raporlama-analiz/raporlama-screens/06.png",
+    video: "/images/raporlama-analiz/ai-analiz-video.webm"
   }
 ];

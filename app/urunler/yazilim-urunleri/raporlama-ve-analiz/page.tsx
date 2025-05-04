@@ -17,11 +17,13 @@ const benefits = [
 ];
 
 const screenshots = [
-  "/images/raporlama-analiz/raporlama-screens/webrapor01.webp",
-  "/images/raporlama-analiz/raporlama-screens/webrapor02.webp",
-  "/images/raporlama-analiz/raporlama-screens/webrapor03.webp",
-  "/images/raporlama-analiz/raporlama-screens/webrapor04.webp",
-  "/images/raporlama-analiz/raporlama-screens/webrapor05.webp"
+  "/images/raporlama-analiz/raporlama-screens/01.png",
+  "/images/raporlama-analiz/raporlama-screens/02.png",
+  "/images/raporlama-analiz/raporlama-screens/03.png",
+  "/images/raporlama-analiz/raporlama-screens/04.png",
+  "/images/raporlama-analiz/raporlama-screens/05.png",
+  "/images/raporlama-analiz/raporlama-screens/06.png",
+  "/images/raporlama-analiz/raporlama-screens/07.png"
 ];
 
 export default function RaporlamaVeAnalizPage() {
@@ -35,14 +37,18 @@ export default function RaporlamaVeAnalizPage() {
           transition={{ duration: 1.5 }}
           className="absolute inset-0 z-0"
         >
-          <Image
-            src="/images/raporlama-analiz/destek-3-min.webp"
-            alt="Raporlama ve Analiz"
-            fill
-            className="object-cover"
-            priority
-          />
-          <div className="absolute inset-0 bg-gradient-to-r from-blue-900/90 to-black/70" />
+          <div className="absolute inset-0 flex items-center justify-center">
+            <video
+              src="/images/raporlama-analiz/ai-analiz-video.webm"
+              autoPlay
+              loop
+              muted
+              playsInline
+              className="absolute w-full h-full object-cover"
+              style={{ filter: "brightness(0.5)" }}
+            />
+          </div>
+          <div className="absolute inset-0 bg-gradient-to-r from-gray-900/70 to-black/60" />
         </motion.div>
         <div className="container relative z-10 mx-auto px-4">
           <div className="max-w-2xl">
@@ -60,7 +66,8 @@ export default function RaporlamaVeAnalizPage() {
               transition={{ duration: 0.8, delay: 0.4 }}
               className="text-xl mb-6 text-blue-50"
             >
-              Yüksek Verimlilik, Operasyonel Fayda.
+              Yapay Zeka Destekli Merkezi Raporlama Araçları
+
             </motion.p>
             <motion.div
               initial={{ opacity: 0, y: 30 }}
@@ -94,7 +101,7 @@ export default function RaporlamaVeAnalizPage() {
             >
               <div className="relative rounded-[2rem] overflow-hidden shadow-2xl">
                 <Image
-                  src="/images/raporlama-analiz/raporlama-screens/webrapor01.webp"
+                  src="/images/raporlama-analiz/raporlama-screens/01.png"
                   alt="Detaylı Raporlama"
                   width={600}
                   height={400}
@@ -187,12 +194,149 @@ export default function RaporlamaVeAnalizPage() {
               <div className="absolute -inset-4 bg-blue-100/30 rounded-[2rem] blur-xl"></div>
               <div className="relative rounded-[2rem] overflow-hidden shadow-2xl">
                 <Image
-                  src="/images/raporlama-analiz/raporlama-screens/webrapor02.webp"
+                  src="/images/raporlama-analiz/raporlama-screens/02.png"
                   alt="Merkezi Raporlama"
                   width={600}
                   height={400}
                   className="w-full h-auto"
                 />
+              </div>
+            </motion.div>
+          </div>
+        </div>
+      </section>
+
+      {/* Yapay Zeka Destekli Raporlama Araçları Section */}
+      <section className="py-16 bg-white">
+        <div className="container mx-auto px-4">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="text-center mb-12"
+          >
+            <div className="inline-block relative">
+              <h2 className="text-4xl font-bold mb-4 relative z-10">
+                Yapay Zeka Destekli <span className="text-blue-600">Raporlama Araçları</span>
+              </h2>
+              <div className="absolute -inset-1 bg-gradient-to-r from-blue-100 to-purple-100 rounded-lg blur-md -z-10"></div>
+              <div className="w-32 h-1 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto mt-2 rounded-full"></div>
+            </div>
+            <p className="text-xl text-gray-600 max-w-2xl mx-auto mt-4">
+              Verilerinizle günlük dilde konuşun, anında analiz sonuçları alın
+            </p>
+          </motion.div>
+          
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <motion.div
+              initial={{ opacity: 0, x: -20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              className="space-y-8 order-2 lg:order-1"
+            >
+              <div className="relative rounded-xl overflow-hidden shadow-xl">
+                <div className="absolute -inset-2 bg-gradient-to-r from-blue-400/20 to-purple-400/20 rounded-xl blur-lg"></div>
+                <video 
+                  src="/images/raporlama-analiz/ai-analiz-video.webm" 
+                  autoPlay 
+                  loop 
+                  muted 
+                  playsInline
+                  className="w-full h-auto relative rounded-xl"
+                  style={{ maxHeight: "400px", objectFit: "cover" }}
+                />
+              </div>
+              
+              <div className="relative rounded-xl overflow-hidden shadow-xl">
+                <div className="absolute -inset-2 bg-gradient-to-r from-blue-400/20 to-purple-400/20 rounded-xl blur-lg"></div>
+                <Image
+                  src="/images/raporlama-analiz/raporlama-screens/06.png"
+                  alt="Yapay Zeka Destekli Raporlama"
+                  width={600}
+                  height={400}
+                  className="w-full h-auto relative rounded-xl"
+                />
+              </div>
+              
+              <div className="bg-gradient-to-r from-blue-600 to-blue-700 p-6 rounded-xl text-white shadow-lg transform transition-transform hover:scale-105">
+                <h3 className="text-xl font-semibold mb-3">Yapay Zeka Asistanınız</h3>
+                <p className="mb-4">
+                  "Geçen hafta en çok satılan ürünler hangileri?"
+                </p>
+                <div className="flex items-center space-x-2 text-blue-100 text-sm">
+                  <span>Sorgunuz anında analiz ediliyor</span>
+                  <div className="flex space-x-1">
+                    <div className="w-2 h-2 rounded-full bg-blue-100 animate-bounce" style={{ animationDelay: "0ms" }}></div>
+                    <div className="w-2 h-2 rounded-full bg-blue-100 animate-bounce" style={{ animationDelay: "150ms" }}></div>
+                    <div className="w-2 h-2 rounded-full bg-blue-100 animate-bounce" style={{ animationDelay: "300ms" }}></div>
+                  </div>
+                </div>
+              </div>
+            </motion.div>
+            
+            <motion.div
+              initial={{ opacity: 0, x: 20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              className="space-y-8 order-1 lg:order-2"
+            >
+              <div className="h-full flex flex-col justify-center">
+                <p className="text-gray-600 mb-4">
+                  Artık karmaşık sorgular oluşturmaya veya teknik bilgiye ihtiyacınız yok. Yapay zeka destekli raporlama araçlarımız sayesinde, günlük konuşma diliyle veri tabanınızı sorgulayabilir, analizler yapabilir ve öngörüler elde edebilirsiniz.
+                </p>
+                <p className="text-gray-600 mb-6">
+                  Örneğin, "Geçen aya göre en çok satış artışı gösteren 5 ürünü göster" veya "Hangi şubemiz bu ay en yüksek ciroyu elde etti?" gibi doğal dil sorguları yapabilirsiniz. Yapay zeka, sorgunuzu analiz eder ve veri tabanınızdan ilgili verileri çekerek size anlamlı sonuçlar sunar.
+                </p>
+                
+                <div className="space-y-4 mt-8">
+                  <motion.div
+                    initial={{ opacity: 0, y: 10 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ delay: 0.1 }}
+                    viewport={{ once: true }}
+                    className="flex items-start space-x-3 p-4 rounded-xl bg-blue-50 hover:bg-blue-100 transition-colors"
+                  >
+                    <div className="bg-blue-100 p-2 rounded-lg flex-shrink-0 mt-1">
+                      <TrendingUp className="w-5 h-5 text-blue-600" />
+                    </div>
+                    <div>
+                      <h3 className="font-semibold text-gray-800">Doğal Dil Sorguları</h3>
+                      <p className="text-gray-600">Teknik SQL bilgisi olmadan günlük dilde veri tabanınızı sorgulayın</p>
+                    </div>
+                  </motion.div>
+                  
+                  <motion.div
+                    initial={{ opacity: 0, y: 10 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ delay: 0.2 }}
+                    viewport={{ once: true }}
+                    className="flex items-start space-x-3 p-4 rounded-xl bg-blue-50 hover:bg-blue-100 transition-colors"
+                  >
+                    <div className="bg-blue-100 p-2 rounded-lg flex-shrink-0 mt-1">
+                      <PieChart className="w-5 h-5 text-blue-600" />
+                    </div>
+                    <div>
+                      <h3 className="font-semibold text-gray-800">Otomatik Veri Analizi</h3>
+                      <p className="text-gray-600">Yapay zeka, verilerinizi analiz ederek anlamlı içgörüler ve öneriler sunar</p>
+                    </div>
+                  </motion.div>
+                  
+                  <motion.div
+                    initial={{ opacity: 0, y: 10 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ delay: 0.3 }}
+                    viewport={{ once: true }}
+                    className="flex items-start space-x-3 p-4 rounded-xl bg-blue-50 hover:bg-blue-100 transition-colors"
+                  >
+                    <div className="bg-blue-100 p-2 rounded-lg flex-shrink-0 mt-1">
+                      <LineChart className="w-5 h-5 text-blue-600" />
+                    </div>
+                    <div>
+                      <h3 className="font-semibold text-gray-800">Tahmine Dayalı Analizler</h3>
+                      <p className="text-gray-600">Geçmiş verilerinize dayanarak gelecek trendleri ve satış tahminleri oluşturun</p>
+                    </div>
+                  </motion.div>
+                </div>
               </div>
             </motion.div>
           </div>

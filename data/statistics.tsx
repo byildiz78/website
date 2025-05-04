@@ -26,8 +26,9 @@ export const statistics = [
     icon: <Users className="h-8 w-8" />,
   },
   {
-    value: 360,
-    label: "360° Çözümler",
-    icon: <Award className="h-8 w-8" />,
+    value: 100,
+    label: "Kişilik Ekip",
+    suffix: "+",
+    icon: <Users className="h-8 w-8" />,
   },
 ];

@@ -10,7 +10,7 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "RobotPOS | Restoran ve Cafe Otomasyon Sistemi | Adisyon & Sipariş Yazılımı",
   description:
-    "RobotPOS, cafe ve restoran işletmeleri için modern, kullanımı kolay ve kapsamlı satış noktası ve yönetim sistemi. 3000+ işletme tarafından tercih edilen otomasyon çözümü.",
+    "RobotPOS, cafe ve restoran işletmeleri için modern, kullanımı kolay ve kapsamlı satış noktası ve yönetim sistemi. 4000+ işletme tarafından tercih edilen otomasyon çözümü.",
   keywords: "restoran otomasyon, cafe otomasyon, adisyon sistemi, restaurant pos, sipariş takip, yemek sipariş sistemi",
   authors: [{ name: "RobotPOS" }],
   creator: "RobotPOS",

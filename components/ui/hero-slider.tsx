@@ -10,6 +10,7 @@ interface Slide {
   title: string;
   description: string;
   image: string;
+  video?: string;
   buttonText?: string;
   buttonLink?: string;
 }
@@ -60,11 +61,24 @@ export function HeroSlider({ slides }: HeroSliderProps) {
             currentSlide === index ? "opacity-100" : "opacity-0"
           }`}
           style={{
-            backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${slide.image})`,
+            backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(${slide.image})`,
             backgroundSize: "cover",
             backgroundPosition: "center",
           }}
         >
+          {slide.video && (
+            <video
+              autoPlay
+              loop
+              muted
+              playsInline
+              className="absolute inset-0 w-full h-full object-cover"
+              style={{ filter: "brightness(0.7)" }}
+            >
+              <source src={slide.video} type="video/webm" />
+            </video>
+          )}
+          <div className="absolute inset-0 bg-gradient-to-r from-gray-900/40 to-black/30" />
           <div className="absolute inset-0 flex items-center justify-center">
             <div className="container mx-auto px-4 text-center text-white">
               <h1 

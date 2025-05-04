@@ -73,7 +73,7 @@ export function FeaturesGrid({ title, subtitle, features }: FeaturesGridProps) {
                     src={feature.bgImage}
                     alt={feature.title}
                     fill
-                    className="object-cover transition-transform duration-700 scale-110 filter brightness-100"
+                    className="object-cover transition-transform duration-700 scale-110 filter brightness-125"
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
                     style={{
                       transform: activeCard === index ? 'scale(1.15)' : 'scale(1.1)',
@@ -83,9 +83,9 @@ export function FeaturesGrid({ title, subtitle, features }: FeaturesGridProps) {
                   
                   {/* Glassmorphism Effect */}
                   <div 
-                    className="absolute inset-0 bg-white/30 backdrop-blur-md transition-all duration-500"
+                    className="absolute inset-0 bg-white/40 backdrop-blur-sm transition-all duration-500"
                     style={{
-                      backdropFilter: activeCard === index ? 'blur(5px)' : 'blur(10px)',
+                      backdropFilter: activeCard === index ? 'blur(4px)' : 'blur(8px)',
                     }}
                   />
                   
@@ -104,7 +104,7 @@ export function FeaturesGrid({ title, subtitle, features }: FeaturesGridProps) {
                 >
                   {/* Icon with floating effect */}
                   <div 
-                    className="mb-5 bg-white/80 backdrop-blur-sm p-3 rounded-xl inline-block shadow-lg transition-all duration-500"
+                    className="mb-5 bg-white/90 backdrop-blur-sm p-3 rounded-xl inline-block shadow-lg transition-all duration-500"
                     style={{
                       transform: activeCard === index ? 'rotate(3deg) scale(1.1)' : 'rotate(0) scale(1)',
                     }}
@@ -121,7 +121,7 @@ export function FeaturesGrid({ title, subtitle, features }: FeaturesGridProps) {
                     </h3>
                     
                     {/* Description with improved styling */}
-                    <p className="text-gray-700 text-sm leading-relaxed line-clamp-3">
+                    <p className="text-gray-700 text-sm leading-relaxed line-clamp-3 font-medium">
                       {feature.description}
                     </p>
                   </div>
@@ -160,7 +160,7 @@ export function FeaturesGrid({ title, subtitle, features }: FeaturesGridProps) {
                 
                 {/* Işık Efekti */}
                 <div 
-                  className={`absolute inset-0 bg-gradient-to-tr from-transparent via-white/5 to-white/20 opacity-0 transition-opacity duration-500 ${
+                  className={`absolute inset-0 bg-gradient-to-tr from-transparent via-white/10 to-white/30 opacity-0 transition-opacity duration-500 ${
                     activeCard === index ? 'opacity-100' : 'group-hover:opacity-70'
                   }`}
                 ></div>

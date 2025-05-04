@@ -3,13 +3,11 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { Search, ChevronDown, ShoppingCart, Building2, Monitor, Headphones, ArrowRight, Check } from "lucide-react";
-import { Input } from "@/components/ui/input";
+import { ChevronDown, ShoppingCart, Building2, Monitor, Headphones, ArrowRight, Check } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 export default function FAQPage() {
-  const [searchTerm, setSearchTerm] = useState("");
-  const [expandedCategory, setExpandedCategory] = useState<string | null>(null);
+  const [expandedCategory, setExpandedCategory] = useState<string | null>("pos"); // Default açık kategori
 
   // FAQ Categories and Questions
   const faqData = {
@@ -77,15 +75,6 @@ export default function FAQPage() {
     }
   };
 
-  // Filter questions based on search term
-  const filteredFAQs = Object.entries(faqData).map(([key, category]) => ({
-    ...category,
-    key,
-    questions: category.questions.filter(
-      q => q.toLowerCase().includes(searchTerm.toLowerCase())
-    )
-  }));
-
   return (
     <div className="min-h-screen pt-20">
       {/* Hero Section */}
@@ -122,81 +111,65 @@ export default function FAQPage() {
         </div>
       </section>
 
-      {/* Search Section */}
-      <section className="py-8 bg-gradient-to-b from-gray-50 to-white">
-        <div className="container mx-auto px-4">
-          <div className="max-w-2xl mx-auto">
-            <div className="relative">
-              <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400" />
-              <Input
-                type="text"
-                placeholder="Soru ara..."
-                className="pl-10"
-                value={searchTerm}
-                onChange={(e) => setSearchTerm(e.target.value)}
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* FAQ Categories */}
-      <section className="py-12">
-        <div className="container mx-auto px-4">
-          <div className="grid gap-8">
-            {filteredFAQs.map((category) => (
-              category.questions.length > 0 && (
-                <motion.div
-                  key={category.key}
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300"
+      <section className="py-12 bg-white">
+        <div className="container mx-auto px-4 max-w-4xl">
+          <div className="grid gap-6">
+            {Object.entries(faqData).map(([key, category]) => (
+              <motion.div
+                key={key}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                className="bg-white rounded-lg shadow-md overflow-hidden border border-gray-100"
+              >
+                {/* Category Header */}
+                <button
+                  onClick={() => setExpandedCategory(expandedCategory === key ? null : key)}
+                  className={`w-full px-6 py-4 flex items-center justify-between ${
+                    expandedCategory === key ? 'bg-blue-50 border-b border-gray-200' : 'hover:bg-gray-50'
+                  } transition-all duration-300`}
                 >
-                  {/* Category Header */}
-                  <button
-                    className={`w-full px-6 py-4 flex items-center justify-between ${
-                      expandedCategory === category.key ? 'bg-blue-50' : 'hover:bg-gray-50'
-                    } transition-all duration-300`}
-                    onClick={() => setExpandedCategory(
-                      expandedCategory === category.key ? null : category.key
-                    )}
-                  >
-                    <div className="flex items-center gap-3">
-                      <div className={`p-2 rounded-lg ${
-                        expandedCategory === category.key ? 'bg-blue-100 text-blue-600' : 'bg-gray-100 text-gray-600'
-                      } transition-all duration-300`}>
-                        {category.icon}
-                      </div>
-                      <h2 className="text-xl font-semibold">{category.title}</h2>
+                  <div className="flex items-center gap-3">
+                    <div className={`p-2 rounded-full ${
+                      expandedCategory === key ? 'bg-blue-100 text-blue-600' : 'bg-gray-100 text-gray-600'
+                    } transition-all duration-300`}>
+                      {category.icon}
                     </div>
-                    <ChevronDown className={`w-5 h-5 transition-transform duration-300 ${
-                      expandedCategory === category.key ? 'rotate-180 text-blue-600' : ''
-                    }`} />
-                  </button>
+                    <h2 className="text-xl font-semibold">{category.title}</h2>
+                  </div>
+                  <ChevronDown className={`w-5 h-5 transition-transform duration-300 ${
+                    expandedCategory === key ? 'rotate-180 text-blue-600' : 'text-gray-400'
+                  }`} />
+                </button>
 
-                  {/* Questions */}
-                  <div className={`overflow-hidden transition-all duration-500 ${
-                    expandedCategory === category.key ? 'max-h-[2000px]' : 'max-h-0'
-                  }`}>
-                    <div className="divide-y divide-gray-100">
-                      {category.questions.map((question, index) => (
-                        <div key={index} className="px-6 py-4">
-                          <div className="flex flex-col gap-2">
-                            {/* Answer Tag */}
-                            <div className="inline-flex items-center gap-1 bg-blue-50 text-blue-600 px-3 py-1 rounded-full w-fit">
-                              <Check className="w-4 h-4" />
-                              <span className="text-sm font-medium">Evet</span>
-                            </div>
-                            {/* Question */}
-                            <div className="text-gray-700">{question}</div>
+                {/* Questions */}
+                <div className={`overflow-hidden transition-all duration-500 ${
+                  expandedCategory === key ? 'max-h-[2000px]' : 'max-h-0'
+                }`}>
+                  <div className="p-6 grid gap-4">
+                    {category.questions.map((question, index) => (
+                      <motion.div
+                        key={index}
+                        initial={{ opacity: 0, y: 10 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ delay: index * 0.03 }}
+                        className="bg-white border border-gray-200 rounded-lg p-4 shadow-sm hover:shadow-md transition-all duration-300"
+                      >
+                        <div className="flex items-start gap-4">
+                          <div className="bg-green-100 p-2 rounded-full flex-shrink-0">
+                            <Check className="w-5 h-5 text-green-600" />
+                          </div>
+                          <div>
+                            <p className="text-gray-800 font-medium">{question}</p>
+                            <p className="text-green-600 font-semibold mt-2">Evet</p>
                           </div>
                         </div>
-                      ))}
-                    </div>
+                      </motion.div>
+                    ))}
                   </div>
-                </motion.div>
-              )
+                </div>
+              </motion.div>
             ))}
           </div>
         </div>

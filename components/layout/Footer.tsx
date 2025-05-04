@@ -45,11 +45,11 @@ const footerLinks = [
 ];
 
 const socialLinks = [
-  { icon: Facebook, href: "https://facebook.com/robotPOS" },
-  { icon: Twitter, href: "https://twitter.com/robotPOS" },
-  { icon: Instagram, href: "https://instagram.com/robotPOS" },
-  { icon: Linkedin, href: "https://linkedin.com/company/robotPOS" },
-  { icon: Youtube, href: "https://youtube.com/robotPOS" },
+  { icon: Facebook, href: "https://facebook.com/robotpos" },
+ 
+  { icon: Instagram, href: "https://instagram.com/robotpos" },
+  { icon: Linkedin, href: "https://tr.linkedin.com/company/robotpos-otomasyon-sistemleri" },
+
 ];
 
 export default function Footer() {

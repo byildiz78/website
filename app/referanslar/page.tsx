@@ -12,6 +12,7 @@ interface SectionHeaderProps {
   icon: LucideIcon;
   title: string;
   colorClass: string;
+  id: string;
 }
 
 interface ReferenceCardProps {
@@ -26,29 +27,16 @@ interface ReferenceCardProps {
   colorClass: string;
 }
 
-const SectionHeader = ({ icon: Icon, title, colorClass }: SectionHeaderProps) => {
-  const headerRef = useRef(null);
-  const [isSticky, setIsSticky] = useState(false);
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([e]) => setIsSticky(e.intersectionRatio < 1),
-      { threshold: [1] }
-    );
-
-    if (headerRef.current) {
-      observer.observe(headerRef.current);
-    }
-
-    return () => observer.disconnect();
-  }, []);
-
+const SectionHeader = ({ icon: Icon, title, colorClass, id }: SectionHeaderProps) => {
   return (
-    <div ref={headerRef} className={`sticky top-20 z-30 bg-gradient-to-r ${
-      colorClass.includes('blue') ? 'from-blue-400/20 to-blue-100/20' :
-      colorClass.includes('red') ? 'from-red-400/20 to-red-100/20' :
-      'from-emerald-400/20 to-emerald-100/20'
-    } rounded-[2rem] py-8 px-4 mb-8`}>
+    <div 
+      id={id}
+      className={`bg-gradient-to-r ${
+        colorClass.includes('blue') ? 'from-blue-400/20 to-blue-100/20' :
+        colorClass.includes('red') ? 'from-red-400/20 to-red-100/20' :
+        'from-emerald-400/20 to-emerald-100/20'
+      } rounded-xl py-5 px-4 mb-8 shadow-sm`}
+    >
       <div className="container mx-auto">
         <div className="flex items-center justify-center gap-3">
           <Icon className={`w-8 h-8 ${colorClass}`} />
@@ -195,6 +183,46 @@ export default function ReferencesPage() {
   const specialProjects = referansData.filter(ref => ref.referans_tipi === "Özel Projeler");
   const individualBusinesses = referansData.filter(ref => ref.referans_tipi === "Tekil İşletmeler");
   
+  // Sticky header için useEffect
+  useEffect(() => {
+    const sections = document.querySelectorAll('.reference-section');
+    const headers = document.querySelectorAll('.section-header');
+    
+    const handleScroll = () => {
+      let currentSectionId = '';
+      
+      sections.forEach((section) => {
+        const sectionTop = section.getBoundingClientRect().top;
+        const sectionHeight = section.clientHeight;
+        
+        // 100px offset for header
+        if (sectionTop <= 100 && sectionTop + sectionHeight > 100) {
+          currentSectionId = section.id;
+        }
+      });
+      
+      // Tüm başlıkları gizle
+      headers.forEach((header) => {
+        header.classList.remove('sticky-active');
+      });
+      
+      // Aktif bölümün başlığını göster
+      if (currentSectionId) {
+        const activeHeader = document.querySelector(`#header-${currentSectionId}`);
+        if (activeHeader) {
+          activeHeader.classList.add('sticky-active');
+        }
+      }
+    };
+    
+    window.addEventListener('scroll', handleScroll);
+    handleScroll(); // İlk yükleme için çalıştır
+    
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+  
   return (
     <div className="min-h-screen pt-20">
       {/* Hero Section */}
@@ -212,7 +240,7 @@ export default function ReferencesPage() {
             className="object-cover"
             priority
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-blue-900/90 to-black/70" />
+          <div className="absolute inset-0 bg-gradient-to-r from-blue-900/70 to-black/50" />
         </motion.div>
         <div className="container relative z-10 h-full mx-auto px-4 flex items-center">
           <motion.div
@@ -231,16 +259,52 @@ export default function ReferencesPage() {
         </div>
       </section>
 
+      {/* Sticky Headers Container */}
+      <div className="sticky top-[72px] z-30">
+        <div id="header-zincir-isletmeler-section" className="section-header sticky-active">
+          <div className={`bg-gradient-to-r from-blue-400/20 to-blue-100/20 py-5 px-4 shadow-sm`}>
+            <div className="container mx-auto">
+              <div className="flex items-center justify-center gap-3">
+                <Building2 className="w-8 h-8 text-blue-600" />
+                <h2 className="text-2xl font-bold">Zincir İşletmeler</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div id="header-ozel-projeler-section" className="section-header">
+          <div className={`bg-gradient-to-r from-red-400/20 to-red-100/20 py-5 px-4 shadow-sm`}>
+            <div className="container mx-auto">
+              <div className="flex items-center justify-center gap-3">
+                <MapPin className="w-8 h-8 text-red-500" />
+                <h2 className="text-2xl font-bold">Özel Projeler</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div id="header-tekil-isletmeler-section" className="section-header">
+          <div className={`bg-gradient-to-r from-emerald-400/20 to-emerald-100/20 py-5 px-4 shadow-sm`}>
+            <div className="container mx-auto">
+              <div className="flex items-center justify-center gap-3">
+                <ArrowRight className="w-8 h-8 text-emerald-600" />
+                <h2 className="text-2xl font-bold">Tekil İşletmeler</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <div className="container mx-auto px-4">
         {/* Chain Businesses Section */}
-        <section className="py-8">
+        <section className="py-8 reference-section" id="zincir-isletmeler-section">
           <SectionHeader
             icon={Building2}
             title="Zincir İşletmeler"
             colorClass="text-blue-600"
+            id="zincir-isletmeler"
           />
-
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 pt-4">
             {chainBusinesses.map((business, index) => (
               <motion.div
                 key={business.adi}
@@ -260,14 +324,14 @@ export default function ReferencesPage() {
         </section>
 
         {/* Special Projects Section */}
-        <section className="py-8">
+        <section className="py-8 reference-section" id="ozel-projeler-section">
           <SectionHeader
             icon={MapPin}
             title="Özel Projeler"
             colorClass="text-red-500"
+            id="ozel-projeler"
           />
-
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 pt-4">
             {specialProjects.map((project, index) => (
               <motion.div
                 key={project.adi}
@@ -287,14 +351,14 @@ export default function ReferencesPage() {
         </section>
 
         {/* Individual Businesses Section */}
-        <section className="py-8">
+        <section className="py-8 reference-section" id="tekil-isletmeler-section">
           <SectionHeader
             icon={ArrowRight}
             title="Tekil İşletmeler"
             colorClass="text-emerald-600"
+            id="tekil-isletmeler"
           />
-
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 pt-4">
             {individualBusinesses.map((business, index) => (
               <motion.div
                 key={business.adi}
@@ -313,6 +377,16 @@ export default function ReferencesPage() {
           </div>
         </section>
       </div>
+
+      {/* CSS for sticky headers */}
+      <style jsx global>{`
+        .section-header {
+          display: none;
+        }
+        .sticky-active {
+          display: block;
+        }
+      `}</style>
     </div>
   );
 }

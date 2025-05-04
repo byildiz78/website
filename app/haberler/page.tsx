@@ -212,7 +212,7 @@ export default function NewsPage() {
           className="absolute inset-0"
         >
           <Image
-            src="/images/general/res-1-min.webp"
+            src="/images/general/company-news.jpg"
             alt="robotPOS Haberler"
             fill
             className="object-cover"
