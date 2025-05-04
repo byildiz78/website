@@ -30,6 +30,7 @@ export default function CustomerTestimonialsPage() {
             src="/images/general/res-1-min.webp"
             alt="robotPOS Müşteri Görüşleri"
             fill
+            sizes="100vw"
             className="object-cover"
             priority
           />
@@ -56,60 +57,69 @@ export default function CustomerTestimonialsPage() {
       {/* Testimonials Grid */}
       <div className="container mx-auto px-4 py-16">
         <div className="grid grid-cols-1 gap-16">
-          {testimonials.map((testimonial: Testimonial, index: number) => (
-            <motion.div
-              key={testimonial.baslik}
-              initial={{ opacity: 0, y: 50 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-100px" }}
-              transition={{ 
-                duration: 0.8,
-                delay: index * 0.1,
-                ease: [0.22, 1, 0.36, 1]
-              }}
-              className="bg-white rounded-3xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-500 group"
-            >
-              <div className="p-8 md:p-12">
-                <div className="flex flex-col md:flex-row items-center gap-12">
-                  <div className="relative w-full md:w-80 h-80 flex-shrink-0">
-                    <div className="absolute inset-0 bg-gradient-to-br from-blue-50 to-gray-50 rounded-2xl group-hover:from-blue-100 group-hover:to-blue-50 transition-colors duration-500" />
-                    <div className="absolute inset-4 rounded-xl overflow-hidden">
-                      <div className="relative w-full h-full">
-                        <Image
-                          src={testimonial.resim}
-                          alt={testimonial.baslik}
-                          fill
-                          className="object-contain transform group-hover:scale-110 transition-transform duration-700"
-                        />
+          {testimonials.map((testimonial: Testimonial, index: number) => {
+            // Görüntü yolunu düzelt - başına "/" ekle
+            const imagePath = testimonial.resim.startsWith('/') ? testimonial.resim : `/${testimonial.resim}`;
+            
+            return (
+              <motion.div
+                key={testimonial.baslik}
+                initial={{ opacity: 0, y: 50 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, margin: "-100px" }}
+                transition={{ 
+                  duration: 0.8,
+                  delay: index * 0.1,
+                  ease: [0.22, 1, 0.36, 1]
+                }}
+                className="bg-white rounded-3xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-500 group"
+              >
+                <div className="p-8 md:p-12">
+                  <div className="flex flex-col md:flex-row items-center gap-12">
+                    <div className="relative w-full md:w-80 h-80 flex-shrink-0">
+                      <div className="absolute inset-0 bg-gradient-to-br from-blue-50 to-gray-50 rounded-2xl group-hover:from-blue-100 group-hover:to-blue-50 transition-colors duration-500" />
+                      <div className="absolute inset-4 rounded-xl overflow-hidden">
+                        <div className="relative w-full h-full">
+                          <Image
+                            src={imagePath}
+                            alt={testimonial.baslik}
+                            fill
+                            sizes="(max-width: 768px) 100vw, 300px"
+                            className="object-contain transform group-hover:scale-110 transition-transform duration-700"
+                            loading={index === 0 ? "eager" : "lazy"}
+                            quality={index === 0 ? 90 : 75}
+                            unoptimized={false}
+                          />
+                        </div>
                       </div>
                     </div>
-                  </div>
-                  <div className="flex-1">
-                    <div className="flex items-center gap-4 mb-8">
-                      <h2 className="text-3xl font-bold text-gray-900 group-hover:text-blue-600 transition-colors duration-300">
-                        {testimonial.baslik}
-                      </h2>
-                      <div className="text-blue-600 opacity-50 group-hover:opacity-100 transition-all duration-500 transform group-hover:rotate-12">
-                        <Quote className="h-10 w-10" />
+                    <div className="flex-1">
+                      <div className="flex items-center gap-4 mb-8">
+                        <h2 className="text-3xl font-bold text-gray-900 group-hover:text-blue-600 transition-colors duration-300">
+                          {testimonial.baslik}
+                        </h2>
+                        <div className="text-blue-600 opacity-50 group-hover:opacity-100 transition-all duration-500 transform group-hover:rotate-12">
+                          <Quote className="h-10 w-10" />
+                        </div>
                       </div>
-                    </div>
-                    <div className="prose prose-lg max-w-none">
-                      {testimonial.icerik.split('\n\n').map((paragraph: string, i: number) => (
-                        paragraph.trim() && (
-                          <p 
-                            key={i} 
-                            className="text-gray-600 mb-4 leading-relaxed group-hover:text-gray-700 transition-colors duration-300"
-                          >
-                            {paragraph}
-                          </p>
-                        )
-                      ))}
+                      <div className="prose prose-lg max-w-none">
+                        {testimonial.icerik.split('\n\n').map((paragraph: string, i: number) => (
+                          paragraph.trim() && (
+                            <p 
+                              key={i} 
+                              className="text-gray-600 mb-4 leading-relaxed group-hover:text-gray-700 transition-colors duration-300"
+                            >
+                              {paragraph}
+                            </p>
+                          )
+                        ))}
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-            </motion.div>
-          ))}
+              </motion.div>
+            );
+          })}
         </div>
       </div>
     </div>

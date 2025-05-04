@@ -52,6 +52,9 @@ const ReferenceCard = ({ data, icon: Icon, colorClass }: ReferenceCardProps) => 
   const cardRef = useRef(null);
   const isChainBusiness = data.referans_tipi === "Zincir İşletmeler";
 
+  // Görüntü yolunu düzelt - başına "/" ekle
+  const imagePath = data.logo_yolu.startsWith('/') ? data.logo_yolu : `/${data.logo_yolu}`;
+
   useEffect(() => {
     if (!data.sube_sayisi) return;
 
@@ -107,10 +110,13 @@ const ReferenceCard = ({ data, icon: Icon, colorClass }: ReferenceCardProps) => 
         <div className="pt-12 pb-6 px-6">
           <div className="relative w-full h-40 mx-auto">
             <Image
-              src={data.logo_yolu}
+              src={imagePath}
               alt={data.adi}
               fill
+              sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, (max-width: 1024px) 33vw, 25vw"
               className="object-contain group-hover:scale-105 transition-transform duration-500"
+              unoptimized={false}
+              loading="lazy"
             />
           </div>
         </div>
@@ -137,10 +143,13 @@ const ReferenceCard = ({ data, icon: Icon, colorClass }: ReferenceCardProps) => 
       <div className="p-6 flex flex-col items-center">
         <div className="w-48 h-48 relative mb-6 bg-gray-50 rounded-xl p-6 group-hover:bg-gray-100 transition-colors">
           <Image
-            src={data.logo_yolu}
+            src={imagePath}
             alt={data.adi}
             fill
+            sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, (max-width: 1024px) 33vw, 192px"
             className="object-contain group-hover:scale-105 transition-transform duration-300"
+            unoptimized={false}
+            loading="lazy"
           />
         </div>
         <div className="text-center">
@@ -237,8 +246,10 @@ export default function ReferencesPage() {
             src="/images/general/res-1-min.webp"
             alt="robotPOS References"
             fill
+            sizes="100vw"
             className="object-cover"
             priority
+            quality={90}
           />
           <div className="absolute inset-0 bg-gradient-to-r from-blue-900/70 to-black/50" />
         </motion.div>
