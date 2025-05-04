@@ -3,6 +3,7 @@ import { TestimonialsCarousel } from "@/components/sections/TestimonialsCarousel
 import { StatisticsSection } from "@/components/sections/StatisticsSection";
 import { SolutionsSection } from "@/components/sections/SolutionsSection";
 import { SectionDivider } from "@/components/ui/section-divider";
+import { NeedAssessmentCTA } from "@/components/sections/NeedAssessmentCTA";
 
 import referansData from "@/public/files/referanslar.json";
 import musteriGorusleriData from "@/public/files/musteri-gorusleri.json";
@@ -36,6 +37,11 @@ export function DefaultSections() {
       <SectionDivider />
       
       <TestimonialsCarousel testimonials={customerTestimonials} />
+      
+      <SectionDivider />
+      
+      {/* İhtiyaç Tespiti CTA bölümü */}
+      <NeedAssessmentCTA />
       
       <SectionDivider />
       

@@ -28,6 +28,7 @@ function validateInput(data: any) {
     experience: data.experience ? sanitizeInput(data.experience) : '',
     message: data.message ? sanitizeInput(data.message) : '',
     subject: data.subject ? sanitizeInput(data.subject) : 'Web Sitesi Formu Dolduruldu',
+    formSummary: data.formSummary ? sanitizeInput(data.formSummary) : '',
   };
   
   return { valid: true, data: sanitizedData };
@@ -105,6 +106,7 @@ export async function POST(req: NextRequest) {
             .field { margin-bottom: 15px; }
             .label { font-weight: bold; color: #1e40af; }
             .footer { text-align: center; margin-top: 20px; font-size: 12px; color: #666; }
+            .summary { background-color: #f8f9fa; padding: 15px; border-left: 4px solid #1e40af; white-space: pre-wrap; font-family: monospace; }
           </style>
         </head>
         <body>
@@ -149,6 +151,12 @@ export async function POST(req: NextRequest) {
                 <p class="label">Mesaj:</p>
                 <p>${data.message || 'Mesaj belirtilmemiş'}</p>
               </div>
+              ${data.formSummary ? `
+              <div class="field">
+                <p class="label">Form Özeti:</p>
+                <div class="summary">${data.formSummary.replace(/\n/g, '<br>')}</div>
+              </div>
+              ` : ''}
             </div>
             <div class="footer">
               <p>Bu e-posta robotPOS web sitesi üzerinden gönderilmiştir.</p>
