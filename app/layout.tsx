@@ -80,11 +80,7 @@ export default function RootLayout({
         <link rel="alternate" hrefLang="ar" href={`${process.env.NEXT_PUBLIC_SITE_URL}/ar` || "https://www.robotpos.com/ar"} />
         <link rel="alternate" hrefLang="x-default" href={process.env.NEXT_PUBLIC_SITE_URL || "https://www.robotpos.com"} />
         
-        {/* Çok esnek Content Security Policy - Tüm harici scriptlere izin ver */}
-        <meta
-          httpEquiv="Content-Security-Policy"
-          content="default-src * 'self'; script-src * 'self' 'unsafe-inline' 'unsafe-eval'; style-src * 'self' 'unsafe-inline'; img-src * 'self' data: blob:; font-src * 'self' data:; connect-src * 'self'; frame-src * 'self'; object-src 'none';"
-        />
+        {/* CSP meta etiketini kaldırdık */}
         
         {/* Facebook Pixel Code */}
         <Script id="facebook-pixel" strategy="afterInteractive">
@@ -108,6 +104,7 @@ export default function RootLayout({
             style={{ display: 'none' }}
             src="https://www.facebook.com/tr?id=139620993426526&ev=PageView&noscript=1"
             alt=""
+            fetchPriority="low"
           />
         </noscript>
         {/* End Facebook Pixel Code */}

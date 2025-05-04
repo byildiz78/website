@@ -26,22 +26,6 @@ const nextConfig = {
     // Empty for now
   },
   
-  // Çok esnek Content Security Policy - Tüm harici scriptleri izin ver
-  async headers() {
-    return [
-      {
-        // Apply these headers to all routes
-        source: '/:path*',
-        headers: [
-          {
-            key: 'Content-Security-Policy',
-            value: "default-src * 'self'; script-src * 'self' 'unsafe-inline' 'unsafe-eval'; style-src * 'self' 'unsafe-inline'; img-src * 'self' data: blob:; font-src * 'self' data:; connect-src * 'self'; frame-src * 'self'; object-src 'none';"
-          }
-        ]
-      }
-    ];
-  },
-  
   // URL yapılandırması
   async rewrites() {
     return {

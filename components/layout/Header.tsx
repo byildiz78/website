@@ -376,6 +376,7 @@ function Header() {
                 alt="robotPOS Logo"
                 width={150}
                 height={40}
+                style={{ width: 'auto', height: '40px' }}
                 className="h-10 w-auto"
                 priority
               />
