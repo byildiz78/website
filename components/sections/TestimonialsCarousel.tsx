@@ -50,12 +50,19 @@ export function TestimonialsCarousel({
       
       // Otherwise, convert from raw format
       const rawItem = item as RawTestimonial;
+      
+      // Handle image path - ensure it starts with a forward slash if it's a relative path
+      let imagePath = rawItem.resim;
+      if (imagePath && !imagePath.startsWith('http') && !imagePath.startsWith('/')) {
+        imagePath = `/${imagePath}`;
+      }
+      
       return {
         id: rawItem.baslik,
         quote: rawItem.icerik.split('\n')[0], // Get first paragraph as quote
         author: rawItem.baslik.split('-')[0].trim(), // Get name before dash
         position: rawItem.baslik.includes('-') ? rawItem.baslik.split('-')[1].trim() : '',
-        image: rawItem.resim
+        image: imagePath
       };
     });
   };

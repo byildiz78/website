@@ -143,7 +143,21 @@ export function ReferenceLogos({
             >
               <div className="w-full h-32 relative flex items-center justify-center transition-all duration-300">
                 <Image
-                  src={isReferansData(business) ? business.logo_yolu : isReferenceData(business) ? business.logo : ''}
+                  src={(() => {
+                    let imagePath = '';
+                    if (isReferansData(business)) {
+                      imagePath = business.logo_yolu;
+                    } else if (isReferenceData(business)) {
+                      imagePath = business.logo;
+                    }
+                    
+                    // Ensure path starts with a forward slash if it's a relative path
+                    if (imagePath && !imagePath.startsWith('http') && !imagePath.startsWith('/')) {
+                      imagePath = `/${imagePath}`;
+                    }
+                    
+                    return imagePath;
+                  })()}
                   alt={isReferansData(business) ? business.adi : isReferenceData(business) ? business.name : 'Reference Logo'}
                   fill
                   sizes="200px"

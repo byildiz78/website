@@ -214,7 +214,14 @@ export default function ZincirMagazaYonetimiPage() {
                 >
                   <div className="h-20 w-full relative mb-4 flex items-center justify-center">
                     <Image
-                      src={reference.logo_yolu}
+                      src={(() => {
+                        let imagePath = reference.logo_yolu;
+                        // Ensure path starts with a forward slash if it's a relative path
+                        if (imagePath && !imagePath.startsWith('http') && !imagePath.startsWith('/')) {
+                          imagePath = `/${imagePath}`;
+                        }
+                        return imagePath;
+                      })()}
                       alt={reference.adi}
                       fill
                       className="object-contain"
