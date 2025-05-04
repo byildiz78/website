@@ -160,8 +160,9 @@ export default function MobilTerminallerPage() {
                   src="/images/general/mobilterminal.png"
                   alt="Mobil Terminal"
                   width={300}
-                  height={200}
-                  className="w-full h-auto"
+                  height={600}
+                  style={{ width: 'auto', height: 'auto' }}
+                  className="w-auto h-auto"
                 />
               </div>
             </motion.div>
@@ -278,9 +279,10 @@ export default function MobilTerminallerPage() {
                 <Image
                   src="/images/general/mobilterminal.png"
                   alt="Mobil Terminal Avantajları"
-                  width={600}
-                  height={400}
-                  className="w-full h-auto"
+                  width={300}
+                  height={600}
+                  style={{ width: 'auto', height: 'auto' }}
+                  className="w-auto h-auto"
                 />
               </div>
             </motion.div>
