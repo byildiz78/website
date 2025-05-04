@@ -83,7 +83,7 @@ export default function RootLayout({
         {/* CSP meta etiketini kaldırdık */}
         
         {/* Facebook Pixel Code */}
-        <Script id="facebook-pixel" strategy="afterInteractive">
+        <Script id="facebook-pixel" strategy="lazyOnload">
           {`
             !function(f,b,e,v,n,t,s)
             {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -103,18 +103,15 @@ export default function RootLayout({
             width="1" 
             style={{ display: 'none' }}
             src="https://www.facebook.com/tr?id=139620993426526&ev=PageView&noscript=1"
-            alt=""
-            fetchPriority="low"
           />
         </noscript>
-        {/* End Facebook Pixel Code */}
         
         {/* Google Ads Tag */}
         <Script 
           src="https://www.googletagmanager.com/gtag/js?id=AW-966206215"
-          strategy="afterInteractive"
+          strategy="lazyOnload"
         />
-        <Script id="google-ads" strategy="afterInteractive">
+        <Script id="google-ads" strategy="lazyOnload">
           {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
@@ -122,10 +119,9 @@ export default function RootLayout({
             gtag('config', 'AW-966206215');
           `}
         </Script>
-        {/* End Google Ads Tag */}
         
         {/* Event snippet for Telefon Takibi AdRoket */}
-        <Script id="google-conversion" strategy="afterInteractive">
+        <Script id="google-conversion" strategy="lazyOnload">
           {`
             function gtag_report_conversion(url) {
               var callback = function () {
@@ -141,10 +137,9 @@ export default function RootLayout({
             }
           `}
         </Script>
-        {/* End Event snippet */}
         
         {/* Google Tag Manager */}
-        <Script id="gtm-script-1" strategy="afterInteractive">
+        <Script id="gtm-script-1" strategy="lazyOnload">
           {`
             (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
             new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -153,10 +148,9 @@ export default function RootLayout({
             })(window,document,'script','dataLayer','GTM-M659LKN');
           `}
         </Script>
-        {/* End Google Tag Manager */}
         
         {/* Google Tag Manager (2nd tag) */}
-        <Script id="gtm-script-2" strategy="afterInteractive">
+        <Script id="gtm-script-2" strategy="lazyOnload">
           {`
             (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
             new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -165,7 +159,6 @@ export default function RootLayout({
             })(window,document,'script','dataLayer','GTM-WWJC785H');
           `}
         </Script>
-        {/* End Google Tag Manager */}
       </head>
       <body className={inter.className}>
         {/* Google Tag Manager (noscript) - Using dangerouslySetInnerHTML for exact HTML format */}
@@ -182,7 +175,7 @@ export default function RootLayout({
         </Providers>
         
         {/* Bitrix24 Call Tracker */}
-        <Script id="bitrix24-call-tracker" strategy="afterInteractive">
+        <Script id="bitrix24-call-tracker" strategy="lazyOnload">
           {`
             (function(w,d,u){
               var s=d.createElement('script');s.async=true;s.src=u+'?'+(Date.now()/60000|0);
