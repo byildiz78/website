@@ -15,12 +15,13 @@ export function GTranslateWidget() {
             window.gtranslateSettings = {
               "default_language": "tr",
               "native_language_names": true,
-              "url_structure": "sub_directory",
+              "detect_browser_language": true,
               "languages": ["tr", "en", "ru", "az", "ar"],
               "wrapper_selector": ".gtranslate_wrapper",
               "switcher_horizontal_position": "inline",
               "float_switcher_open_direction": "bottom",
-              "flag_style": "3d"
+              "flag_style": "3d",
+              "alt_flags": {"en":"usa","ar":"sa"}
             }
           `,
         }}
