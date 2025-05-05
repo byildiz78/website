@@ -66,25 +66,14 @@ const nextConfig = {
   async rewrites() {
     return {
       beforeFiles: [
-        // GTranslate için dil alt dizinlerini destekle
-        {
-          source: '/en/:path*',
-          destination: '/:path*',
-        },
-        {
-          source: '/ru/:path*',
-          destination: '/:path*',
-        },
-        {
-          source: '/ar/:path*',
-          destination: '/:path*',
-        },
+        // GTranslate için dil alt dizinlerini KALDIRDIK
+        // Artık GTranslate JavaScript widget'ı ile çalışacak
+        
         // Blog yazıları için özel yönlendirme
         {
           source: '/blog/:slug',
           destination: '/:slug',
         },
-        // Diğer diller için gerekirse buraya ekleyebilirsiniz
       ],
     };
   },
