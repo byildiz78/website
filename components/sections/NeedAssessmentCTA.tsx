@@ -1,5 +1,4 @@
 import React from "react";
-import Link from "next/link";
 import { ArrowRight, CheckCircle, Monitor, Smartphone, Printer } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
@@ -48,14 +47,14 @@ export function NeedAssessmentCTA() {
                 ))}
               </ul>
               
-              <Link href="/ihtiyac-tespiti" passHref>
+              <a href="/ihtiyac-tespiti">
                 <Button 
                   className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-6 text-lg rounded-lg shadow-lg hover:shadow-xl transition-all duration-300"
                 >
                   İhtiyaç Tespiti Yap
                   <ArrowRight className="ml-2 w-5 h-5" />
                 </Button>
-              </Link>
+              </a>
             </motion.div>
           </div>
           
@@ -121,12 +120,12 @@ export function NeedAssessmentCTA() {
                 
                 {/* İleri butonu */}
                 <div className="flex justify-end mt-6">
-                  <Link href="/ihtiyac-tespiti" passHref>
+                  <a href="/ihtiyac-tespiti">
                     <Button className="bg-blue-600 hover:bg-blue-700 text-white">
                       İleri
                       <ArrowRight className="w-4 h-4 ml-2" />
                     </Button>
-                  </Link>
+                  </a>
                 </div>
               </div>
             </motion.div>

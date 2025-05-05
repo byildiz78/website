@@ -24,7 +24,7 @@ const stats = [
   },
   {
     icon: <Users className="w-8 h-8 text-blue-400" />,
-    value: "100+",
+    value: "80+",
     label: "Zincir Marka"
   },
   {
