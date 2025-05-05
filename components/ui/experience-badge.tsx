@@ -13,7 +13,7 @@ export function ExperienceBadge({
 }: ExperienceBadgeProps) {
   // Position classes based on the position prop
   const positionClasses = {
-    "top-right": "top-6 right-12",
+    "top-right": "top-0 right-0",
     "top-left": "top-6 left-12",
     "bottom-right": "bottom-6 right-12",
     "bottom-left": "bottom-6 left-12"

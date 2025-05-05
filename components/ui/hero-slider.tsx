@@ -166,7 +166,7 @@ export function HeroSlider({ slides, priority = false }: HeroSliderProps) {
       </div>
 
       {/* Deneyim rozeti */}
-      <div className="absolute right-8 top-8 z-30">
+      <div className="absolute right-0 top-0 z-30">
         <ExperienceBadge />
       </div>
 

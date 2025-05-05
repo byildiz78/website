@@ -283,7 +283,7 @@ export default function PartnerApplicationPage() {
             className="lg:col-span-1 space-y-6"
           >
             <div className="bg-white rounded-xl p-6 shadow-lg">
-              <h2 className="text-xl font-bold text-blue-800 mb-4">Çözüm Ortaklarımız Arıyoruz</h2>
+              <h2 className="text-xl font-bold text-blue-800 mb-4">Çözüm Ortaklarımızı Arıyoruz</h2>
               <p className="text-gray-600 mb-4">
                 robotPOS olarak, katma değerli çözümlerimizin tanıtımı, satışı ve satış sonrası desteklerinde birlikte çalışabileceğimiz sektör profesyonellerine kapımız açık.
               </p>
