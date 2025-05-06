@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useRef, useEffect, useState } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import Image from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { Building2, MapPin, ArrowRight, LucideIcon } from "lucide-react";
@@ -48,46 +48,11 @@ const SectionHeader = ({ icon: Icon, title, colorClass, id }: SectionHeaderProps
 };
 
 const ReferenceCard = ({ data, icon: Icon, colorClass }: ReferenceCardProps) => {
-  const [count, setCount] = useState(0);
   const cardRef = useRef(null);
   const isChainBusiness = data.referans_tipi === "Zincir İşletmeler";
 
   // Görüntü yolunu düzelt - başına "/" ekle
   const imagePath = data.logo_yolu.startsWith('/') ? data.logo_yolu : `/${data.logo_yolu}`;
-
-  useEffect(() => {
-    if (!data.sube_sayisi) return;
-
-    const observer = new IntersectionObserver(
-      (entries) => {
-        if (entries[0].isIntersecting) {
-          let start = 0;
-          const end = data.sube_sayisi || 0; 
-          const duration = 2000;
-          const increment = Math.ceil(end / (duration / 16));
-          
-          const timer = setInterval(() => {
-            start += increment;
-            if (start >= end) {
-              setCount(end);
-              clearInterval(timer);
-            } else {
-              setCount(start);
-            }
-          }, 16);
-
-          return () => clearInterval(timer);
-        }
-      },
-      { threshold: 0.1 }
-    );
-
-    if (cardRef.current) {
-      observer.observe(cardRef.current);
-    }
-
-    return () => observer.disconnect();
-  }, [data.sube_sayisi]);
 
   // Zincir işletmeler için özel kart tasarımı
   if (isChainBusiness) {
@@ -102,7 +67,7 @@ const ReferenceCard = ({ data, icon: Icon, colorClass }: ReferenceCardProps) => 
         {/* Şube sayısı rozeti */}
         {data.sube_sayisi && (
           <div className="absolute top-0 right-0 bg-blue-600 text-white font-bold px-4 py-2 z-10 rounded-bl-lg shadow-md">
-            <span className="text-xl">{count}+</span> <span className="text-xs tracking-wider">ŞUBE</span>
+            <span className="text-xl">{data.sube_sayisi}+</span> <span className="text-xs tracking-wider">ŞUBE</span>
           </div>
         )}
         
@@ -159,7 +124,7 @@ const ReferenceCard = ({ data, icon: Icon, colorClass }: ReferenceCardProps) => 
           {data.sube_sayisi ? (
             <div className="space-y-2">
               <div className="text-2xl font-bold text-blue-600">
-                {count}+
+                {data.sube_sayisi}+
               </div>
               <div className={`inline-flex items-center px-3 py-1.5 rounded-full ${
                 colorClass === 'text-blue-600' ? 'bg-blue-50 text-blue-600' :
