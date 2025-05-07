@@ -73,6 +73,7 @@ export default function RootLayout({
   return (
     <html lang="tr" suppressHydrationWarning>
       <head>
+        <meta name="google-site-verification" content="ql9L6tHWIhoEb5U2Dw-VXI2yrBSdqCmUq52al2gO7oY" />
         <link rel="canonical" href={process.env.NEXT_PUBLIC_SITE_URL || "https://www.robotpos.com"} />
         <link rel="alternate" hrefLang="tr" href={process.env.NEXT_PUBLIC_SITE_URL || "https://www.robotpos.com"} />
         <link rel="alternate" hrefLang="en" href={`${process.env.NEXT_PUBLIC_SITE_URL}/en` || "https://www.robotpos.com/en"} />
