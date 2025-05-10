@@ -1,9 +1,14 @@
 import { NextResponse } from 'next/server';
 import jwt from 'jsonwebtoken';
 
-// Hardcoded credentials for development - in production, use environment variables securely
-const ADMIN_USERNAME = 'robotpos';
-const ADMIN_PASSWORD = '123!';
+// Get credentials from environment variables
+const ADMIN_USERNAME = process.env.ADMIN_USER_NAME;
+const ADMIN_PASSWORD = process.env.ADMIN_PASSWORD;
+
+// Check if environment variables are set
+if (!ADMIN_USERNAME || !ADMIN_PASSWORD) {
+  console.error('Admin kullanıcı adı veya şifre environment variable\'larda tanımlanmamış');
+}
 
 export async function POST(request: Request) {
   try {
@@ -16,7 +21,7 @@ export async function POST(request: Request) {
       // Create a JWT token
       const token = jwt.sign(
         { username, role: 'admin' },
-        'robotpos-admin-secret-key',
+        process.env.JWT_SECRET || 'robotpos-admin-secret-key',
         { expiresIn: '24h' }
       );
 
