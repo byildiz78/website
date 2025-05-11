@@ -124,7 +124,7 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
           <p className="mb-8">Aradığınız içerik bulunamadı veya kaldırılmış olabilir.</p>
           <a 
             href="/blog" 
-            className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-blue-600 hover:bg-blue-700"
+            className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-white hover:bg-blue-700"
           >
             Blog Ana Sayfasına Dön
           </a>
@@ -186,7 +186,7 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
           <div className="mt-12 pt-8 border-t border-gray-200">
             <a 
               href="/blog" 
-              className="inline-flex items-center text-blue-600 hover:text-blue-800"
+              className="inline-flex items-center text-white bg-blue-600  hover:bg-blue-700 px-6 py-3 rounded-lg"
             >
               <svg className="mr-2 w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                 <path fillRule="evenodd" d="M9.707 14.707a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 1.414L7.414 9H15a1 1 0 110 2H7.414l2.293 2.293a1 1 0 010 1.414z" clipRule="evenodd"></path>

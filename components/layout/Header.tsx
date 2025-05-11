@@ -194,7 +194,7 @@ const navItems: NavItem[] = [
           },
           {
             title: "Restoran Makaleleri",
-            href: "/blog",
+            href: "/blog_new",
             description: "Sektörel bilgi ve makaleler",
             icon: <FileText className="w-5 h-5 text-blue-600" />,
           },

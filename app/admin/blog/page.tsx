@@ -141,12 +141,18 @@ export default function AdminBlogPage() {
         </div>
       )}
       
-      <div className="mb-6">
+      <div className="mb-6 flex gap-4">
         <Link 
           href="/admin/blog/yeni" 
           className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600"
         >
           Yeni Blog Yazısı Ekle
+        </Link>
+        <Link 
+          href="/admin/blog-yeni" 
+          className="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600"
+        >
+          Blog Yeni Yönetimi
         </Link>
       </div>
       

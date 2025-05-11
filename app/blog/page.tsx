@@ -81,6 +81,11 @@ export default function BlogPage() {
     return '/images/blog-placeholder.jpg'; // Varsayılan resim
   }
 
+  // HTML içeriğini güvenli bir şekilde render etme
+  function renderHtmlContent(content: string) {
+    return { __html: content };
+  }
+
   return (
     <>
       <PageHeader 
