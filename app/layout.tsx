@@ -139,36 +139,21 @@ export default function RootLayout({
           `}
         </Script>
         
-        {/* Google Tag Manager */}
-        <Script id="gtm-script-1" strategy="lazyOnload">
+        {/* Google Analytics 4 */}
+        <Script 
+          src="https://www.googletagmanager.com/gtag/js?id=G-7XYGT311WK"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
           {`
-            (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-            })(window,document,'script','dataLayer','GTM-M659LKN');
-          `}
-        </Script>
-        
-        {/* Google Tag Manager (2nd tag) */}
-        <Script id="gtm-script-2" strategy="lazyOnload">
-          {`
-            (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-            })(window,document,'script','dataLayer','GTM-WWJC785H');
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-7XYGT311WK');
           `}
         </Script>
       </head>
       <body className={inter.className}>
-        {/* Google Tag Manager (noscript) - Using dangerouslySetInnerHTML for exact HTML format */}
-        <noscript dangerouslySetInnerHTML={{ __html: `<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M659LKN" height="0" width="0" style="display:none;visibility:hidden"></iframe>` }} />
-        {/* End Google Tag Manager (noscript) */}
-        
-        {/* Google Tag Manager (noscript) - Using dangerouslySetInnerHTML for exact HTML format */}
-        <noscript dangerouslySetInnerHTML={{ __html: `<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WWJC785H" height="0" width="0" style="display:none;visibility:hidden"></iframe>` }} />
-        {/* End Google Tag Manager (noscript) */}
         
         <Providers>
           <MainLayout>{children}</MainLayout>
