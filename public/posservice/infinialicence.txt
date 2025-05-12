@@ -1,0 +1,1 @@
+http://lic.robotpos.com/Infinia/getLicence.asmx

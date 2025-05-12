@@ -1,0 +1,217 @@
+ozcanlar#https://srv6.robotpos.com/Ozcanlar/WebReport#Özcanlar Köfte$
+sok#http://85.159.65.164/SokMarket/WebReports#Şok Market$
+etilermarmaris#http://srv9.robotpos.com/EtilerMarmaris/WebReport#Etiler Marmaris$
+rumeli#https://srv9.robotpos.com/Rumeli/WebReport2020#Rumeli Çikolatacısı$
+isslama#http://srv9.robotpos.com/Isslama/WebReport#Isslama Köfte$
+maia#http://srv9.robotpos.com/Maia/WebReport#Maia Chocolate$
+redmango#http://srv9.robotpos.com/RedMango/WebReport#Red Mango$
+tavada#http://srv9.robotpos.com/TavadaTavuk/WebReport#Tavada Tavuk$
+tavadatavuk#http://srv9.robotpos.com/TavadaTavuk/WebReport#Tavada Tavuk$
+tathisar#https://srv9.robotpos.com/Tathisar/WebReport2020#Tadhisar$
+osmanlioglu#https://srv9.robotpos.com/OsmanliogluYeni/WebReport2020#Osmanlıoğlu Kuruyemiş$
+market#http://85.159.65.164/MarketDemo/WebReports#Market$
+malatyapazari#https://srv8.robotpos.com/MalatyaPazariEski/WebReport2020#Malatya Pazarı$
+mpc#http://srv8.robotpos.com/MalatyaPazariMpc/WebReport#Malatya Pazarı$
+mpazari#http://srv8.robotpos.com/MalatyaPazari/WebReports#Malatya Pazarı$
+mpazari2020#http://srv8.robotpos.com/MalatyaPazari/WebReport2020#Malatya Pazarı$
+citirusta#https://srv6.robotpos.com/CitirUsta/WebReport2020#Çıtır Usta$
+konakmazlum#https://srv9.robotpos.com/KonakMazlum/WebReport2020#Konak Mazlum$
+RMZ#http://srv10.robotpos.com/Ramiz/WebReport2020/krmzyeni#Köfteci Ramiz$
+infinia#http://srv8.robotpos.com/TekSube/WebReport#Infinia$
+seyidoglu#http://srv6.robotpos.com/Seyidoglu/WebReport#Seyidoğlu$
+infiniafatih#http://213.159.0.219/robotpos/infiniafatih#Infinia Fatih$
+iss#https://robotpos.issturkiye.com:51251/WebReport2020#ISS$
+bigcarmelos#http://srv6.robotpos.com/BigCarmelos/Webreport#Big Carmelos$
+tavukdunyasi#https://srv7.robotpos.com/TavukDunyasi/WebReport2020#Tavuk Dünyası$
+tavukdunyasi_kibris#https://srv7.robotpos.com/TavukDunyasiKibris/WebReportYeni#Tavuk Dünyası Kıbrıs$
+tavuktest#http://srv7.robotpos.com/tavukdunyasi/TavukDunyasi2019#Tavuk Dünyasi$
+tavukdunyasiyeni#https://srv7.robotpos.com/TavukDunyasi/WebReport2020#Tavuk Dünyasi$
+tavukdunyasiyenitest#https://srv7.robotpos.com/TavukDunyasi/WebReport2020Test#Tavuk Dünyasi Test$
+kofteciyusuf#http://195.175.109.150:84/WebReport#Köfteci Yusuf$
+saritas#http://213.159.28.219/robotpos/Saritas#Sarıtaş$
+georgia#http://213.159.28.219/robotpos/Georgia#CREA Georgia$
+donerehli#http://srv9.robotpos.com/DonerEhli/WebReport#Ehli Döner$
+crea#http://srv9.robotpos.com/Baku/WebReport#CREA$
+creayeni#http://srv9.robotpos.com/BakuYeni#CREA$
+demo#http://srv9.robotpos.com/demo2017#demo$
+burak#https://srv9.robotpos.com/Demo2023/WebReport#burak$
+issbakiye#http://212.174.55.217:82/clubcard$
+uzay#https://srv8.robotpos.com/Uzay/WebReport2020#Uzay Pastaneleri$
+tib#http://31.207.85.163:10000/tib/WebReports#TİB$
+begendik#http://31.207.85.163:10000/begendik/WebReports#Beğendik$
+gimsa#http://31.207.85.163:10000/gimsa/WebReports#Gimsa$
+makro#http://31.207.85.163:10000/makro/WebReports#Makro$
+alacati#http://141.98.207.106/Alacati/WebReport2020#Alaçatı Muhallebicisi$
+Foodlog#http://srv9.robotpos.com/Foodlog/WebReport#Foodlog$
+coffef#https://srv9.robotpos.com/Foodlog/WebReport2020#The Coffee Factory$
+cfactory#https://srv9.robotpos.com/Foodlog/WebReport2020#The Coffee Factory$
+gonulkahvesi#https://srv6.robotpos.com/GonulKahvesi/WebReport2020#Gönül Kahvesi$
+teahouse#https://srv6.robotpos.com/TeaHouse/WebReport2020#Beta Tea House$
+gulluoglu#https://srv9.robotpos.com/fGulluoglu/WebReport2020#Faruk Güllüoğlu$
+fg_denetim#http://srv9.robotpos.com/fGulluoglu/WebReport2020#Faruk Güllüoğlu Denetim$
+kafepi#http://srv9.robotpos.com/KafePi/WebReport2016#Kafe Pi$
+kafepiba#http://srv5.robotpos.com/KafePiBeachAlacati/WebReport#Kafe Pi Beach Alaçatı$
+kahvedunyasi#https://robotpos.kahvedunyasi.com#Kahve Dünyası$
+kahvedunyasi2#https://robotpos.kahvedunyasi.com#Kahve Dünyası$
+kahvedunyasi2023#https://robotpos2.kahvedunyasi.com#Kahve Dünyası$
+kahvedunyasivpn#http://10.0.215.55/kahvedunyasi/WebReport2020#Kahve Dünyası VPN$
+kd_test#http://robotpos2.kahvedunyasi.com#Kahve Dünyası$
+brk#http://31.207.80.227/uzay/webreports2018#burak$
+test#http://213.159.0.91/test#test$
+issschneider#http://78.189.46.31:82/clubcard$
+issmerkez#https://robotpos.issturkiye.com:51251/CampusCard$
+pakis#https://srv6.robotpos.com/Pakis/WebReport2020#PAKİŞ$
+mgm#https://srv8.robotpos.com/Mgm/WebReport2020#Metro Gross Market$
+lynx#http://srv6.robotpos.com/Lynx/Webreport#Lynx$
+secal#http://78.186.250.56/SecAl/WebReport#Seç Al$
+isiklaret#http://srv6.robotpos.com/IsiklarEt/Webreport#Işıklar Et$
+gunaydin#https://srv9.robotpos.com/Gunaydin/WebReport2020#Günaydın$
+pideby#http://10.10.50.12:1923/PideByPide/WebReport#Pide By Pide$
+ckunefe#http://srv6.robotpos.com/CinaraltiKunefe/WebReport#Çınaraltı Künefe$
+ishakbey#http://10.10.50.12:1923/Ishakbey/WebReport#İshak Bey$
+panpini#http://srv6.robotpos.com/Panpini/WebReport#Panpini$
+oksijen#http://srv6.robotpos.com/Oksijen/WebReport#Oksijen$
+ozsut#http://srv8.robotpos.com/Ozsut/WebReport2020#Özsüt$
+bros#http://srv6.robotpos.com/Bros/WebReport#Bros$
+doyuyo#http://srv8.robotpos.com/Doyuyo/WebReport#Doyuyo$
+doyuyo2#http://srv8.robotpos.com/Doyuyo2/WebReport#Doyuyo2$
+doyuyo3#http://srv8.robotpos.com/Doyuyo3/WebReport#Doyuyo3$
+doyuyo3test#http://srv8.robotpos.com/Doyuyo3/WebReportTest#Doyuyo3$
+kafepi_bjk#http://srv8.robotpos.com/KafePiBJK/WebReport#KafePi$
+shirin#http://134.19.215.42:51919/WebReports#ShirinPay$
+coffy#https://portal.coffy.com.tr/WebReport#Coffy$
+ziyade#http://srv8.robotpos.com/Ziyade/WebReport#Ziyade$
+sodexo#http://srv8.robotpos.com/Sodexo/WebReport2020#Sodexo$
+asuman#https://srv8.robotpos.com/Asuman/WebReport2020#Asuman$
+istanbulhavalimani#https://srv8.robotpos.com/CaySaati/WebReport2020#İstanbul Havalimanı$
+irmak#http://srv9.robotpos.com/Tapas/WebReport2020#Irmak$
+secmarket#http://srv9.robotpos.com/SecMarket/WebReports#Seç Market$
+fumet#https://srv9.robotpos.com/Fumet/WebReport2020#Fumet$
+medipol#http://polin.medipol.com.tr/Medipol/WebReport2020#Medipol$
+solen#https://srv8.robotpos.com/Solen/WebReport2020#Şölen$
+ccorner#https://srv8.robotpos.com/ChefCorner/WebReport2020#Chef Corner$
+elitcikolata#http://srv6.robotpos.com/ElitCikolata/WebReport/#Elit Çikolata$
+prive#http://srv8.robotpos.com/Namli/WebReport/#Prive$
+baris#http://srv8.robotpos.com/Yeni/WebReport/#Barış$
+fabric#http://srv9.robotpos.com/Fabric/WebReport/#Fabric$
+bonamade#https://srv8.robotpos.com/Bonamade/WebReport2020/#Bonamade$
+fatboy#http://176.235.207.69:8013/Fatboy/WebReport/#Fatboy$
+etisleri#http://srv8.robotpos.com/EtIsleri/WebReport2020/#Et İşleri$
+hd#https://robotpos.hdholding.com/HD/WebReport/#HD$
+pidem#https://robotpos.hdholding.com/Pidem/WebReport/#Pidem$
+makarnam#https://robotpos.hdholding.com/Makarnam/WebReport/#Makarnam$
+hd2024#https://robotpos.hdholding.com/HD/WebReport2024/#HD2024$
+pidem2024#https://robotpos.hdholding.com/Pidem/WebReport2024/#Pidem2024$
+makarnam2024#https://robotpos.hdholding.com/Makarnam/WebReport2024/#Makarnam2024$
+odz#http://srv9.robotpos.com/ODZ/WebReport2020#Denetim$
+gkahvesi#http://srv9.robotpos.com/GonulKahvesi/WebReport#Gönül Kahvesi$
+defermo#https://srv9.robotpos.com/Defermo/WebReport#Defermo$
+bonet#http://81.8.72.240/Bonet/WebReport2020#Bonet$
+greensalads#https://srv10.robotpos.com/GreenSalads/WebReport#Green Salads$
+balanu#https://srv8.robotpos.com/Balanu/WebReport#Balanu$
+bekirzade#https://srv9.robotpos.com/Bekirzade/WebReport#Bekirzade$
+kudo#https://srv9.robotpos.com/KudoRestorant/WebReport#Kudo$
+kahvedunyasitest#http://10.0.215.55/kahvedunyasi/WebReports2020#Kahve Dünyası Mobil$
+delbello#http://85.105.170.77:7000/CafeDelbello/WebReport#Cafe Delbello$
+qespresso#https://srv8.robotpos.com/QEspresso/WebReport#QEspresso$
+yagcioglu#https://srv9.robotpos.com/YagciogluPastaneleri/WebReport#Yağcıoğlu$
+patroon#https://srv8.robotpos.com/PatroonCafe/WebReport2020#PatroonCafe$
+demo2022#https://srv9.robotpos.com/WebReportDemo/WebReport#demo2022$
+princecafe#https://srv8.robotpos.com/PrinceCafe/WebReport#princecafe$
+ugurme#http://srv6.robotpos.com/UnluerGurme/WebReport#ÜnlüerGurme$
+cvk#http://192.168.100.232:7000/Cvk/WebReport#Cvk$
+theco#https://srv6.robotpos.com/CoffeeTheCo/WebReport#TheCo$
+tastyy#https://srv8.robotpos.com/TastyyGencGrup/WebReport#TASTYY$
+g360#https://srv8.robotpos.com/Gastro360/WebReport#Gastro360$
+sman#https://srv6.robotpos.com/Slandman/WebReport#Slandman$
+mykasaba#https://srv9.robotpos.com/MyKasaba/WebReport#MyKasaba$
+teksubetest#https://srv8.robotpos.com/TekSube/WebReport2020#teksubetest$
+bahbel#http://88.255.86.244:7000/BahcelievlerBel/WebReport#Bahçelievler Bel$
+cinnabon#https://srv9.robotpos.com/Cinnabon/WebReport#Cinnabon$
+kudo2023#https://srv9.robotpos.com/KudoRestorant/WebReport2023#kudo2023$
+remzioglu#https://srv6.robotpos.com/Remzioglu/WebReport#Remzioglu$
+remzioglu_ipek#https://srv6.robotpos.com/RemziogluIpekyolu/WebReport#Remzioğlu İpekyolu$
+skisikli#https://srv8.robotpos.com/SaleCafe/WebReport#skisikli$
+jollybistro#https://srv9.robotpos.com/JollyBistro/WebReport#Jolly Bistro$
+etilermar#https://srv8.robotpos.com/EtilerMarmaris/WebReport2023#etilermar$
+tdoner#https://srv9.robotpos.com/TadimDoner/WebReport#Tadım Döner$
+vpera#https://srv8.robotpos.com/VerandaPera/WebReport#Veranda Pera$
+azetiler#https://srv6.robotpos.com/CreaEtiler/WebReport#azetiler$
+sahra#https://srv6.robotpos.com/SahraKent/WebReport#SahraKent$
+creamybeach#https://srv6.robotpos.com/CreaMyBeach/WebReport#creamybeach$
+sefb#http://85.96.200.100:7000/SefBaklava/WebReport#ŞefBaklava$
+dmahsun#https://srv9.robotpos.com/DurumcuMahsunUsta/WebReport#Dürümcü Mahsun Usta$
+labada#https://srv9.robotpos.com/LabadaGurme/WebReport#Labada$
+kayserimutfagi#https://srv6.robotpos.com/KayseriMutfagi/WebReport#Kayseri Mutfağı$
+creasutis#https://srv6.robotpos.com/CreaEmirganSutis/WebReport#Emirgan Sütiş$
+newyorkcaffe#https://srv9.robotpos.com/CoffeeTargoviBaku/WebReport#newyork caffe$
+palanci#https://srv8.robotpos.com/MalatyaPazariPalanci/WebReport#Palancı$
+mua#https://srv6.robotpos.com/MuaDondurma/WebReport#MuaDondurma$
+cemilusta#https://srv9.robotpos.com/CemilUsta/WebReport#Cemil Usta$
+bonamade2024#https://srv9.robotpos.com/Bonamade2024/WebReport#bonamade2024$
+donerciserkanusta#https://srv9.robotpos.com/DonerciSerkanUsta/WebReport#donerciserkanusta$
+cesmekahve#http://141.98.207.106/EgedenGrup/WebReport#cesmekahve$
+mandarin#https://srv9.robotpos.com/Mandarin/WebReport#Mandarin Crea$
+zencefil#https://srv9.robotpos.com/Zencefil/WebReport#Unique Alliance MMC$
+sarayli#https://srv8.robotpos.com/SarayliDoner/WebReport#Sarayli Doner$
+butcha#https://srv8.robotpos.com/ButchaSteakHouse/WebReport#Butcha SteakHouse$
+burgerx#https://srv8.robotpos.com/BurgerX/WebReport#Burger X$
+candy#https://srv8.robotpos.com/CandyZoo/WebReport#Candy Zoo$
+esto#https://srv8.robotpos.com/EstoLahmacun/WebReport#Esto Lahmacun$
+emin#https://srv8.robotpos.com/FerdaGida/WebReport#Donerci Emin$
+yborsasi#https://srv8.robotpos.com/YumurtaBorsasi/WebReport#Yumurta Borsasi$
+jini#https://srv9.robotpos.com/BakuBlueBird/WebReport#Baku Jini Coffee$
+creabaku#https://srv9.robotpos.com/CreaBaku/WebReport#Crea Baku$
+mazlumafm#http://srv9.robotpos.com/KonakMazlumAFM/WebReport#KonakMazlumAfm$
+mazlumenfes#http://srv9.robotpos.com/KonakMazlumEnfes#KonakMazlumEnfes$
+caysaatirize#https://srv8.robotpos.com/RizeCaySaati/WebReport#Rize CaySaati$
+kafkisikli#https://srv8.robotpos.com/KafKisikli/WebReport#Kaf Kısıklı$
+pizzakoy#https://srv10.robotpos.com/PizzaKoy/WebReport#Pizza Koy$
+limon#https://srv9.robotpos.com/LimonLokalFethiye/WebReport#Limon Lokal$
+latife#https://srv9.robotpos.com/LatifeDoner/WebReport#Latife Doner$
+ceos#https://srv9.robotpos.com/CeosLoungeBaku/WebReport#Ceos Lounge$
+root#https://srv9.robotpos.com/RootRaftCoffee/WebReport#Root Raft$
+td2023#https://srv7.robotpos.com/TavukDunyasi/WebReport20172023#Tavuk Dünyası 2023$
+crossing#https://srv10.robotpos.com/Crossing/WebReport#Crossing Zorlu$
+meatsalad#https://srv9.robotpos.com/MeatSalad/WebReport#Meat Salad$
+laterrace#https://srv9.robotpos.com/BakuLaTerrace/WebReport#La Terrace$
+bitik#https://srv9.robotpos.com/BakuBiTikLounge/WebReport#Bitik Lounge Baku$
+sosyete#https://srv9.robotpos.com/BakuSosyeteMeyhanesi/WebReport#Sosyete Meyhanesi$
+mangalda#https://srv9.robotpos.com/BakuMangaldaRestoran/WebReport#Mangalda Restoran Baku$
+burc#https://srv9.robotpos.com/BurcFirin/WebReport#Burc Firin$
+sahara#https://srv9.robotpos.com/BakuSaharaGroup/WebReport#Baku Sahara$
+tavukk#https://srv7.robotpos.com/TavukDunyasi/WebReport2024#Tavuk Dünyası New$
+pidem2#https://robotpos.hdholding.com/Pidem/WebReport2024/#Pidem2$
+citypark#https://srv9.robotpos.com/CityParkBowling/WebReport#City Park Bowling$
+lezita#https://srv9.robotpos.com/Lezita/WebReport#Lezita$
+testclubcard#https://srv8.robotpos.com/UzanEt/OnlineCari/Service/#TestClubCard$
+alaybeyoglu#https://srv9.robotpos.com/Alaybeyoglu/WebReport#Alaybeyoglu$
+mixsos#https://srv6.robotpos.com/Mixsos/WebReport#Mixsos$
+kolibri#https://srv9.robotpos.com/KolibriCafe/WebReport#Kolibri$
+rily#https://srv6.robotpos.com/Rily/WebReport#Rily$
+servant#https://srv8.robotpos.com/VerandaPera/WebReport#Veranda Servant$
+bakukunefe#https://srv10.robotpos.com/CreaBakuKunefe/WebReport#Baku Kunefe$
+onburger#https://srv10.robotpos.com/10Burger/WebReport#10 Burger$
+village#https://srv6.robotpos.com/CafeVillage/WebReport#Cafe Village$
+onkasap#https://srv10.robotpos.com/10Kasap/WebReport#10 Kasap$
+kolorit#https://srv10.robotpos.com/Kolorit/WebReport#Kolorit$
+donerali#https://srv8.robotpos.com/DonerciAli/WebReport#Dönerci Ali$
+mua2025#https://srv6.robotpos.com/MuaDondurma/WebReport2025#Mua 2025$
+kure#http://srv10.robotpos.com/KurePizza/WebReport#Kure Pizza$
+hacibasar#http://srv10.robotpos.com/HaciBasar/WebReport#Hacı Başar$
+carmen#http://srv10.robotpos.com/CarmenTatlicilik/WebReport#Carmen Tatlıcılık$
+homec#http://portal.homelesschef.com/HomelessChef/WebReport#HomelessChef$
+donerihsan#https://srv9.robotpos.com/LatifeDoner/WebReport#Dönerci İhsan Efendi$
+bonton#http://srv8.robotpos.com/Ozsut/WebReport2020#Bonton$
+coffykibris#https://portal.coffy.com.tr/CoffyKibris/WebReport#CoffyKıbrıs$
+marna#http://srv10.robotpos.com/Marna/WebReport#Marna Restorant$
+castle#http://srv10.robotpos.com/TheCastlePatisserie/WebReport#TheCastlePatisserie$
+resat#http://srv10.robotpos.com/ResatEfendi/WebReport#ResatEfendi$
+isskagithane#https://robotpos.issturkiye.com:51251/WebReport2020#ISS-TR 2$
+elvet#http://srv10.robotpos.com/CreaElvet/WebReport#CreaElvet$
+kaave#http://srv10.robotpos.com/Kaave/WebReport#Kaave$
+egeden#http://141.98.207.106/BerlinBakery/WebReport#EgedenGrup$
+dilekp#http://srv10.robotpos.com/DilekPastanesi/WebReport/Home#Dilek Pastanesi$
+westmix#http://srv10.robotpos.com/DilekPastanesi/WebReport/Home#westmixcafe$
+gizlib#https://srv10.robotpos.com/GizliBahce/WebReport/Home#GizliBahçe$
+restotal#https://srv10.robotpos.com/Restotal/WebReport/Login#Restotal$

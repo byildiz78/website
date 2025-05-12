@@ -1,0 +1,2 @@
+default--http://213.159.28.211/posService/posService.asmx
+ramiz--http://213.159.28.211/posService/posService.asmx
