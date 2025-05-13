@@ -28,6 +28,10 @@ const staticPages = [
   '/urunler/donanim-urunleri/self-servis-kiosk',
   '/urunler/donanim-urunleri/okc-urunleri',
   '/robotpos-cozum-uretir/qr-menu-siparis',
+  '/adisyon-programi',
+  '/pos-sistemi',
+  '/restoran-otomasyon',
+  '/restoran-programi',
 ];
 
 async function generateSitemap() {

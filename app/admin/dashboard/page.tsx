@@ -90,9 +90,9 @@ export default function AdminDashboard() {
               </div>
               <div className="bg-gray-50 px-4 py-4 sm:px-6">
                 <div className="text-sm">
-                  <Link href="/admin/blog" className="font-medium text-blue-600 hover:text-blue-500">
+                  <a href="/admin/blog" className="font-medium text-blue-600 hover:text-blue-500">
                     Makaleleri Yönet
-                  </Link>
+                  </a>
                 </div>
               </div>
             </div>
@@ -117,9 +117,9 @@ export default function AdminDashboard() {
               </div>
               <div className="bg-gray-50 px-4 py-4 sm:px-6">
                 <div className="text-sm">
-                  <Link href="/admin/referanslar" className="font-medium text-indigo-600 hover:text-indigo-500">
+                  <a href="/admin/referanslar" className="font-medium text-indigo-600 hover:text-indigo-500">
                     Referansları Yönet
-                  </Link>
+                  </a>
                 </div>
               </div>
             </div>
@@ -144,9 +144,9 @@ export default function AdminDashboard() {
               </div>
               <div className="bg-gray-50 px-4 py-4 sm:px-6">
                 <div className="text-sm">
-                  <Link href="/admin/musteri-gorusleri" className="font-medium text-green-600 hover:text-green-500">
+                  <a href="/admin/musteri-gorusleri" className="font-medium text-green-600 hover:text-green-500">
                     Müşteri Görüşlerini Yönet
-                  </Link>
+                  </a>
                 </div>
               </div>
             </div>
@@ -171,9 +171,9 @@ export default function AdminDashboard() {
               </div>
               <div className="bg-gray-50 px-4 py-4 sm:px-6">
                 <div className="text-sm">
-                  <Link href="/admin/form-verileri" className="font-medium text-purple-600 hover:text-purple-500">
+                  <a href="/admin/form-verileri" className="font-medium text-purple-600 hover:text-purple-500">
                     Form Verilerini Görüntüle
-                  </Link>
+                  </a>
                 </div>
               </div>
             </div>
@@ -195,9 +195,9 @@ export default function AdminDashboard() {
                     Yeni Blog Yazısı
                   </dt>
                   <dd className="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
-                    <Link href="/admin/blog/yeni" className="text-blue-600 hover:text-blue-500">
+                    <a href="/admin/blog/yeni" className="text-blue-600 hover:text-blue-500">
                       Yeni bir blog yazısı ekle
-                    </Link>
+                    </a>
                   </dd>
                 </div>
                 <div className="bg-white px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
@@ -205,9 +205,9 @@ export default function AdminDashboard() {
                     Yeni Referans
                   </dt>
                   <dd className="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
-                    <Link href="/admin/referanslar/yeni" className="text-blue-600 hover:text-blue-500">
+                    <a href="/admin/referanslar/yeni" className="text-blue-600 hover:text-blue-500">
                       Yeni bir referans ekle
-                    </Link>
+                    </a>
                   </dd>
                 </div>
                 <div className="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
@@ -215,9 +215,9 @@ export default function AdminDashboard() {
                     Yeni Müşteri Görüşü
                   </dt>
                   <dd className="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
-                    <Link href="/admin/musteri-gorusleri/yeni" className="text-blue-600 hover:text-blue-500">
+                    <a href="/admin/musteri-gorusleri/yeni" className="text-blue-600 hover:text-blue-500">
                       Yeni bir müşteri görüşü ekle
-                    </Link>
+                    </a>
                   </dd>
                 </div>
               </dl>

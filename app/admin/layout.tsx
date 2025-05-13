@@ -106,7 +106,7 @@ export default function AdminLayout({
         <div className="mb-6">
           <div className="border-b border-gray-200">
             <nav className="flex -mb-px">
-              <Link
+              <a
                 href="/admin/dashboard"
                 className={`${isActive('dashboard')} w-1/5 py-4 px-1 text-center border-b-2 font-medium text-sm ${
                   getActiveTab() === 'dashboard' ? 'border-blue-500' : 'border-transparent'
@@ -129,9 +129,9 @@ export default function AdminLayout({
                   </svg>
                   Dashboard
                 </span>
-              </Link>
+              </a>
               
-              <Link
+              <a
                 href="/admin/blog"
                 className={`${isActive('blog')} w-1/5 py-4 px-1 text-center border-b-2 font-medium text-sm ${
                   getActiveTab() === 'blog' ? 'border-blue-500' : 'border-transparent'
@@ -154,9 +154,9 @@ export default function AdminLayout({
                   </svg>
                   Makaleler
                 </span>
-              </Link>
+              </a>
               
-              <Link
+              <a
                 href="/admin/referanslar"
                 className={`${isActive('referanslar')} w-1/5 py-4 px-1 text-center border-b-2 font-medium text-sm ${
                   getActiveTab() === 'referanslar' ? 'border-blue-500' : 'border-transparent'
@@ -179,9 +179,9 @@ export default function AdminLayout({
                   </svg>
                   Referanslar
                 </span>
-              </Link>
+              </a>
               
-              <Link
+              <a
                 href="/admin/musteri-gorusleri"
                 className={`${isActive('musteri-gorusleri')} w-1/5 py-4 px-1 text-center border-b-2 font-medium text-sm ${
                   getActiveTab() === 'musteri-gorusleri' ? 'border-blue-500' : 'border-transparent'
@@ -204,9 +204,9 @@ export default function AdminLayout({
                   </svg>
                   Müşteri Görüşleri
                 </span>
-              </Link>
+              </a>
               
-              <Link
+              <a
                 href="/admin/form-verileri"
                 className={`${isActive('form-verileri')} w-1/5 py-4 px-1 text-center border-b-2 font-medium text-sm ${
                   getActiveTab() === 'form-verileri' ? 'border-blue-500' : 'border-transparent'
@@ -229,7 +229,7 @@ export default function AdminLayout({
                   </svg>
                   Form Verileri
                 </span>
-              </Link>
+              </a>
             </nav>
           </div>
         </div>
