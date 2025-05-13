@@ -10,6 +10,7 @@ import {
   Youtube 
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 const footerLinks = [
   {
@@ -144,6 +145,20 @@ export default function Footer() {
           </div>
           <div className="text-gray-500 text-sm">
             {new Date().getFullYear()} robotPOS. Tüm hakları saklıdır.
+          </div>
+          <div className="flex flex-wrap gap-2 mt-2">
+            <Link href="/restoran-programi" className="text-xs bg-gray-800 text-gray-400 px-2 py-1 rounded hover:bg-blue-600/10 hover:text-blue-400 transition-all">
+              Restoran Programı
+            </Link>
+            <Link href="/adisyon-programi" className="text-xs bg-gray-800 text-gray-400 px-2 py-1 rounded hover:bg-blue-600/10 hover:text-blue-400 transition-all">
+              Adisyon Programı
+            </Link>
+            <Link href="/pos-sistemi" className="text-xs bg-gray-800 text-gray-400 px-2 py-1 rounded hover:bg-blue-600/10 hover:text-blue-400 transition-all">
+              POS Sistemi
+            </Link>
+            <Link href="/restoran-otomasyon" className="text-xs bg-gray-800 text-gray-400 px-2 py-1 rounded hover:bg-blue-600/10 hover:text-blue-400 transition-all">
+              Restoran Otomasyon
+            </Link>
           </div>
         </div>
       </div>
