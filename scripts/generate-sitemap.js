@@ -32,6 +32,7 @@ const staticPages = [
   '/pos-sistemi',
   '/restoran-otomasyon',
   '/restoran-programi',
+  '/etiket',
 ];
 
 async function generateSitemap() {
