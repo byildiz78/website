@@ -48,7 +48,7 @@ export function PageHero({
             src={backgroundImage}
             alt={title}
             fill
-            className="object-cover"
+            className="object-contain bg-gray-100"
             priority
           />
         )}

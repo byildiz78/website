@@ -33,6 +33,7 @@ const staticPages = [
   '/restoran-otomasyon',
   '/restoran-programi',
   '/etiket',
+  '/restoran-yazarkasa-entegrasyonu',
 ];
 
 async function generateSitemap() {

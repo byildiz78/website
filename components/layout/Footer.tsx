@@ -159,6 +159,9 @@ export default function Footer() {
             <a href="/restoran-otomasyon" className="text-xs bg-gray-800 text-gray-400 px-2 py-1 rounded hover:bg-blue-600/10 hover:text-blue-400 transition-all">
               Restoran Otomasyon
             </a>
+            <a href="/restoran-yazarkasa-entegrasyonu" className="text-xs bg-gray-800 text-gray-400 px-2 py-1 rounded hover:bg-blue-600/10 hover:text-blue-400 transition-all">
+              Yazarkasa Entegrasyonu
+            </a>
           </div>
         </div>
       </div>
