@@ -3,7 +3,7 @@
     "referans_tipi": "Zincir İşletmeler",
     "adi": "Tavuk Dünyası",
     "logo_yolu": "images/reflogo/td_logo_19_01_03.jpg",
-    "sube_sayisi": 310
+    "sube_sayisi": 330
   },
   {
     "referans_tipi": "Zincir İşletmeler",
@@ -15,7 +15,7 @@
     "referans_tipi": "Zincir İşletmeler",
     "adi": "Kahve Dünyası",
     "logo_yolu": "images/reflogo/referans-3-min.png",
-    "sube_sayisi": 280
+    "sube_sayisi": 300
   },
   {
     "referans_tipi": "Zincir İşletmeler",
@@ -45,7 +45,7 @@
     "referans_tipi": "Zincir İşletmeler",
     "adi": "Coffy",
     "logo_yolu": "images/reflogo/coffy.jpg",
-    "sube_sayisi": 100
+    "sube_sayisi": 170
   },
   {
     "referans_tipi": "Zincir İşletmeler",
@@ -63,14 +63,9 @@
     "referans_tipi": "Zincir İşletmeler",
     "adi": "Tavada Tavuk",
     "logo_yolu": "images/reflogo/robotpos-zincir-isletme-logo-4-min.png",
-    "sube_sayisi": 50
+    "sube_sayisi": 60
   },
-  {
-    "referans_tipi": "Zincir İşletmeler",
-    "adi": "Seç - Al",
-    "logo_yolu": "images/reflogo/06-SeçAl.jpg",
-    "sube_sayisi": 50
-  },
+
   {
     "referans_tipi": "Zincir İşletmeler",
     "adi": "Doyuyo!",
@@ -117,7 +112,7 @@
     "referans_tipi": "Zincir İşletmeler",
     "adi": "Bursa İshakbey",
     "logo_yolu": "images/reflogo/02-Bursa-İshakbey.png",
-    "sube_sayisi": 20
+    "sube_sayisi": 25
   },
   {
     "referans_tipi": "Zincir İşletmeler",
@@ -141,13 +136,13 @@
     "referans_tipi": "Zincir İşletmeler",
     "adi": "The Coffee Factory",
     "logo_yolu": "images/reflogo/07-The-Coffee-Factory.jpg",
-    "sube_sayisi": 20
+    "sube_sayisi": 35
   },
   {
     "referans_tipi": "Zincir İşletmeler",
     "adi": "Mua Dondurma",
     "logo_yolu": "images/reflogo/mua-logo.jpg",
-    "sube_sayisi": 15
+    "sube_sayisi": 25
   },
   {
     "referans_tipi": "Zincir İşletmeler",
@@ -165,7 +160,7 @@
     "referans_tipi": "Zincir İşletmeler",
     "adi": "Uzay Pastanesi",
     "logo_yolu": "images/reflogo/uzay-pastanesi-yeni-logo.jpg",
-    "sube_sayisi": 10
+    "sube_sayisi": 15
   },
   {
     "referans_tipi": "Zincir İşletmeler",
@@ -199,27 +194,27 @@
   },
   {
     "referans_tipi": "Zincir İşletmeler",
-    "adi": "Coffee Headquarters",
-    "logo_yolu": "images/reflogo/headquarters_logo-1_page-0001.jpg",
-    "sube_sayisi": 10
+    "adi": "THE CO.",
+    "logo_yolu": "images/reflogo/theco.png",
+    "sube_sayisi": 15
   },
   {
     "referans_tipi": "Zincir İşletmeler",
     "adi": "Yağcıoğlu Pastaneleri",
     "logo_yolu": "images/reflogo/yagcioglu-past-logo.jpg",
-    "sube_sayisi": 9
+    "sube_sayisi": 10
   },
   {
     "referans_tipi": "Zincir İşletmeler",
     "adi": "İntiba Döner",
     "logo_yolu": "images/reflogo/robotpos-zincir-isletme-logo-9-min.png",
-    "sube_sayisi": 8
+    "sube_sayisi": 10
   },
   {
     "referans_tipi": "Zincir İşletmeler",
     "adi": "Çeşme Kahve",
     "logo_yolu": "images/reflogo/cesme-kahve-logo.jpg",
-    "sube_sayisi": 7
+    "sube_sayisi": 15
   },
   {
     "referans_tipi": "Zincir İşletmeler",
@@ -249,7 +244,7 @@
     "referans_tipi": "Zincir İşletmeler",
     "adi": "Dönerci Ali Usta",
     "logo_yolu": "images/reflogo/referans-1.png",
-    "sube_sayisi": 4
+    "sube_sayisi": 5
   },
   {
     "referans_tipi": "Zincir İşletmeler",
@@ -274,6 +269,26 @@
     "adi": "Sahra Kent",
     "logo_yolu": "images/reflogo/sahra-kent-logo_page-0001.jpg",
     "sube_sayisi": 3
+  },
+
+  {
+    "referans_tipi": "Zincir İşletmeler",
+    "adi": "KOLİBRİ COFFEE",
+    "logo_yolu": "images/reflogo/kolibri.jpg",
+    "sube_sayisi": 5
+  },
+
+  {
+    "referans_tipi": "Zincir İşletmeler",
+   "adi": "Çay Saati",
+   "logo_yolu": "images/reflogo/Çay-Saati.jpg",
+   "sube_sayisi": 10
+  },
+  {
+    "referans_tipi": "Zincir İşletmeler",
+   "adi": "Q Espresso",
+   "logo_yolu": "images/reflogo/Q_Espresso_Logo_Vektorel_Siyah_page-0001.jpg",
+   "sube_sayisi": 5
   },
   {
     "referans_tipi": "Özel Projeler",
@@ -749,12 +764,7 @@
     "logo_yolu": "images/reflogo/Rocket-Burger.jpg",
     "sehir": "İstanbul"
   },
-  {
-    "referans_tipi": "Tekil İşletmeler",
-    "adi": "Çay Saati",
-    "logo_yolu": "images/reflogo/Çay-Saati.jpg",
-    "sehir": "İstanbul"
-  },
+
   {
     "referans_tipi": "Tekil İşletmeler",
     "adi": "Yalı Restaurant",
@@ -899,12 +909,7 @@
     "logo_yolu": "images/reflogo/defermo-logo-copy.jpg",
     "sehir": "Irak"
   },
-  {
-    "referans_tipi": "Tekil İşletmeler",
-    "adi": "Q Espresso Maltepe-Kozyatağı",
-    "logo_yolu": "images/reflogo/Q_Espresso_Logo_Vektorel_Siyah_page-0001.jpg",
-    "sehir": "İstanbul"
-  },
+
   {
     "referans_tipi": "Tekil İşletmeler",
     "adi": "Urfadan Okmeydanı-Kağıthane",

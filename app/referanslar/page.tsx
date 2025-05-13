@@ -153,7 +153,9 @@ const ReferenceCard = ({ data, icon: Icon, colorClass }: ReferenceCardProps) => 
 
 export default function ReferencesPage() {
   // Filter references by type - moved inside the component
-  const chainBusinesses = referansData.filter(ref => ref.referans_tipi === "Zincir İşletmeler");
+  const chainBusinesses = referansData
+    .filter(ref => ref.referans_tipi === "Zincir İşletmeler")
+    .sort((a, b) => (b.sube_sayisi || 0) - (a.sube_sayisi || 0)); // Sort by branch count (descending)
   const specialProjects = referansData.filter(ref => ref.referans_tipi === "Özel Projeler");
   const individualBusinesses = referansData.filter(ref => ref.referans_tipi === "Tekil İşletmeler");
   
