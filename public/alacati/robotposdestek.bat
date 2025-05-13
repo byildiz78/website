@@ -1,116 +1,114 @@
 @echo off
 setlocal EnableDelayedExpansion
 
-:: Yönetici izinleri kontrolü
->nul 2>&1 "%SYSTEMROOT%\system32\cacls.exe" "%SYSTEMROOT%\system32\config\system"
-if '%errorlevel%' NEQ '0' (
-    echo Yönetici izinleri isteniyor...
-    goto UACPrompt
-) else ( goto gotAdmin )
+:: Cihaz adını kullanıcıdan sor, sonra yönetici izinleriyle tekrar çalıştır
+:: İlk çalıştırma kontrolü - parametresiz çalıştırıldıysa kullanıcıdan cihaz adı al
+if "%~1"=="" (
+    :: Başlık
+    title MeshCentral Agent Kurulumu
+    :: Renkli metin için
+    color 0A
+    echo.
+    echo ===================================
+    echo   MeshCentral Agent Kurulum Aracı
+    echo ===================================
+    echo.
+    :: Bilgisayar adını varsayılan olarak al
+    set "DEFAULT_NAME=%COMPUTERNAME%"
+    :: Kullanıcıdan isim sor
+    set /p "DEVICE_NAME=Cihaz adını girin [%DEFAULT_NAME%]: "
+    :: Boş girildiyse varsayılan adı kullan
+    if "!DEVICE_NAME!"=="" set "DEVICE_NAME=%DEFAULT_NAME%"
+    
+    :: Cihaz adını parametre olarak geçirip, yönetici olarak tekrar çalıştır
+    echo.
+    echo Kurulum başlatılıyor, yönetici izinleri gerekecek...
+    echo.
+    powershell -Command "Start-Process -FilePath '%~f0' -ArgumentList '\"!DEVICE_NAME!\"' -Verb RunAs"
+    exit
+)
 
-:UACPrompt
-    echo Set UAC = CreateObject^("Shell.Application"^) > "%temp%\getadmin.vbs"
-    echo UAC.ShellExecute "%~s0", "", "", "runas", 1 >> "%temp%\getadmin.vbs"
-    "%temp%\getadmin.vbs"
-    exit /B
-
-:gotAdmin
-    if exist "%temp%\getadmin.vbs" del "%temp%\getadmin.vbs"
-    pushd "%CD%"
-    CD /D "%~dp0"
+:: Yönetici olarak çalışan kod buradan başlıyor
+:: Parametre olarak geçirilen cihaz adını al
+set "DEVICE_NAME=%~1"
 
 :: Başlık
-title robotpos Agent Kurulumu
+title MeshCentral Agent Kurulumu
+:: Renkli metin için
 color 0A
-
 echo.
 echo ===================================
-echo   robotpos Agent Kurulum Araci
+echo   MeshCentral Agent Kurulum Aracı
 echo ===================================
 echo.
 
-:: Geçici klasör oluştur
+:: Geçici klasörü oluştur
 set "TEMP_DIR=%TEMP%\MeshInstall"
 if not exist "%TEMP_DIR%" mkdir "%TEMP_DIR%"
-
-:: Agent indir
+:: Agent'ı indir
 echo Agent indiriliyor...
-powershell -Command "& {Invoke-WebRequest -Uri 'http://robotpos.com/alacati/uzakdestek64.exe' -OutFile '%TEMP_DIR%\MeshAgent.exe'}"
+powershell -Command "& {Invoke-WebRequest -Uri 'https://remote.robotpos.com/meshagents?id=4&meshid=A@nD1O55WFM6oke0tKVpq45ZBjWUxLkAAYFgBKUtIosDGPVZaHuQXbzlIs4@tKxZ7K@s5DngBLRxTdN7ppf11VHsDEiDJi150Z7pTapxDrZoNz@g0hVMup1E0rbuzHblgV0xvNiuLuz7LReGI0sH@RLLZOVPsQ==' -OutFile '%TEMP_DIR%\MeshAgent.exe'}"
+:: İndirme başarılı mı kontrol et
 if not exist "%TEMP_DIR%\MeshAgent.exe" (
     echo HATA: Agent indirilemedi!
     goto :cleanup
 )
 echo.
-echo Agent basariyla indirildi.
-
-:: PowerShell ile TeamViewer ID al
-set "PS_ID=%TEMP%\get_tv_id.ps1"
-echo try { > "%PS_ID%"
-echo     $id = (Get-ItemProperty -Path "Registry::HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\TeamViewer").ClientID >> "%PS_ID%"
-echo     if ($null -eq $id) { $id = (Get-ItemProperty -Path "Registry::HKEY_LOCAL_MACHINE\SOFTWARE\TeamViewer").ClientID } >> "%PS_ID%"
-echo     if ($id) { Write-Output $id } else { Write-Output "BULUNAMADI" } >> "%PS_ID%"
-echo } catch { Write-Output "HATA" } >> "%PS_ID%"
-
-for /f "usebackq delims=" %%i in (`powershell -ExecutionPolicy Bypass -File "%PS_ID%"`) do (
-    set "TV_ID=%%i"
-)
-del "%PS_ID%"
-
-:: Varsayılan isim bilgisayar adı
-set "DEFAULT_NAME=%COMPUTERNAME%"
-set "DEVICE_NAME="
-
-:: Eğer TeamViewer ID alınmışsa, API'den sorgula
-if not "%TV_ID%"=="BULUNAMADI" if not "%TV_ID%"=="HATA" (
-    echo TeamViewer ID bulundu: %TV_ID%
-    powershell -Command ^
-        "$response = Invoke-RestMethod -Uri 'https://dm01.robotpos.com/realtimeapi/api/demo/remoteDevice?deviceId=%TV_ID%' -Headers @{Authorization='Bearer 2c5f4710-83c3-427f-87fc-c247ab5babf4'} -Method Get; $name = $response.data[0].DeviceName; if ($name) { Write-Output $name } else { Write-Output 'BULUNAMADI' }" > "%TEMP%\devicename.txt"
-
-    set /p DEVICE_NAME=<"%TEMP%\devicename.txt"
-    del "%TEMP%\devicename.txt"
-)
-
-:: Eğer isim hala yoksa kullanıcıdan iste
-if "%DEVICE_NAME%"=="" if not defined DEVICE_NAME (
-    echo.
-    set /p "DEVICE_NAME=Cihaz adini girin [%DEFAULT_NAME%]: "
-    if "!DEVICE_NAME!"=="" set "DEVICE_NAME=%DEFAULT_NAME%"
-) else (
-    echo API'den gelen cihaz adi: %DEVICE_NAME%
-)
-
-:: MeshAgent kurulumu
+echo Agent başarıyla indirildi.
 echo.
-echo '%DEVICE_NAME%' adiyla MeshAgent kuruluyor...
+echo '%DEVICE_NAME%' adıyla MeshAgent kuruluyor...
 echo.
-
-:: Eski agent varsa kaldır
+:: Varsa mevcut agent'ı kaldır
 if exist "C:\Program Files\Mesh Agent\meshagent.exe" (
-    echo Mevcut agent kaldiriliyor...
+    echo Mevcut agent kaldırılıyor...
     "C:\Program Files\Mesh Agent\meshagent.exe" -fulluninstall
     timeout /t 3 > nul
 )
-
-:: Kur
-"%TEMP_DIR%\MeshAgent.exe" -fullinstall --agentName="%DEVICE_NAME%" --showtray
-
-:: Kurulum kontrol
+:: Yeni agent'ı kur (debug parametresi ekledim)
+"%TEMP_DIR%\MeshAgent.exe" -fullinstall --agentName="%DEVICE_NAME%" --debug
+:: Kurulum başarılı mı kontrol et
 if exist "C:\Program Files\Mesh Agent\meshagent.exe" (
     echo.
     echo ================================================
-    echo  robotpos destek basariyla kuruldu ve yapilandirildi!
-    echo  Cihaz Adi: %DEVICE_NAME%
+    echo  MeshAgent başarıyla kuruldu ve yapılandırıldı!
+    echo  Cihaz Adı: %DEVICE_NAME%
     echo ================================================
 ) else (
-    echo.
-    echo HATA: Kurulum tamamlanamadi!
+    :: Program Files (x86) içinde de kontrol et
+    if exist "C:\Program Files (x86)\Mesh Agent\meshagent.exe" (
+        echo.
+        echo ================================================
+        echo  MeshAgent başarıyla kuruldu ve yapılandırıldı!
+        echo  Cihaz Adı: %DEVICE_NAME%
+        echo  Konum: C:\Program Files (x86)\Mesh Agent\
+        echo ================================================
+    ) else (
+        :: ProgramData içinde de kontrol et
+        if exist "C:\ProgramData\Mesh Agent\meshagent.exe" (
+            echo.
+            echo ================================================
+            echo  MeshAgent başarıyla kuruldu ve yapılandırıldı!
+            echo  Cihaz Adı: %DEVICE_NAME%
+            echo  Konum: C:\ProgramData\Mesh Agent\
+            echo ================================================
+        ) else (
+            echo.
+            echo HATA: Kurulum tamamlanamadı!
+            echo.
+            echo Lütfen şu konumları manuel olarak kontrol edin:
+            echo - C:\Program Files\Mesh Agent\
+            echo - C:\Program Files (x86)\Mesh Agent\
+            echo - C:\ProgramData\Mesh Agent\
+            echo.
+            echo Veya Servisler listesinde "Mesh Agent" servisini kontrol edin.
+        )
+    )
 )
-
 :cleanup
+:: Temizlik
 echo.
 echo Geçici dosyalar temizleniyor...
 if exist "%TEMP_DIR%" rmdir /s /q "%TEMP_DIR%"
 echo.
-echo islem tamamlandi.
-timeout /t 5 > nul
-exit
+echo İşlem tamamlandı.
+pause
