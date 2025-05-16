@@ -17,6 +17,14 @@ const downloadItems = [
     fileType: "Uygulama"
   },
   {
+    name: "Uzak Destek Aracı (32-bit)",
+    description: "32-bit sistemler için uzaktan destek uygulaması. PC adı ile kurulum yapar.",
+    icon: <FileCode className="h-10 w-10 text-green-500" />,
+    filePath: "/alacati/uzakdestek32.exe",
+    fileSize: "3.1 MB",
+    fileType: "Uygulama"
+  },
+  {
     name: "RobotPOS Destek Aracı",
     description: "Otomatik Kurulum scriptini içerir. İstemci adını kullanıcının girmesini sağlar.",
     icon: <FileText className="h-10 w-10 text-blue-500" />,
@@ -119,6 +127,9 @@ export default function DestekPage() {
               <ol className="list-decimal pl-5 space-y-4 text-gray-700">
                 <li>
                   <span className="font-medium">Uzak Destek Aracı 64-bit (uzakdestek64.exe):</span> 64-bit işletim sistemleri için optimize edilmiş uzak destek uygulamasıdır. Doğrudan çalıştırabilirsiniz. PC adınızı otomatik olarak kullanarak kurulum yapar.
+                </li>
+                <li>
+                  <span className="font-medium">Uzak Destek Aracı 32-bit (uzakdestek32.exe):</span> 32-bit işletim sistemleri için optimize edilmiş uzak destek uygulamasıdır. Doğrudan çalıştırabilirsiniz. PC adınızı otomatik olarak kullanarak kurulum yapar.
                 </li>
                 <li>
                   <span className="font-medium">RobotPOS Destek Aracı (robotposdestek.bat):</span> Bu dosyayı indirdikten sonra çift tıklayarak çalıştırın. Cihaz adını girmeniz istenecektir. Otomatik kurulum scriptini çalıştırarak teknik destek ekibimizin bilgisayarınıza güvenli bir şekilde bağlanmasını sağlar.
