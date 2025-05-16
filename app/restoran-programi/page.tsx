@@ -165,7 +165,7 @@ export default function RestaurantProgramPage() {
                 asChild
               >
                 <a href="/demo-talebi">
-                  Ücretsiz Demo Talebi
+                  Sizi Arayalım Talebi
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </a>
               </Button>
