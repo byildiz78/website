@@ -23,12 +23,12 @@ export const metadata: Metadata = {
   },
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "https://www.robotpos.com"),
   alternates: {
-    canonical: "/",
+    canonical: "https://www.robotpos.com",
     languages: {
-      'tr': '/',
-      'en': '/en',
-      'ru': '/ru',
-      'ar': '/ar',
+      'tr': 'https://www.robotpos.com',
+      'ru': 'https://ru.robotpos.com',
+      'az': 'https://az.robotpos.com',
+      'ar': 'https://ar.robotpos.com',
     },
   },
   openGraph: {
@@ -74,12 +74,12 @@ export default function RootLayout({
     <html lang="tr" suppressHydrationWarning>
       <head>
         <meta name="google-site-verification" content="ql9L6tHWIhoEb5U2Dw-VXI2yrBSdqCmUq52al2gO7oY" />
-        <link rel="canonical" href={process.env.NEXT_PUBLIC_SITE_URL || "https://www.robotpos.com"} />
-        <link rel="alternate" hrefLang="tr" href={process.env.NEXT_PUBLIC_SITE_URL || "https://www.robotpos.com"} />
-        <link rel="alternate" hrefLang="en" href={`${process.env.NEXT_PUBLIC_SITE_URL}/en` || "https://www.robotpos.com/en"} />
-        <link rel="alternate" hrefLang="ru" href={`${process.env.NEXT_PUBLIC_SITE_URL}/ru` || "https://www.robotpos.com/ru"} />
-        <link rel="alternate" hrefLang="ar" href={`${process.env.NEXT_PUBLIC_SITE_URL}/ar` || "https://www.robotpos.com/ar"} />
-        <link rel="alternate" hrefLang="x-default" href={process.env.NEXT_PUBLIC_SITE_URL || "https://www.robotpos.com"} />
+        <link rel="canonical" href="https://www.robotpos.com" />
+        <link rel="alternate" hrefLang="tr" href="https://www.robotpos.com" />
+        <link rel="alternate" hrefLang="ru" href="https://ru.robotpos.com" />
+        <link rel="alternate" hrefLang="az" href="https://az.robotpos.com" />
+        <link rel="alternate" hrefLang="ar" href="https://ar.robotpos.com" />
+        <link rel="alternate" hrefLang="x-default" href="https://www.robotpos.com" />
         
         {/* CSP meta etiketini kaldırdık */}
         

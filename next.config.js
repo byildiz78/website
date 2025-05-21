@@ -66,9 +66,6 @@ const nextConfig = {
   async rewrites() {
     return {
       beforeFiles: [
-        // GTranslate için dil alt dizinlerini KALDIRDIK
-        // Artık GTranslate JavaScript widget'ı ile çalışacak
-        
         // Blog yazıları için özel yönlendirme
         {
           source: '/blog/:slug',
@@ -76,6 +73,21 @@ const nextConfig = {
         },
       ],
     };
+  },
+
+  // Subdomain tabanlı dil yapısı için alan adı yapılandırması
+  async headers() {
+    return [
+      {
+        source: '/:path*',
+        headers: [
+          {
+            key: 'Access-Control-Allow-Origin',
+            value: '*',
+          },
+        ],
+      },
+    ];
   },
 };
 
