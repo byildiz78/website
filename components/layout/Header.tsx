@@ -40,7 +40,7 @@ import {
   Cpu,
   HardDrive,
 } from "lucide-react";
-import { GTranslateWidget } from "@/components/ui/gtranslate-widget";
+import GTranslateWidget from "@/components/ui/gtranslate-widget";
 
 type NavItem = {
   title: string;
