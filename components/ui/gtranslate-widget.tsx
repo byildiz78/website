@@ -13,7 +13,17 @@ export default function GTranslateWidget() {
     // GTranslate ayarlarını ekle
     const settingsScript = document.createElement('script');
     settingsScript.id = 'gtranslate-settings-script';
-    settingsScript.innerHTML = `window.gtranslateSettings = {"default_language":"tr","native_language_names":true,"url_structure":"sub_domain","languages":["tr","en","ru","az","ar"],"wrapper_selector":".gtranslate_wrapper","switcher_horizontal_position":"inline","float_switcher_open_direction":"bottom","flag_style":"3d"}`;
+    settingsScript.innerHTML = `window.gtranslateSettings = {
+      "default_language":"tr",
+      "native_language_names":true,
+      "url_structure":"sub_domain",
+      "languages":["tr","en","ru","az","ar"],
+      "wrapper_selector":".gtranslate_wrapper",
+      "switcher_horizontal_position":"inline",
+      "float_switcher_open_direction":"bottom",
+      "flag_style":"3d",
+      "auto_switch":true
+    }`;
     document.head.appendChild(settingsScript);
     
     // GTranslate script'ini ekle
