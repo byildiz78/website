@@ -71,6 +71,11 @@ const nextConfig = {
           source: '/blog/:slug',
           destination: '/:slug',
         },
+        // Sitemap.xml için özel yönlendirme
+        {
+          source: '/sitemap.xml',
+          destination: '/api/sitemap',
+        },
       ],
     };
   },

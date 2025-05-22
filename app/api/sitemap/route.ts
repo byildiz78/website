@@ -3,7 +3,7 @@ import fs from 'fs';
 import path from 'path';
 
 // Desteklenen diller
-const languages = ['tr', 'en', 'ru', 'ar'];
+const languages = ['tr', 'en', 'ru', 'ar', 'az'];
 const defaultLanguage = 'tr';
 
 // Blog yazısı tipi tanımla
@@ -54,12 +54,14 @@ export async function GET() {
       xml += '  <url>\n';
       xml += `    <loc>${baseUrl}${page}</loc>\n`;
       
-      // Alternatif dil bağlantıları
+      // Alternatif dil bağlantıları - ?locale=xx formatında
       languages.forEach(lang => {
-        const langPrefix = lang === defaultLanguage ? '' : `/${lang}`;
-        xml += `    <xhtml:link rel="alternate" hreflang="${lang}" href="${baseUrl}${langPrefix}${page}" />\n`;
+        const langQuery = lang === defaultLanguage ? '' : `?locale=${lang}`;
+        xml += `    <xhtml:link rel="alternate" hreflang="${lang}" href="${baseUrl}${page}${langQuery}" />\n`;
       });
       
+      const today = new Date().toISOString().split('T')[0];
+      xml += `    <lastmod>${today}</lastmod>\n`;
       xml += '    <changefreq>weekly</changefreq>\n';
       xml += '    <priority>0.8</priority>\n';
       xml += '  </url>\n';
@@ -70,10 +72,10 @@ export async function GET() {
       xml += '  <url>\n';
       xml += `    <loc>${baseUrl}/${post.slug}</loc>\n`;
       
-      // Alternatif dil bağlantıları (blog yazıları için)
+      // Alternatif dil bağlantıları (blog yazıları için) - ?locale=xx formatında
       languages.forEach(lang => {
-        const langPrefix = lang === defaultLanguage ? '' : `/${lang}`;
-        xml += `    <xhtml:link rel="alternate" hreflang="${lang}" href="${baseUrl}${langPrefix}/${post.slug}" />\n`;
+        const langQuery = lang === defaultLanguage ? '' : `?locale=${lang}`;
+        xml += `    <xhtml:link rel="alternate" hreflang="${lang}" href="${baseUrl}/${post.slug}${langQuery}" />\n`;
       });
       
       // Blog yazısı tarihi
@@ -87,10 +89,10 @@ export async function GET() {
     // XML sonlandırma
     xml += '</urlset>';
     
-    // XML içeriğini döndür
+    // XML içeriğini döndür ve Content-Type başlığını ayarla
     return new NextResponse(xml, {
       headers: {
-        'Content-Type': 'application/xml',
+        'Content-Type': 'application/xml; charset=utf-8',
       },
     });
   } catch (error) {

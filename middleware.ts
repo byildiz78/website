@@ -55,7 +55,8 @@ export function middleware(request: NextRequest) {
 
   // Sitemap.xml için doğru içerik türünü ayarla
   if (pathname === '/sitemap.xml' || pathname.endsWith('/sitemap.xml')) {
-    response.headers.set('Content-Type', 'application/xml');
+    response.headers.set('Content-Type', 'application/xml; charset=utf-8');
+    // API'den gelen yanıtı döndür
     return response;
   }
 
