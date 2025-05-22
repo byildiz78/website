@@ -24,7 +24,20 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
   const [error, setError] = useState<string | null>(null);
   const [processedContent, setProcessedContent] = useState<string>('');
 
+  // List of language codes to ignore for blog post fetching
+  const ignoredSlugs = ["en", "ru", "az", "ar", "tr"]; // Add any other language codes ConveyThis might use
+
   useEffect(() => {
+    // If the slug is an ignored language code, don't treat it as a blog post
+    if (ignoredSlugs.includes(params.slug)) {
+      setLoading(false);
+      // Optionally, set an error or a specific state to indicate this is not a blog page
+      // For now, we'll just prevent fetching and let ConveyThis handle the page
+      // You might want to show a generic loading or a blank page here if ConveyThis hasn't translated yet
+      setError("Bu bir blog sayfası değildir."); // Or set a different message or behavior
+      return;
+    }
+
     async function fetchBlogPost() {
       try {
         const response = await fetch('/files/blog_posts.json');
