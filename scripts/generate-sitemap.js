@@ -3,7 +3,7 @@ const path = require('path');
 const glob = require('glob');
 
 // Desteklenen diller
-const languages = ['tr', 'en', 'ru', 'ar'];
+const languages = ['tr', 'en', 'ru', 'ar', 'az'];
 const defaultLanguage = 'tr';
 
 // Ana URL'yi ayarla
@@ -54,8 +54,8 @@ async function generateSitemap() {
       
       // Alternatif dil bağlantıları
       languages.forEach(lang => {
-        const langPrefix = lang === defaultLanguage ? '' : `/${lang}`;
-        xml += `    <xhtml:link rel="alternate" hreflang="${lang}" href="${baseUrl}${langPrefix}${page}" />\n`;
+        const langQuery = lang === defaultLanguage ? '' : `?locale=${lang}`;
+        xml += `    <xhtml:link rel="alternate" hreflang="${lang}" href="${baseUrl}${page}${langQuery}" />\n`;
       });
       
       const today = new Date().toISOString().split('T')[0];
@@ -72,8 +72,8 @@ async function generateSitemap() {
       
       // Alternatif dil bağlantıları (blog yazıları için)
       languages.forEach(lang => {
-        const langPrefix = lang === defaultLanguage ? '' : `/${lang}`;
-        xml += `    <xhtml:link rel="alternate" hreflang="${lang}" href="${baseUrl}${langPrefix}/${post.slug}" />\n`;
+        const langQuery = lang === defaultLanguage ? '' : `?locale=${lang}`;
+        xml += `    <xhtml:link rel="alternate" hreflang="${lang}" href="${baseUrl}/${post.slug}${langQuery}" />\n`;
       });
       
       // Blog yazısı tarihi
