@@ -3,239 +3,263 @@
   <url>
     <loc>https://www.robotpos.com</loc>
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.robotpos.com" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.robotpos.com/en" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://www.robotpos.com/ru" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://www.robotpos.com/ar" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.robotpos.com?locale=en" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.robotpos.com?locale=ru" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.robotpos.com?locale=ar" />
+    <xhtml:link rel="alternate" hreflang="az" href="https://www.robotpos.com?locale=az" />
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
-    <lastmod>2025-05-21</lastmod>
+    <lastmod>2025-05-22</lastmod>
   </url>
   <url>
     <loc>https://www.robotpos.com/hakkimizda</loc>
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.robotpos.com/hakkimizda" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.robotpos.com/en/hakkimizda" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://www.robotpos.com/ru/hakkimizda" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://www.robotpos.com/ar/hakkimizda" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.robotpos.com/hakkimizda?locale=en" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.robotpos.com/hakkimizda?locale=ru" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.robotpos.com/hakkimizda?locale=ar" />
+    <xhtml:link rel="alternate" hreflang="az" href="https://www.robotpos.com/hakkimizda?locale=az" />
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
-    <lastmod>2025-05-21</lastmod>
+    <lastmod>2025-05-22</lastmod>
   </url>
   <url>
     <loc>https://www.robotpos.com/iletisim</loc>
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.robotpos.com/iletisim" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.robotpos.com/en/iletisim" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://www.robotpos.com/ru/iletisim" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://www.robotpos.com/ar/iletisim" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.robotpos.com/iletisim?locale=en" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.robotpos.com/iletisim?locale=ru" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.robotpos.com/iletisim?locale=ar" />
+    <xhtml:link rel="alternate" hreflang="az" href="https://www.robotpos.com/iletisim?locale=az" />
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
-    <lastmod>2025-05-21</lastmod>
+    <lastmod>2025-05-22</lastmod>
   </url>
   <url>
     <loc>https://www.robotpos.com/referanslar</loc>
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.robotpos.com/referanslar" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.robotpos.com/en/referanslar" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://www.robotpos.com/ru/referanslar" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://www.robotpos.com/ar/referanslar" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.robotpos.com/referanslar?locale=en" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.robotpos.com/referanslar?locale=ru" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.robotpos.com/referanslar?locale=ar" />
+    <xhtml:link rel="alternate" hreflang="az" href="https://www.robotpos.com/referanslar?locale=az" />
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
-    <lastmod>2025-05-21</lastmod>
+    <lastmod>2025-05-22</lastmod>
   </url>
   <url>
     <loc>https://www.robotpos.com/sss</loc>
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.robotpos.com/sss" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.robotpos.com/en/sss" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://www.robotpos.com/ru/sss" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://www.robotpos.com/ar/sss" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.robotpos.com/sss?locale=en" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.robotpos.com/sss?locale=ru" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.robotpos.com/sss?locale=ar" />
+    <xhtml:link rel="alternate" hreflang="az" href="https://www.robotpos.com/sss?locale=az" />
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
-    <lastmod>2025-05-21</lastmod>
+    <lastmod>2025-05-22</lastmod>
   </url>
   <url>
     <loc>https://www.robotpos.com/demo-talebi</loc>
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.robotpos.com/demo-talebi" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.robotpos.com/en/demo-talebi" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://www.robotpos.com/ru/demo-talebi" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://www.robotpos.com/ar/demo-talebi" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.robotpos.com/demo-talebi?locale=en" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.robotpos.com/demo-talebi?locale=ru" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.robotpos.com/demo-talebi?locale=ar" />
+    <xhtml:link rel="alternate" hreflang="az" href="https://www.robotpos.com/demo-talebi?locale=az" />
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
-    <lastmod>2025-05-21</lastmod>
+    <lastmod>2025-05-22</lastmod>
   </url>
   <url>
     <loc>https://www.robotpos.com/blog</loc>
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.robotpos.com/blog" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.robotpos.com/en/blog" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://www.robotpos.com/ru/blog" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://www.robotpos.com/ar/blog" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.robotpos.com/blog?locale=en" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.robotpos.com/blog?locale=ru" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.robotpos.com/blog?locale=ar" />
+    <xhtml:link rel="alternate" hreflang="az" href="https://www.robotpos.com/blog?locale=az" />
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
-    <lastmod>2025-05-21</lastmod>
+    <lastmod>2025-05-22</lastmod>
   </url>
   <url>
     <loc>https://www.robotpos.com/urunler</loc>
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.robotpos.com/urunler" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.robotpos.com/en/urunler" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://www.robotpos.com/ru/urunler" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://www.robotpos.com/ar/urunler" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.robotpos.com/urunler?locale=en" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.robotpos.com/urunler?locale=ru" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.robotpos.com/urunler?locale=ar" />
+    <xhtml:link rel="alternate" hreflang="az" href="https://www.robotpos.com/urunler?locale=az" />
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
-    <lastmod>2025-05-21</lastmod>
+    <lastmod>2025-05-22</lastmod>
   </url>
   <url>
     <loc>https://www.robotpos.com/urunler/yazilim-urunleri/satis-noktasi-yonetimi</loc>
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.robotpos.com/urunler/yazilim-urunleri/satis-noktasi-yonetimi" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.robotpos.com/en/urunler/yazilim-urunleri/satis-noktasi-yonetimi" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://www.robotpos.com/ru/urunler/yazilim-urunleri/satis-noktasi-yonetimi" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://www.robotpos.com/ar/urunler/yazilim-urunleri/satis-noktasi-yonetimi" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.robotpos.com/urunler/yazilim-urunleri/satis-noktasi-yonetimi?locale=en" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.robotpos.com/urunler/yazilim-urunleri/satis-noktasi-yonetimi?locale=ru" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.robotpos.com/urunler/yazilim-urunleri/satis-noktasi-yonetimi?locale=ar" />
+    <xhtml:link rel="alternate" hreflang="az" href="https://www.robotpos.com/urunler/yazilim-urunleri/satis-noktasi-yonetimi?locale=az" />
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
-    <lastmod>2025-05-21</lastmod>
+    <lastmod>2025-05-22</lastmod>
   </url>
   <url>
     <loc>https://www.robotpos.com/urunler/yazilim-urunleri/stok-maliyet-yonetimi</loc>
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.robotpos.com/urunler/yazilim-urunleri/stok-maliyet-yonetimi" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.robotpos.com/en/urunler/yazilim-urunleri/stok-maliyet-yonetimi" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://www.robotpos.com/ru/urunler/yazilim-urunleri/stok-maliyet-yonetimi" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://www.robotpos.com/ar/urunler/yazilim-urunleri/stok-maliyet-yonetimi" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.robotpos.com/urunler/yazilim-urunleri/stok-maliyet-yonetimi?locale=en" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.robotpos.com/urunler/yazilim-urunleri/stok-maliyet-yonetimi?locale=ru" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.robotpos.com/urunler/yazilim-urunleri/stok-maliyet-yonetimi?locale=ar" />
+    <xhtml:link rel="alternate" hreflang="az" href="https://www.robotpos.com/urunler/yazilim-urunleri/stok-maliyet-yonetimi?locale=az" />
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
-    <lastmod>2025-05-21</lastmod>
+    <lastmod>2025-05-22</lastmod>
   </url>
   <url>
     <loc>https://www.robotpos.com/urunler/yazilim-urunleri/sadakat-ve-kazanc-arttirici-cozumler</loc>
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.robotpos.com/urunler/yazilim-urunleri/sadakat-ve-kazanc-arttirici-cozumler" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.robotpos.com/en/urunler/yazilim-urunleri/sadakat-ve-kazanc-arttirici-cozumler" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://www.robotpos.com/ru/urunler/yazilim-urunleri/sadakat-ve-kazanc-arttirici-cozumler" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://www.robotpos.com/ar/urunler/yazilim-urunleri/sadakat-ve-kazanc-arttirici-cozumler" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.robotpos.com/urunler/yazilim-urunleri/sadakat-ve-kazanc-arttirici-cozumler?locale=en" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.robotpos.com/urunler/yazilim-urunleri/sadakat-ve-kazanc-arttirici-cozumler?locale=ru" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.robotpos.com/urunler/yazilim-urunleri/sadakat-ve-kazanc-arttirici-cozumler?locale=ar" />
+    <xhtml:link rel="alternate" hreflang="az" href="https://www.robotpos.com/urunler/yazilim-urunleri/sadakat-ve-kazanc-arttirici-cozumler?locale=az" />
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
-    <lastmod>2025-05-21</lastmod>
+    <lastmod>2025-05-22</lastmod>
   </url>
   <url>
     <loc>https://www.robotpos.com/urunler/yazilim-urunleri/zincir-magaza-yonetimi</loc>
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.robotpos.com/urunler/yazilim-urunleri/zincir-magaza-yonetimi" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.robotpos.com/en/urunler/yazilim-urunleri/zincir-magaza-yonetimi" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://www.robotpos.com/ru/urunler/yazilim-urunleri/zincir-magaza-yonetimi" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://www.robotpos.com/ar/urunler/yazilim-urunleri/zincir-magaza-yonetimi" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.robotpos.com/urunler/yazilim-urunleri/zincir-magaza-yonetimi?locale=en" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.robotpos.com/urunler/yazilim-urunleri/zincir-magaza-yonetimi?locale=ru" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.robotpos.com/urunler/yazilim-urunleri/zincir-magaza-yonetimi?locale=ar" />
+    <xhtml:link rel="alternate" hreflang="az" href="https://www.robotpos.com/urunler/yazilim-urunleri/zincir-magaza-yonetimi?locale=az" />
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
-    <lastmod>2025-05-21</lastmod>
+    <lastmod>2025-05-22</lastmod>
   </url>
   <url>
     <loc>https://www.robotpos.com/urunler/donanim-urunleri/dokunmatik-terminal</loc>
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.robotpos.com/urunler/donanim-urunleri/dokunmatik-terminal" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.robotpos.com/en/urunler/donanim-urunleri/dokunmatik-terminal" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://www.robotpos.com/ru/urunler/donanim-urunleri/dokunmatik-terminal" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://www.robotpos.com/ar/urunler/donanim-urunleri/dokunmatik-terminal" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.robotpos.com/urunler/donanim-urunleri/dokunmatik-terminal?locale=en" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.robotpos.com/urunler/donanim-urunleri/dokunmatik-terminal?locale=ru" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.robotpos.com/urunler/donanim-urunleri/dokunmatik-terminal?locale=ar" />
+    <xhtml:link rel="alternate" hreflang="az" href="https://www.robotpos.com/urunler/donanim-urunleri/dokunmatik-terminal?locale=az" />
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
-    <lastmod>2025-05-21</lastmod>
+    <lastmod>2025-05-22</lastmod>
   </url>
   <url>
     <loc>https://www.robotpos.com/urunler/donanim-urunleri/mobil-terminaller</loc>
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.robotpos.com/urunler/donanim-urunleri/mobil-terminaller" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.robotpos.com/en/urunler/donanim-urunleri/mobil-terminaller" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://www.robotpos.com/ru/urunler/donanim-urunleri/mobil-terminaller" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://www.robotpos.com/ar/urunler/donanim-urunleri/mobil-terminaller" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.robotpos.com/urunler/donanim-urunleri/mobil-terminaller?locale=en" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.robotpos.com/urunler/donanim-urunleri/mobil-terminaller?locale=ru" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.robotpos.com/urunler/donanim-urunleri/mobil-terminaller?locale=ar" />
+    <xhtml:link rel="alternate" hreflang="az" href="https://www.robotpos.com/urunler/donanim-urunleri/mobil-terminaller?locale=az" />
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
-    <lastmod>2025-05-21</lastmod>
+    <lastmod>2025-05-22</lastmod>
   </url>
   <url>
     <loc>https://www.robotpos.com/urunler/donanim-urunleri/self-servis-kiosk</loc>
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.robotpos.com/urunler/donanim-urunleri/self-servis-kiosk" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.robotpos.com/en/urunler/donanim-urunleri/self-servis-kiosk" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://www.robotpos.com/ru/urunler/donanim-urunleri/self-servis-kiosk" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://www.robotpos.com/ar/urunler/donanim-urunleri/self-servis-kiosk" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.robotpos.com/urunler/donanim-urunleri/self-servis-kiosk?locale=en" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.robotpos.com/urunler/donanim-urunleri/self-servis-kiosk?locale=ru" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.robotpos.com/urunler/donanim-urunleri/self-servis-kiosk?locale=ar" />
+    <xhtml:link rel="alternate" hreflang="az" href="https://www.robotpos.com/urunler/donanim-urunleri/self-servis-kiosk?locale=az" />
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
-    <lastmod>2025-05-21</lastmod>
+    <lastmod>2025-05-22</lastmod>
   </url>
   <url>
     <loc>https://www.robotpos.com/urunler/donanim-urunleri/okc-urunleri</loc>
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.robotpos.com/urunler/donanim-urunleri/okc-urunleri" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.robotpos.com/en/urunler/donanim-urunleri/okc-urunleri" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://www.robotpos.com/ru/urunler/donanim-urunleri/okc-urunleri" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://www.robotpos.com/ar/urunler/donanim-urunleri/okc-urunleri" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.robotpos.com/urunler/donanim-urunleri/okc-urunleri?locale=en" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.robotpos.com/urunler/donanim-urunleri/okc-urunleri?locale=ru" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.robotpos.com/urunler/donanim-urunleri/okc-urunleri?locale=ar" />
+    <xhtml:link rel="alternate" hreflang="az" href="https://www.robotpos.com/urunler/donanim-urunleri/okc-urunleri?locale=az" />
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
-    <lastmod>2025-05-21</lastmod>
+    <lastmod>2025-05-22</lastmod>
   </url>
   <url>
     <loc>https://www.robotpos.com/robotpos-cozum-uretir/qr-menu-siparis</loc>
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.robotpos.com/robotpos-cozum-uretir/qr-menu-siparis" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.robotpos.com/en/robotpos-cozum-uretir/qr-menu-siparis" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://www.robotpos.com/ru/robotpos-cozum-uretir/qr-menu-siparis" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://www.robotpos.com/ar/robotpos-cozum-uretir/qr-menu-siparis" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.robotpos.com/robotpos-cozum-uretir/qr-menu-siparis?locale=en" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.robotpos.com/robotpos-cozum-uretir/qr-menu-siparis?locale=ru" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.robotpos.com/robotpos-cozum-uretir/qr-menu-siparis?locale=ar" />
+    <xhtml:link rel="alternate" hreflang="az" href="https://www.robotpos.com/robotpos-cozum-uretir/qr-menu-siparis?locale=az" />
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
-    <lastmod>2025-05-21</lastmod>
+    <lastmod>2025-05-22</lastmod>
   </url>
   <url>
     <loc>https://www.robotpos.com/adisyon-programi</loc>
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.robotpos.com/adisyon-programi" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.robotpos.com/en/adisyon-programi" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://www.robotpos.com/ru/adisyon-programi" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://www.robotpos.com/ar/adisyon-programi" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.robotpos.com/adisyon-programi?locale=en" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.robotpos.com/adisyon-programi?locale=ru" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.robotpos.com/adisyon-programi?locale=ar" />
+    <xhtml:link rel="alternate" hreflang="az" href="https://www.robotpos.com/adisyon-programi?locale=az" />
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
-    <lastmod>2025-05-21</lastmod>
+    <lastmod>2025-05-22</lastmod>
   </url>
   <url>
     <loc>https://www.robotpos.com/pos-sistemi</loc>
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.robotpos.com/pos-sistemi" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.robotpos.com/en/pos-sistemi" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://www.robotpos.com/ru/pos-sistemi" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://www.robotpos.com/ar/pos-sistemi" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.robotpos.com/pos-sistemi?locale=en" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.robotpos.com/pos-sistemi?locale=ru" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.robotpos.com/pos-sistemi?locale=ar" />
+    <xhtml:link rel="alternate" hreflang="az" href="https://www.robotpos.com/pos-sistemi?locale=az" />
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
-    <lastmod>2025-05-21</lastmod>
+    <lastmod>2025-05-22</lastmod>
   </url>
   <url>
     <loc>https://www.robotpos.com/restoran-otomasyon</loc>
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.robotpos.com/restoran-otomasyon" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.robotpos.com/en/restoran-otomasyon" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://www.robotpos.com/ru/restoran-otomasyon" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://www.robotpos.com/ar/restoran-otomasyon" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.robotpos.com/restoran-otomasyon?locale=en" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.robotpos.com/restoran-otomasyon?locale=ru" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.robotpos.com/restoran-otomasyon?locale=ar" />
+    <xhtml:link rel="alternate" hreflang="az" href="https://www.robotpos.com/restoran-otomasyon?locale=az" />
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
-    <lastmod>2025-05-21</lastmod>
+    <lastmod>2025-05-22</lastmod>
   </url>
   <url>
     <loc>https://www.robotpos.com/restoran-programi</loc>
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.robotpos.com/restoran-programi" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.robotpos.com/en/restoran-programi" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://www.robotpos.com/ru/restoran-programi" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://www.robotpos.com/ar/restoran-programi" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.robotpos.com/restoran-programi?locale=en" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.robotpos.com/restoran-programi?locale=ru" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.robotpos.com/restoran-programi?locale=ar" />
+    <xhtml:link rel="alternate" hreflang="az" href="https://www.robotpos.com/restoran-programi?locale=az" />
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
-    <lastmod>2025-05-21</lastmod>
+    <lastmod>2025-05-22</lastmod>
   </url>
   <url>
     <loc>https://www.robotpos.com/etiket</loc>
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.robotpos.com/etiket" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.robotpos.com/en/etiket" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://www.robotpos.com/ru/etiket" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://www.robotpos.com/ar/etiket" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.robotpos.com/etiket?locale=en" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.robotpos.com/etiket?locale=ru" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.robotpos.com/etiket?locale=ar" />
+    <xhtml:link rel="alternate" hreflang="az" href="https://www.robotpos.com/etiket?locale=az" />
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
-    <lastmod>2025-05-21</lastmod>
+    <lastmod>2025-05-22</lastmod>
   </url>
   <url>
     <loc>https://www.robotpos.com/restoran-yazarkasa-entegrasyonu</loc>
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.robotpos.com/restoran-yazarkasa-entegrasyonu" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.robotpos.com/en/restoran-yazarkasa-entegrasyonu" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://www.robotpos.com/ru/restoran-yazarkasa-entegrasyonu" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://www.robotpos.com/ar/restoran-yazarkasa-entegrasyonu" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.robotpos.com/restoran-yazarkasa-entegrasyonu?locale=en" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.robotpos.com/restoran-yazarkasa-entegrasyonu?locale=ru" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.robotpos.com/restoran-yazarkasa-entegrasyonu?locale=ar" />
+    <xhtml:link rel="alternate" hreflang="az" href="https://www.robotpos.com/restoran-yazarkasa-entegrasyonu?locale=az" />
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
-    <lastmod>2025-05-21</lastmod>
+    <lastmod>2025-05-22</lastmod>
   </url>
   <url>
     <loc>https://www.robotpos.com/restoranlar-yapay-zeka-dan-nasil-etkilenecek</loc>
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.robotpos.com/restoranlar-yapay-zeka-dan-nasil-etkilenecek" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.robotpos.com/en/restoranlar-yapay-zeka-dan-nasil-etkilenecek" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://www.robotpos.com/ru/restoranlar-yapay-zeka-dan-nasil-etkilenecek" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://www.robotpos.com/ar/restoranlar-yapay-zeka-dan-nasil-etkilenecek" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.robotpos.com/restoranlar-yapay-zeka-dan-nasil-etkilenecek?locale=en" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.robotpos.com/restoranlar-yapay-zeka-dan-nasil-etkilenecek?locale=ru" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.robotpos.com/restoranlar-yapay-zeka-dan-nasil-etkilenecek?locale=ar" />
+    <xhtml:link rel="alternate" hreflang="az" href="https://www.robotpos.com/restoranlar-yapay-zeka-dan-nasil-etkilenecek?locale=az" />
     <lastmod>2025-05-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -243,9 +267,10 @@
   <url>
     <loc>https://www.robotpos.com/restaurant-otomasyon-nedir</loc>
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.robotpos.com/restaurant-otomasyon-nedir" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.robotpos.com/en/restaurant-otomasyon-nedir" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://www.robotpos.com/ru/restaurant-otomasyon-nedir" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://www.robotpos.com/ar/restaurant-otomasyon-nedir" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.robotpos.com/restaurant-otomasyon-nedir?locale=en" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.robotpos.com/restaurant-otomasyon-nedir?locale=ru" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.robotpos.com/restaurant-otomasyon-nedir?locale=ar" />
+    <xhtml:link rel="alternate" hreflang="az" href="https://www.robotpos.com/restaurant-otomasyon-nedir?locale=az" />
     <lastmod>2024-03-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -253,9 +278,10 @@
   <url>
     <loc>https://www.robotpos.com/cost-ve-maliyet-analiz</loc>
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.robotpos.com/cost-ve-maliyet-analiz" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.robotpos.com/en/cost-ve-maliyet-analiz" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://www.robotpos.com/ru/cost-ve-maliyet-analiz" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://www.robotpos.com/ar/cost-ve-maliyet-analiz" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.robotpos.com/cost-ve-maliyet-analiz?locale=en" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.robotpos.com/cost-ve-maliyet-analiz?locale=ru" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.robotpos.com/cost-ve-maliyet-analiz?locale=ar" />
+    <xhtml:link rel="alternate" hreflang="az" href="https://www.robotpos.com/cost-ve-maliyet-analiz?locale=az" />
     <lastmod>2024-05-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -263,9 +289,10 @@
   <url>
     <loc>https://www.robotpos.com/cafe-kafeterta-otomasyon-yazilim</loc>
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.robotpos.com/cafe-kafeterta-otomasyon-yazilim" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.robotpos.com/en/cafe-kafeterta-otomasyon-yazilim" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://www.robotpos.com/ru/cafe-kafeterta-otomasyon-yazilim" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://www.robotpos.com/ar/cafe-kafeterta-otomasyon-yazilim" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.robotpos.com/cafe-kafeterta-otomasyon-yazilim?locale=en" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.robotpos.com/cafe-kafeterta-otomasyon-yazilim?locale=ru" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.robotpos.com/cafe-kafeterta-otomasyon-yazilim?locale=ar" />
+    <xhtml:link rel="alternate" hreflang="az" href="https://www.robotpos.com/cafe-kafeterta-otomasyon-yazilim?locale=az" />
     <lastmod>2024-03-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -273,9 +300,10 @@
   <url>
     <loc>https://www.robotpos.com/paket-servis-takip-yazilimi</loc>
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.robotpos.com/paket-servis-takip-yazilimi" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.robotpos.com/en/paket-servis-takip-yazilimi" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://www.robotpos.com/ru/paket-servis-takip-yazilimi" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://www.robotpos.com/ar/paket-servis-takip-yazilimi" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.robotpos.com/paket-servis-takip-yazilimi?locale=en" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.robotpos.com/paket-servis-takip-yazilimi?locale=ru" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.robotpos.com/paket-servis-takip-yazilimi?locale=ar" />
+    <xhtml:link rel="alternate" hreflang="az" href="https://www.robotpos.com/paket-servis-takip-yazilimi?locale=az" />
     <lastmod>2024-03-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -283,9 +311,10 @@
   <url>
     <loc>https://www.robotpos.com/stok-maliyet-takip-sistemi</loc>
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.robotpos.com/stok-maliyet-takip-sistemi" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.robotpos.com/en/stok-maliyet-takip-sistemi" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://www.robotpos.com/ru/stok-maliyet-takip-sistemi" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://www.robotpos.com/ar/stok-maliyet-takip-sistemi" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.robotpos.com/stok-maliyet-takip-sistemi?locale=en" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.robotpos.com/stok-maliyet-takip-sistemi?locale=ru" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.robotpos.com/stok-maliyet-takip-sistemi?locale=ar" />
+    <xhtml:link rel="alternate" hreflang="az" href="https://www.robotpos.com/stok-maliyet-takip-sistemi?locale=az" />
     <lastmod>2024-03-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -293,9 +322,10 @@
   <url>
     <loc>https://www.robotpos.com/dokunmatik-bilgisayar-pos</loc>
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.robotpos.com/dokunmatik-bilgisayar-pos" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.robotpos.com/en/dokunmatik-bilgisayar-pos" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://www.robotpos.com/ru/dokunmatik-bilgisayar-pos" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://www.robotpos.com/ar/dokunmatik-bilgisayar-pos" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.robotpos.com/dokunmatik-bilgisayar-pos?locale=en" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.robotpos.com/dokunmatik-bilgisayar-pos?locale=ru" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.robotpos.com/dokunmatik-bilgisayar-pos?locale=ar" />
+    <xhtml:link rel="alternate" hreflang="az" href="https://www.robotpos.com/dokunmatik-bilgisayar-pos?locale=az" />
     <lastmod>2024-03-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -303,9 +333,10 @@
   <url>
     <loc>https://www.robotpos.com/garson-takip-sistemi-elektronik-siparis</loc>
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.robotpos.com/garson-takip-sistemi-elektronik-siparis" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.robotpos.com/en/garson-takip-sistemi-elektronik-siparis" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://www.robotpos.com/ru/garson-takip-sistemi-elektronik-siparis" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://www.robotpos.com/ar/garson-takip-sistemi-elektronik-siparis" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.robotpos.com/garson-takip-sistemi-elektronik-siparis?locale=en" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.robotpos.com/garson-takip-sistemi-elektronik-siparis?locale=ru" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.robotpos.com/garson-takip-sistemi-elektronik-siparis?locale=ar" />
+    <xhtml:link rel="alternate" hreflang="az" href="https://www.robotpos.com/garson-takip-sistemi-elektronik-siparis?locale=az" />
     <lastmod>2024-03-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -313,9 +344,10 @@
   <url>
     <loc>https://www.robotpos.com/pastane-takip-yazilim-siparis</loc>
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.robotpos.com/pastane-takip-yazilim-siparis" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.robotpos.com/en/pastane-takip-yazilim-siparis" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://www.robotpos.com/ru/pastane-takip-yazilim-siparis" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://www.robotpos.com/ar/pastane-takip-yazilim-siparis" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.robotpos.com/pastane-takip-yazilim-siparis?locale=en" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.robotpos.com/pastane-takip-yazilim-siparis?locale=ru" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.robotpos.com/pastane-takip-yazilim-siparis?locale=ar" />
+    <xhtml:link rel="alternate" hreflang="az" href="https://www.robotpos.com/pastane-takip-yazilim-siparis?locale=az" />
     <lastmod>2024-03-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -323,9 +355,10 @@
   <url>
     <loc>https://www.robotpos.com/elektronik-adisyon-bilgisayar-sistemi</loc>
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.robotpos.com/elektronik-adisyon-bilgisayar-sistemi" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.robotpos.com/en/elektronik-adisyon-bilgisayar-sistemi" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://www.robotpos.com/ru/elektronik-adisyon-bilgisayar-sistemi" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://www.robotpos.com/ar/elektronik-adisyon-bilgisayar-sistemi" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.robotpos.com/elektronik-adisyon-bilgisayar-sistemi?locale=en" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.robotpos.com/elektronik-adisyon-bilgisayar-sistemi?locale=ru" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.robotpos.com/elektronik-adisyon-bilgisayar-sistemi?locale=ar" />
+    <xhtml:link rel="alternate" hreflang="az" href="https://www.robotpos.com/elektronik-adisyon-bilgisayar-sistemi?locale=az" />
     <lastmod>2024-03-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -333,9 +366,10 @@
   <url>
     <loc>https://www.robotpos.com/zincir-restaurant-merkezi-yonetim</loc>
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.robotpos.com/zincir-restaurant-merkezi-yonetim" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.robotpos.com/en/zincir-restaurant-merkezi-yonetim" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://www.robotpos.com/ru/zincir-restaurant-merkezi-yonetim" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://www.robotpos.com/ar/zincir-restaurant-merkezi-yonetim" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.robotpos.com/zincir-restaurant-merkezi-yonetim?locale=en" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.robotpos.com/zincir-restaurant-merkezi-yonetim?locale=ru" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.robotpos.com/zincir-restaurant-merkezi-yonetim?locale=ar" />
+    <xhtml:link rel="alternate" hreflang="az" href="https://www.robotpos.com/zincir-restaurant-merkezi-yonetim?locale=az" />
     <lastmod>2024-03-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -343,9 +377,10 @@
   <url>
     <loc>https://www.robotpos.com/restaurant-adisyon</loc>
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.robotpos.com/restaurant-adisyon" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.robotpos.com/en/restaurant-adisyon" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://www.robotpos.com/ru/restaurant-adisyon" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://www.robotpos.com/ar/restaurant-adisyon" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.robotpos.com/restaurant-adisyon?locale=en" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.robotpos.com/restaurant-adisyon?locale=ru" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.robotpos.com/restaurant-adisyon?locale=ar" />
+    <xhtml:link rel="alternate" hreflang="az" href="https://www.robotpos.com/restaurant-adisyon?locale=az" />
     <lastmod>2024-04-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -353,9 +388,10 @@
   <url>
     <loc>https://www.robotpos.com/restaurant-pos</loc>
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.robotpos.com/restaurant-pos" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.robotpos.com/en/restaurant-pos" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://www.robotpos.com/ru/restaurant-pos" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://www.robotpos.com/ar/restaurant-pos" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.robotpos.com/restaurant-pos?locale=en" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.robotpos.com/restaurant-pos?locale=ru" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.robotpos.com/restaurant-pos?locale=ar" />
+    <xhtml:link rel="alternate" hreflang="az" href="https://www.robotpos.com/restaurant-pos?locale=az" />
     <lastmod>2024-04-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -363,9 +399,10 @@
   <url>
     <loc>https://www.robotpos.com/maliyet-hesaplama-yontemleri</loc>
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.robotpos.com/maliyet-hesaplama-yontemleri" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.robotpos.com/en/maliyet-hesaplama-yontemleri" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://www.robotpos.com/ru/maliyet-hesaplama-yontemleri" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://www.robotpos.com/ar/maliyet-hesaplama-yontemleri" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.robotpos.com/maliyet-hesaplama-yontemleri?locale=en" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.robotpos.com/maliyet-hesaplama-yontemleri?locale=ru" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.robotpos.com/maliyet-hesaplama-yontemleri?locale=ar" />
+    <xhtml:link rel="alternate" hreflang="az" href="https://www.robotpos.com/maliyet-hesaplama-yontemleri?locale=az" />
     <lastmod>2024-04-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -373,9 +410,10 @@
   <url>
     <loc>https://www.robotpos.com/cost-control</loc>
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.robotpos.com/cost-control" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.robotpos.com/en/cost-control" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://www.robotpos.com/ru/cost-control" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://www.robotpos.com/ar/cost-control" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.robotpos.com/cost-control?locale=en" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.robotpos.com/cost-control?locale=ru" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.robotpos.com/cost-control?locale=ar" />
+    <xhtml:link rel="alternate" hreflang="az" href="https://www.robotpos.com/cost-control?locale=az" />
     <lastmod>2024-04-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -383,9 +421,10 @@
   <url>
     <loc>https://www.robotpos.com/restaurant-otomasyonu</loc>
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.robotpos.com/restaurant-otomasyonu" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.robotpos.com/en/restaurant-otomasyonu" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://www.robotpos.com/ru/restaurant-otomasyonu" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://www.robotpos.com/ar/restaurant-otomasyonu" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.robotpos.com/restaurant-otomasyonu?locale=en" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.robotpos.com/restaurant-otomasyonu?locale=ru" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.robotpos.com/restaurant-otomasyonu?locale=ar" />
+    <xhtml:link rel="alternate" hreflang="az" href="https://www.robotpos.com/restaurant-otomasyonu?locale=az" />
     <lastmod>2024-04-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -393,9 +432,10 @@
   <url>
     <loc>https://www.robotpos.com/kofteci-ramiz-adisyon-sistemi</loc>
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.robotpos.com/kofteci-ramiz-adisyon-sistemi" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.robotpos.com/en/kofteci-ramiz-adisyon-sistemi" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://www.robotpos.com/ru/kofteci-ramiz-adisyon-sistemi" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://www.robotpos.com/ar/kofteci-ramiz-adisyon-sistemi" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.robotpos.com/kofteci-ramiz-adisyon-sistemi?locale=en" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.robotpos.com/kofteci-ramiz-adisyon-sistemi?locale=ru" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.robotpos.com/kofteci-ramiz-adisyon-sistemi?locale=ar" />
+    <xhtml:link rel="alternate" hreflang="az" href="https://www.robotpos.com/kofteci-ramiz-adisyon-sistemi?locale=az" />
     <lastmod>2024-04-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -403,9 +443,10 @@
   <url>
     <loc>https://www.robotpos.com/kofteci-ramiz-bilgisayar-sistemi</loc>
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.robotpos.com/kofteci-ramiz-bilgisayar-sistemi" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.robotpos.com/en/kofteci-ramiz-bilgisayar-sistemi" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://www.robotpos.com/ru/kofteci-ramiz-bilgisayar-sistemi" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://www.robotpos.com/ar/kofteci-ramiz-bilgisayar-sistemi" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.robotpos.com/kofteci-ramiz-bilgisayar-sistemi?locale=en" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.robotpos.com/kofteci-ramiz-bilgisayar-sistemi?locale=ru" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.robotpos.com/kofteci-ramiz-bilgisayar-sistemi?locale=ar" />
+    <xhtml:link rel="alternate" hreflang="az" href="https://www.robotpos.com/kofteci-ramiz-bilgisayar-sistemi?locale=az" />
     <lastmod>2024-04-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -413,9 +454,10 @@
   <url>
     <loc>https://www.robotpos.com/garson-el-terminali-ile-mobil-siparis-ve-kasa-kontrolu</loc>
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.robotpos.com/garson-el-terminali-ile-mobil-siparis-ve-kasa-kontrolu" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.robotpos.com/en/garson-el-terminali-ile-mobil-siparis-ve-kasa-kontrolu" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://www.robotpos.com/ru/garson-el-terminali-ile-mobil-siparis-ve-kasa-kontrolu" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://www.robotpos.com/ar/garson-el-terminali-ile-mobil-siparis-ve-kasa-kontrolu" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.robotpos.com/garson-el-terminali-ile-mobil-siparis-ve-kasa-kontrolu?locale=en" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.robotpos.com/garson-el-terminali-ile-mobil-siparis-ve-kasa-kontrolu?locale=ru" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.robotpos.com/garson-el-terminali-ile-mobil-siparis-ve-kasa-kontrolu?locale=ar" />
+    <xhtml:link rel="alternate" hreflang="az" href="https://www.robotpos.com/garson-el-terminali-ile-mobil-siparis-ve-kasa-kontrolu?locale=az" />
     <lastmod>2024-04-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -423,9 +465,10 @@
   <url>
     <loc>https://www.robotpos.com/stok-maliyet-yonetim-sistemi</loc>
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.robotpos.com/stok-maliyet-yonetim-sistemi" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.robotpos.com/en/stok-maliyet-yonetim-sistemi" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://www.robotpos.com/ru/stok-maliyet-yonetim-sistemi" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://www.robotpos.com/ar/stok-maliyet-yonetim-sistemi" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.robotpos.com/stok-maliyet-yonetim-sistemi?locale=en" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.robotpos.com/stok-maliyet-yonetim-sistemi?locale=ru" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.robotpos.com/stok-maliyet-yonetim-sistemi?locale=ar" />
+    <xhtml:link rel="alternate" hreflang="az" href="https://www.robotpos.com/stok-maliyet-yonetim-sistemi?locale=az" />
     <lastmod>2005-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -433,9 +476,10 @@
   <url>
     <loc>https://www.robotpos.com/seyran-pastaneleri-adisyon-sistemi</loc>
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.robotpos.com/seyran-pastaneleri-adisyon-sistemi" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.robotpos.com/en/seyran-pastaneleri-adisyon-sistemi" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://www.robotpos.com/ru/seyran-pastaneleri-adisyon-sistemi" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://www.robotpos.com/ar/seyran-pastaneleri-adisyon-sistemi" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.robotpos.com/seyran-pastaneleri-adisyon-sistemi?locale=en" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.robotpos.com/seyran-pastaneleri-adisyon-sistemi?locale=ru" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.robotpos.com/seyran-pastaneleri-adisyon-sistemi?locale=ar" />
+    <xhtml:link rel="alternate" hreflang="az" href="https://www.robotpos.com/seyran-pastaneleri-adisyon-sistemi?locale=az" />
     <lastmod>2024-04-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -443,9 +487,10 @@
   <url>
     <loc>https://www.robotpos.com/restaurant-pos-sistemi</loc>
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.robotpos.com/restaurant-pos-sistemi" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.robotpos.com/en/restaurant-pos-sistemi" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://www.robotpos.com/ru/restaurant-pos-sistemi" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://www.robotpos.com/ar/restaurant-pos-sistemi" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.robotpos.com/restaurant-pos-sistemi?locale=en" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.robotpos.com/restaurant-pos-sistemi?locale=ru" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.robotpos.com/restaurant-pos-sistemi?locale=ar" />
+    <xhtml:link rel="alternate" hreflang="az" href="https://www.robotpos.com/restaurant-pos-sistemi?locale=az" />
     <lastmod>2024-04-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -453,9 +498,10 @@
   <url>
     <loc>https://www.robotpos.com/zincir-restaurant-pos-yazilim</loc>
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.robotpos.com/zincir-restaurant-pos-yazilim" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.robotpos.com/en/zincir-restaurant-pos-yazilim" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://www.robotpos.com/ru/zincir-restaurant-pos-yazilim" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://www.robotpos.com/ar/zincir-restaurant-pos-yazilim" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.robotpos.com/zincir-restaurant-pos-yazilim?locale=en" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.robotpos.com/zincir-restaurant-pos-yazilim?locale=ru" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.robotpos.com/zincir-restaurant-pos-yazilim?locale=ar" />
+    <xhtml:link rel="alternate" hreflang="az" href="https://www.robotpos.com/zincir-restaurant-pos-yazilim?locale=az" />
     <lastmod>2024-04-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -463,9 +509,10 @@
   <url>
     <loc>https://www.robotpos.com/restaurant-programi</loc>
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.robotpos.com/restaurant-programi" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.robotpos.com/en/restaurant-programi" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://www.robotpos.com/ru/restaurant-programi" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://www.robotpos.com/ar/restaurant-programi" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.robotpos.com/restaurant-programi?locale=en" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.robotpos.com/restaurant-programi?locale=ru" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.robotpos.com/restaurant-programi?locale=ar" />
+    <xhtml:link rel="alternate" hreflang="az" href="https://www.robotpos.com/restaurant-programi?locale=az" />
     <lastmod>2024-05-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -473,9 +520,10 @@
   <url>
     <loc>https://www.robotpos.com/dokunmatik-pos-sistemleri</loc>
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.robotpos.com/dokunmatik-pos-sistemleri" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.robotpos.com/en/dokunmatik-pos-sistemleri" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://www.robotpos.com/ru/dokunmatik-pos-sistemleri" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://www.robotpos.com/ar/dokunmatik-pos-sistemleri" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.robotpos.com/dokunmatik-pos-sistemleri?locale=en" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.robotpos.com/dokunmatik-pos-sistemleri?locale=ru" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.robotpos.com/dokunmatik-pos-sistemleri?locale=ar" />
+    <xhtml:link rel="alternate" hreflang="az" href="https://www.robotpos.com/dokunmatik-pos-sistemleri?locale=az" />
     <lastmod>2024-05-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -483,9 +531,10 @@
   <url>
     <loc>https://www.robotpos.com/restaurant-yazilimi</loc>
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.robotpos.com/restaurant-yazilimi" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.robotpos.com/en/restaurant-yazilimi" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://www.robotpos.com/ru/restaurant-yazilimi" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://www.robotpos.com/ar/restaurant-yazilimi" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.robotpos.com/restaurant-yazilimi?locale=en" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.robotpos.com/restaurant-yazilimi?locale=ru" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.robotpos.com/restaurant-yazilimi?locale=ar" />
+    <xhtml:link rel="alternate" hreflang="az" href="https://www.robotpos.com/restaurant-yazilimi?locale=az" />
     <lastmod>2024-05-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -493,9 +542,10 @@
   <url>
     <loc>https://www.robotpos.com/restoran-satis-sistemi</loc>
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.robotpos.com/restoran-satis-sistemi" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.robotpos.com/en/restoran-satis-sistemi" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://www.robotpos.com/ru/restoran-satis-sistemi" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://www.robotpos.com/ar/restoran-satis-sistemi" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.robotpos.com/restoran-satis-sistemi?locale=en" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.robotpos.com/restoran-satis-sistemi?locale=ru" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.robotpos.com/restoran-satis-sistemi?locale=ar" />
+    <xhtml:link rel="alternate" hreflang="az" href="https://www.robotpos.com/restoran-satis-sistemi?locale=az" />
     <lastmod>2019-05-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -503,9 +553,10 @@
   <url>
     <loc>https://www.robotpos.com/adisyon-sistemi</loc>
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.robotpos.com/adisyon-sistemi" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.robotpos.com/en/adisyon-sistemi" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://www.robotpos.com/ru/adisyon-sistemi" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://www.robotpos.com/ar/adisyon-sistemi" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.robotpos.com/adisyon-sistemi?locale=en" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.robotpos.com/adisyon-sistemi?locale=ru" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.robotpos.com/adisyon-sistemi?locale=ar" />
+    <xhtml:link rel="alternate" hreflang="az" href="https://www.robotpos.com/adisyon-sistemi?locale=az" />
     <lastmod>2024-05-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -513,9 +564,10 @@
   <url>
     <loc>https://www.robotpos.com/kofteci-ramiz-adisyon-sistemi-2</loc>
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.robotpos.com/kofteci-ramiz-adisyon-sistemi-2" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.robotpos.com/en/kofteci-ramiz-adisyon-sistemi-2" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://www.robotpos.com/ru/kofteci-ramiz-adisyon-sistemi-2" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://www.robotpos.com/ar/kofteci-ramiz-adisyon-sistemi-2" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.robotpos.com/kofteci-ramiz-adisyon-sistemi-2?locale=en" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.robotpos.com/kofteci-ramiz-adisyon-sistemi-2?locale=ru" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.robotpos.com/kofteci-ramiz-adisyon-sistemi-2?locale=ar" />
+    <xhtml:link rel="alternate" hreflang="az" href="https://www.robotpos.com/kofteci-ramiz-adisyon-sistemi-2?locale=az" />
     <lastmod>2024-05-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -523,9 +575,10 @@
   <url>
     <loc>https://www.robotpos.com/restaurant-otomasyon-programi</loc>
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.robotpos.com/restaurant-otomasyon-programi" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.robotpos.com/en/restaurant-otomasyon-programi" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://www.robotpos.com/ru/restaurant-otomasyon-programi" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://www.robotpos.com/ar/restaurant-otomasyon-programi" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.robotpos.com/restaurant-otomasyon-programi?locale=en" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.robotpos.com/restaurant-otomasyon-programi?locale=ru" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.robotpos.com/restaurant-otomasyon-programi?locale=ar" />
+    <xhtml:link rel="alternate" hreflang="az" href="https://www.robotpos.com/restaurant-otomasyon-programi?locale=az" />
     <lastmod>2024-06-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -533,9 +586,10 @@
   <url>
     <loc>https://www.robotpos.com/restoran-yazilim</loc>
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.robotpos.com/restoran-yazilim" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.robotpos.com/en/restoran-yazilim" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://www.robotpos.com/ru/restoran-yazilim" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://www.robotpos.com/ar/restoran-yazilim" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.robotpos.com/restoran-yazilim?locale=en" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.robotpos.com/restoran-yazilim?locale=ru" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.robotpos.com/restoran-yazilim?locale=ar" />
+    <xhtml:link rel="alternate" hreflang="az" href="https://www.robotpos.com/restoran-yazilim?locale=az" />
     <lastmod>2024-06-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -543,9 +597,10 @@
   <url>
     <loc>https://www.robotpos.com/tum-adisyonlar-robotpos-adisyon-programi-ile-kontrol-altinda</loc>
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.robotpos.com/tum-adisyonlar-robotpos-adisyon-programi-ile-kontrol-altinda" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.robotpos.com/en/tum-adisyonlar-robotpos-adisyon-programi-ile-kontrol-altinda" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://www.robotpos.com/ru/tum-adisyonlar-robotpos-adisyon-programi-ile-kontrol-altinda" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://www.robotpos.com/ar/tum-adisyonlar-robotpos-adisyon-programi-ile-kontrol-altinda" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.robotpos.com/tum-adisyonlar-robotpos-adisyon-programi-ile-kontrol-altinda?locale=en" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.robotpos.com/tum-adisyonlar-robotpos-adisyon-programi-ile-kontrol-altinda?locale=ru" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.robotpos.com/tum-adisyonlar-robotpos-adisyon-programi-ile-kontrol-altinda?locale=ar" />
+    <xhtml:link rel="alternate" hreflang="az" href="https://www.robotpos.com/tum-adisyonlar-robotpos-adisyon-programi-ile-kontrol-altinda?locale=az" />
     <lastmod>2024-06-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -553,9 +608,10 @@
   <url>
     <loc>https://www.robotpos.com/restoran-yazilim-sistemi</loc>
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.robotpos.com/restoran-yazilim-sistemi" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.robotpos.com/en/restoran-yazilim-sistemi" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://www.robotpos.com/ru/restoran-yazilim-sistemi" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://www.robotpos.com/ar/restoran-yazilim-sistemi" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.robotpos.com/restoran-yazilim-sistemi?locale=en" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.robotpos.com/restoran-yazilim-sistemi?locale=ru" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.robotpos.com/restoran-yazilim-sistemi?locale=ar" />
+    <xhtml:link rel="alternate" hreflang="az" href="https://www.robotpos.com/restoran-yazilim-sistemi?locale=az" />
     <lastmod>2019-09-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -563,9 +619,10 @@
   <url>
     <loc>https://www.robotpos.com/bilgisayarli-adisyon-sistemi</loc>
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.robotpos.com/bilgisayarli-adisyon-sistemi" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.robotpos.com/en/bilgisayarli-adisyon-sistemi" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://www.robotpos.com/ru/bilgisayarli-adisyon-sistemi" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://www.robotpos.com/ar/bilgisayarli-adisyon-sistemi" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.robotpos.com/bilgisayarli-adisyon-sistemi?locale=en" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.robotpos.com/bilgisayarli-adisyon-sistemi?locale=ru" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.robotpos.com/bilgisayarli-adisyon-sistemi?locale=ar" />
+    <xhtml:link rel="alternate" hreflang="az" href="https://www.robotpos.com/bilgisayarli-adisyon-sistemi?locale=az" />
     <lastmod>2024-06-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -573,9 +630,10 @@
   <url>
     <loc>https://www.robotpos.com/40163-2</loc>
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.robotpos.com/40163-2" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.robotpos.com/en/40163-2" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://www.robotpos.com/ru/40163-2" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://www.robotpos.com/ar/40163-2" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.robotpos.com/40163-2?locale=en" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.robotpos.com/40163-2?locale=ru" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.robotpos.com/40163-2?locale=ar" />
+    <xhtml:link rel="alternate" hreflang="az" href="https://www.robotpos.com/40163-2?locale=az" />
     <lastmod>2016-02-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -583,9 +641,10 @@
   <url>
     <loc>https://www.robotpos.com/tum-sistem-tek-bir-robotpos-yazilimi-ile-kontrol-altinda</loc>
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.robotpos.com/tum-sistem-tek-bir-robotpos-yazilimi-ile-kontrol-altinda" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.robotpos.com/en/tum-sistem-tek-bir-robotpos-yazilimi-ile-kontrol-altinda" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://www.robotpos.com/ru/tum-sistem-tek-bir-robotpos-yazilimi-ile-kontrol-altinda" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://www.robotpos.com/ar/tum-sistem-tek-bir-robotpos-yazilimi-ile-kontrol-altinda" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.robotpos.com/tum-sistem-tek-bir-robotpos-yazilimi-ile-kontrol-altinda?locale=en" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.robotpos.com/tum-sistem-tek-bir-robotpos-yazilimi-ile-kontrol-altinda?locale=ru" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.robotpos.com/tum-sistem-tek-bir-robotpos-yazilimi-ile-kontrol-altinda?locale=ar" />
+    <xhtml:link rel="alternate" hreflang="az" href="https://www.robotpos.com/tum-sistem-tek-bir-robotpos-yazilimi-ile-kontrol-altinda?locale=az" />
     <lastmod>2019-02-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -593,9 +652,10 @@
   <url>
     <loc>https://www.robotpos.com/modern-restoran-yazilimi-yonetim-siparis</loc>
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.robotpos.com/modern-restoran-yazilimi-yonetim-siparis" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.robotpos.com/en/modern-restoran-yazilimi-yonetim-siparis" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://www.robotpos.com/ru/modern-restoran-yazilimi-yonetim-siparis" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://www.robotpos.com/ar/modern-restoran-yazilimi-yonetim-siparis" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.robotpos.com/modern-restoran-yazilimi-yonetim-siparis?locale=en" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.robotpos.com/modern-restoran-yazilimi-yonetim-siparis?locale=ru" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.robotpos.com/modern-restoran-yazilimi-yonetim-siparis?locale=ar" />
+    <xhtml:link rel="alternate" hreflang="az" href="https://www.robotpos.com/modern-restoran-yazilimi-yonetim-siparis?locale=az" />
     <lastmod>2019-02-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -603,9 +663,10 @@
   <url>
     <loc>https://www.robotpos.com/modern-restoran-yazilimi-personel</loc>
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.robotpos.com/modern-restoran-yazilimi-personel" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.robotpos.com/en/modern-restoran-yazilimi-personel" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://www.robotpos.com/ru/modern-restoran-yazilimi-personel" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://www.robotpos.com/ar/modern-restoran-yazilimi-personel" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.robotpos.com/modern-restoran-yazilimi-personel?locale=en" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.robotpos.com/modern-restoran-yazilimi-personel?locale=ru" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.robotpos.com/modern-restoran-yazilimi-personel?locale=ar" />
+    <xhtml:link rel="alternate" hreflang="az" href="https://www.robotpos.com/modern-restoran-yazilimi-personel?locale=az" />
     <lastmod>2019-02-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -613,9 +674,10 @@
   <url>
     <loc>https://www.robotpos.com/modern-restoran-yazilimi-raporlama</loc>
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.robotpos.com/modern-restoran-yazilimi-raporlama" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.robotpos.com/en/modern-restoran-yazilimi-raporlama" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://www.robotpos.com/ru/modern-restoran-yazilimi-raporlama" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://www.robotpos.com/ar/modern-restoran-yazilimi-raporlama" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.robotpos.com/modern-restoran-yazilimi-raporlama?locale=en" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.robotpos.com/modern-restoran-yazilimi-raporlama?locale=ru" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.robotpos.com/modern-restoran-yazilimi-raporlama?locale=ar" />
+    <xhtml:link rel="alternate" hreflang="az" href="https://www.robotpos.com/modern-restoran-yazilimi-raporlama?locale=az" />
     <lastmod>2019-02-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -623,9 +685,10 @@
   <url>
     <loc>https://www.robotpos.com/mobil-siparis-sisitemi-google-playde</loc>
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.robotpos.com/mobil-siparis-sisitemi-google-playde" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.robotpos.com/en/mobil-siparis-sisitemi-google-playde" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://www.robotpos.com/ru/mobil-siparis-sisitemi-google-playde" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://www.robotpos.com/ar/mobil-siparis-sisitemi-google-playde" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.robotpos.com/mobil-siparis-sisitemi-google-playde?locale=en" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.robotpos.com/mobil-siparis-sisitemi-google-playde?locale=ru" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.robotpos.com/mobil-siparis-sisitemi-google-playde?locale=ar" />
+    <xhtml:link rel="alternate" hreflang="az" href="https://www.robotpos.com/mobil-siparis-sisitemi-google-playde?locale=az" />
     <lastmod>2016-02-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -633,9 +696,10 @@
   <url>
     <loc>https://www.robotpos.com/restoran-mobil-siparis-sistemi-el-terminali</loc>
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.robotpos.com/restoran-mobil-siparis-sistemi-el-terminali" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.robotpos.com/en/restoran-mobil-siparis-sistemi-el-terminali" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://www.robotpos.com/ru/restoran-mobil-siparis-sistemi-el-terminali" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://www.robotpos.com/ar/restoran-mobil-siparis-sistemi-el-terminali" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.robotpos.com/restoran-mobil-siparis-sistemi-el-terminali?locale=en" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.robotpos.com/restoran-mobil-siparis-sistemi-el-terminali?locale=ru" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.robotpos.com/restoran-mobil-siparis-sistemi-el-terminali?locale=ar" />
+    <xhtml:link rel="alternate" hreflang="az" href="https://www.robotpos.com/restoran-mobil-siparis-sistemi-el-terminali?locale=az" />
     <lastmod>2019-02-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -643,9 +707,10 @@
   <url>
     <loc>https://www.robotpos.com/mutfak-siparis-ekrani-kds</loc>
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.robotpos.com/mutfak-siparis-ekrani-kds" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.robotpos.com/en/mutfak-siparis-ekrani-kds" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://www.robotpos.com/ru/mutfak-siparis-ekrani-kds" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://www.robotpos.com/ar/mutfak-siparis-ekrani-kds" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.robotpos.com/mutfak-siparis-ekrani-kds?locale=en" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.robotpos.com/mutfak-siparis-ekrani-kds?locale=ru" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.robotpos.com/mutfak-siparis-ekrani-kds?locale=ar" />
+    <xhtml:link rel="alternate" hreflang="az" href="https://www.robotpos.com/mutfak-siparis-ekrani-kds?locale=az" />
     <lastmod>2019-02-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -653,9 +718,10 @@
   <url>
     <loc>https://www.robotpos.com/restoran-pos-yazilimlarinin-isletmenize-olan-katkilari-nelerdir</loc>
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.robotpos.com/restoran-pos-yazilimlarinin-isletmenize-olan-katkilari-nelerdir" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.robotpos.com/en/restoran-pos-yazilimlarinin-isletmenize-olan-katkilari-nelerdir" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://www.robotpos.com/ru/restoran-pos-yazilimlarinin-isletmenize-olan-katkilari-nelerdir" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://www.robotpos.com/ar/restoran-pos-yazilimlarinin-isletmenize-olan-katkilari-nelerdir" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.robotpos.com/restoran-pos-yazilimlarinin-isletmenize-olan-katkilari-nelerdir?locale=en" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.robotpos.com/restoran-pos-yazilimlarinin-isletmenize-olan-katkilari-nelerdir?locale=ru" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.robotpos.com/restoran-pos-yazilimlarinin-isletmenize-olan-katkilari-nelerdir?locale=ar" />
+    <xhtml:link rel="alternate" hreflang="az" href="https://www.robotpos.com/restoran-pos-yazilimlarinin-isletmenize-olan-katkilari-nelerdir?locale=az" />
     <lastmod>2019-02-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -663,9 +729,10 @@
   <url>
     <loc>https://www.robotpos.com/pos-sistemlerinde-tek-merkezden-menu-degistirme-kampanya-olusturma</loc>
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.robotpos.com/pos-sistemlerinde-tek-merkezden-menu-degistirme-kampanya-olusturma" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.robotpos.com/en/pos-sistemlerinde-tek-merkezden-menu-degistirme-kampanya-olusturma" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://www.robotpos.com/ru/pos-sistemlerinde-tek-merkezden-menu-degistirme-kampanya-olusturma" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://www.robotpos.com/ar/pos-sistemlerinde-tek-merkezden-menu-degistirme-kampanya-olusturma" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.robotpos.com/pos-sistemlerinde-tek-merkezden-menu-degistirme-kampanya-olusturma?locale=en" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.robotpos.com/pos-sistemlerinde-tek-merkezden-menu-degistirme-kampanya-olusturma?locale=ru" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.robotpos.com/pos-sistemlerinde-tek-merkezden-menu-degistirme-kampanya-olusturma?locale=ar" />
+    <xhtml:link rel="alternate" hreflang="az" href="https://www.robotpos.com/pos-sistemlerinde-tek-merkezden-menu-degistirme-kampanya-olusturma?locale=az" />
     <lastmod>2019-02-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -673,9 +740,10 @@
   <url>
     <loc>https://www.robotpos.com/yeni-nesil-restoran-yazilim-sistemleri</loc>
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.robotpos.com/yeni-nesil-restoran-yazilim-sistemleri" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.robotpos.com/en/yeni-nesil-restoran-yazilim-sistemleri" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://www.robotpos.com/ru/yeni-nesil-restoran-yazilim-sistemleri" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://www.robotpos.com/ar/yeni-nesil-restoran-yazilim-sistemleri" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.robotpos.com/yeni-nesil-restoran-yazilim-sistemleri?locale=en" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.robotpos.com/yeni-nesil-restoran-yazilim-sistemleri?locale=ru" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.robotpos.com/yeni-nesil-restoran-yazilim-sistemleri?locale=ar" />
+    <xhtml:link rel="alternate" hreflang="az" href="https://www.robotpos.com/yeni-nesil-restoran-yazilim-sistemleri?locale=az" />
     <lastmod>2019-02-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -683,9 +751,10 @@
   <url>
     <loc>https://www.robotpos.com/modern-restoran-yazilimi-musteri-yonetimi</loc>
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.robotpos.com/modern-restoran-yazilimi-musteri-yonetimi" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.robotpos.com/en/modern-restoran-yazilimi-musteri-yonetimi" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://www.robotpos.com/ru/modern-restoran-yazilimi-musteri-yonetimi" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://www.robotpos.com/ar/modern-restoran-yazilimi-musteri-yonetimi" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.robotpos.com/modern-restoran-yazilimi-musteri-yonetimi?locale=en" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.robotpos.com/modern-restoran-yazilimi-musteri-yonetimi?locale=ru" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.robotpos.com/modern-restoran-yazilimi-musteri-yonetimi?locale=ar" />
+    <xhtml:link rel="alternate" hreflang="az" href="https://www.robotpos.com/modern-restoran-yazilimi-musteri-yonetimi?locale=az" />
     <lastmod>2019-02-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -693,9 +762,10 @@
   <url>
     <loc>https://www.robotpos.com/restoran-yazilimi-online-destek-personel-egitimi-yerinde-servis</loc>
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.robotpos.com/restoran-yazilimi-online-destek-personel-egitimi-yerinde-servis" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.robotpos.com/en/restoran-yazilimi-online-destek-personel-egitimi-yerinde-servis" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://www.robotpos.com/ru/restoran-yazilimi-online-destek-personel-egitimi-yerinde-servis" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://www.robotpos.com/ar/restoran-yazilimi-online-destek-personel-egitimi-yerinde-servis" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.robotpos.com/restoran-yazilimi-online-destek-personel-egitimi-yerinde-servis?locale=en" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.robotpos.com/restoran-yazilimi-online-destek-personel-egitimi-yerinde-servis?locale=ru" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.robotpos.com/restoran-yazilimi-online-destek-personel-egitimi-yerinde-servis?locale=ar" />
+    <xhtml:link rel="alternate" hreflang="az" href="https://www.robotpos.com/restoran-yazilimi-online-destek-personel-egitimi-yerinde-servis?locale=az" />
     <lastmod>2019-02-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -703,9 +773,10 @@
   <url>
     <loc>https://www.robotpos.com/inventory-management-system-1</loc>
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.robotpos.com/inventory-management-system-1" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.robotpos.com/en/inventory-management-system-1" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://www.robotpos.com/ru/inventory-management-system-1" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://www.robotpos.com/ar/inventory-management-system-1" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.robotpos.com/inventory-management-system-1?locale=en" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.robotpos.com/inventory-management-system-1?locale=ru" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.robotpos.com/inventory-management-system-1?locale=ar" />
+    <xhtml:link rel="alternate" hreflang="az" href="https://www.robotpos.com/inventory-management-system-1?locale=az" />
     <lastmod>2019-05-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -713,9 +784,10 @@
   <url>
     <loc>https://www.robotpos.com/restoran-raporlama</loc>
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.robotpos.com/restoran-raporlama" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.robotpos.com/en/restoran-raporlama" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://www.robotpos.com/ru/restoran-raporlama" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://www.robotpos.com/ar/restoran-raporlama" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.robotpos.com/restoran-raporlama?locale=en" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.robotpos.com/restoran-raporlama?locale=ru" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.robotpos.com/restoran-raporlama?locale=ar" />
+    <xhtml:link rel="alternate" hreflang="az" href="https://www.robotpos.com/restoran-raporlama?locale=az" />
     <lastmod>2019-06-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -723,9 +795,10 @@
   <url>
     <loc>https://www.robotpos.com/restoran-cafe-personel</loc>
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.robotpos.com/restoran-cafe-personel" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.robotpos.com/en/restoran-cafe-personel" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://www.robotpos.com/ru/restoran-cafe-personel" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://www.robotpos.com/ar/restoran-cafe-personel" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.robotpos.com/restoran-cafe-personel?locale=en" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.robotpos.com/restoran-cafe-personel?locale=ru" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.robotpos.com/restoran-cafe-personel?locale=ar" />
+    <xhtml:link rel="alternate" hreflang="az" href="https://www.robotpos.com/restoran-cafe-personel?locale=az" />
     <lastmod>2019-06-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -733,9 +806,10 @@
   <url>
     <loc>https://www.robotpos.com/caller-id-paket-servis</loc>
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.robotpos.com/caller-id-paket-servis" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.robotpos.com/en/caller-id-paket-servis" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://www.robotpos.com/ru/caller-id-paket-servis" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://www.robotpos.com/ar/caller-id-paket-servis" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.robotpos.com/caller-id-paket-servis?locale=en" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.robotpos.com/caller-id-paket-servis?locale=ru" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.robotpos.com/caller-id-paket-servis?locale=ar" />
+    <xhtml:link rel="alternate" hreflang="az" href="https://www.robotpos.com/caller-id-paket-servis?locale=az" />
     <lastmod>2019-06-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -743,9 +817,10 @@
   <url>
     <loc>https://www.robotpos.com/cafeteria-siparis-programi</loc>
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.robotpos.com/cafeteria-siparis-programi" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.robotpos.com/en/cafeteria-siparis-programi" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://www.robotpos.com/ru/cafeteria-siparis-programi" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://www.robotpos.com/ar/cafeteria-siparis-programi" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.robotpos.com/cafeteria-siparis-programi?locale=en" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.robotpos.com/cafeteria-siparis-programi?locale=ru" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.robotpos.com/cafeteria-siparis-programi?locale=ar" />
+    <xhtml:link rel="alternate" hreflang="az" href="https://www.robotpos.com/cafeteria-siparis-programi?locale=az" />
     <lastmod>2019-06-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -753,9 +828,10 @@
   <url>
     <loc>https://www.robotpos.com/restoran-pos</loc>
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.robotpos.com/restoran-pos" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.robotpos.com/en/restoran-pos" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://www.robotpos.com/ru/restoran-pos" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://www.robotpos.com/ar/restoran-pos" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.robotpos.com/restoran-pos?locale=en" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.robotpos.com/restoran-pos?locale=ru" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.robotpos.com/restoran-pos?locale=ar" />
+    <xhtml:link rel="alternate" hreflang="az" href="https://www.robotpos.com/restoran-pos?locale=az" />
     <lastmod>2019-06-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -763,9 +839,10 @@
   <url>
     <loc>https://www.robotpos.com/destekve-servis</loc>
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.robotpos.com/destekve-servis" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.robotpos.com/en/destekve-servis" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://www.robotpos.com/ru/destekve-servis" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://www.robotpos.com/ar/destekve-servis" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.robotpos.com/destekve-servis?locale=en" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.robotpos.com/destekve-servis?locale=ru" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.robotpos.com/destekve-servis?locale=ar" />
+    <xhtml:link rel="alternate" hreflang="az" href="https://www.robotpos.com/destekve-servis?locale=az" />
     <lastmod>2019-06-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -773,9 +850,10 @@
   <url>
     <loc>https://www.robotpos.com/restoran-yazilimi</loc>
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.robotpos.com/restoran-yazilimi" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.robotpos.com/en/restoran-yazilimi" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://www.robotpos.com/ru/restoran-yazilimi" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://www.robotpos.com/ar/restoran-yazilimi" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.robotpos.com/restoran-yazilimi?locale=en" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.robotpos.com/restoran-yazilimi?locale=ru" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.robotpos.com/restoran-yazilimi?locale=ar" />
+    <xhtml:link rel="alternate" hreflang="az" href="https://www.robotpos.com/restoran-yazilimi?locale=az" />
     <lastmod>2019-09-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -783,9 +861,10 @@
   <url>
     <loc>https://www.robotpos.com/post-fdf24486</loc>
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.robotpos.com/post-fdf24486" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.robotpos.com/en/post-fdf24486" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://www.robotpos.com/ru/post-fdf24486" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://www.robotpos.com/ar/post-fdf24486" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.robotpos.com/post-fdf24486?locale=en" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.robotpos.com/post-fdf24486?locale=ru" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.robotpos.com/post-fdf24486?locale=ar" />
+    <xhtml:link rel="alternate" hreflang="az" href="https://www.robotpos.com/post-fdf24486?locale=az" />
     <lastmod>2024-06-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -793,9 +872,10 @@
   <url>
     <loc>https://www.robotpos.com/restoran-otomasyon</loc>
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.robotpos.com/restoran-otomasyon" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.robotpos.com/en/restoran-otomasyon" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://www.robotpos.com/ru/restoran-otomasyon" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://www.robotpos.com/ar/restoran-otomasyon" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.robotpos.com/restoran-otomasyon?locale=en" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.robotpos.com/restoran-otomasyon?locale=ru" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.robotpos.com/restoran-otomasyon?locale=ar" />
+    <xhtml:link rel="alternate" hreflang="az" href="https://www.robotpos.com/restoran-otomasyon?locale=az" />
     <lastmod>2019-07-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -803,9 +883,10 @@
   <url>
     <loc>https://www.robotpos.com/adisyon-programi</loc>
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.robotpos.com/adisyon-programi" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.robotpos.com/en/adisyon-programi" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://www.robotpos.com/ru/adisyon-programi" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://www.robotpos.com/ar/adisyon-programi" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.robotpos.com/adisyon-programi?locale=en" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.robotpos.com/adisyon-programi?locale=ru" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.robotpos.com/adisyon-programi?locale=ar" />
+    <xhtml:link rel="alternate" hreflang="az" href="https://www.robotpos.com/adisyon-programi?locale=az" />
     <lastmod>2019-10-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -813,9 +894,10 @@
   <url>
     <loc>https://www.robotpos.com/cost-control-kavramlari-nedir-ve-nasil-yapilir</loc>
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.robotpos.com/cost-control-kavramlari-nedir-ve-nasil-yapilir" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.robotpos.com/en/cost-control-kavramlari-nedir-ve-nasil-yapilir" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://www.robotpos.com/ru/cost-control-kavramlari-nedir-ve-nasil-yapilir" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://www.robotpos.com/ar/cost-control-kavramlari-nedir-ve-nasil-yapilir" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.robotpos.com/cost-control-kavramlari-nedir-ve-nasil-yapilir?locale=en" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.robotpos.com/cost-control-kavramlari-nedir-ve-nasil-yapilir?locale=ru" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.robotpos.com/cost-control-kavramlari-nedir-ve-nasil-yapilir?locale=ar" />
+    <xhtml:link rel="alternate" hreflang="az" href="https://www.robotpos.com/cost-control-kavramlari-nedir-ve-nasil-yapilir?locale=az" />
     <lastmod>2012-05-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -823,9 +905,10 @@
   <url>
     <loc>https://www.robotpos.com/restaurant-adisyon-sistemi</loc>
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.robotpos.com/restaurant-adisyon-sistemi" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.robotpos.com/en/restaurant-adisyon-sistemi" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://www.robotpos.com/ru/restaurant-adisyon-sistemi" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://www.robotpos.com/ar/restaurant-adisyon-sistemi" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.robotpos.com/restaurant-adisyon-sistemi?locale=en" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.robotpos.com/restaurant-adisyon-sistemi?locale=ru" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.robotpos.com/restaurant-adisyon-sistemi?locale=ar" />
+    <xhtml:link rel="alternate" hreflang="az" href="https://www.robotpos.com/restaurant-adisyon-sistemi?locale=az" />
     <lastmod>2024-12-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -833,9 +916,10 @@
   <url>
     <loc>https://www.robotpos.com/restoran-pos-sisteminin-sahip-olmasi-gereken-temel-ozellikler-nelerdir</loc>
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.robotpos.com/restoran-pos-sisteminin-sahip-olmasi-gereken-temel-ozellikler-nelerdir" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.robotpos.com/en/restoran-pos-sisteminin-sahip-olmasi-gereken-temel-ozellikler-nelerdir" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://www.robotpos.com/ru/restoran-pos-sisteminin-sahip-olmasi-gereken-temel-ozellikler-nelerdir" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://www.robotpos.com/ar/restoran-pos-sisteminin-sahip-olmasi-gereken-temel-ozellikler-nelerdir" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.robotpos.com/restoran-pos-sisteminin-sahip-olmasi-gereken-temel-ozellikler-nelerdir?locale=en" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.robotpos.com/restoran-pos-sisteminin-sahip-olmasi-gereken-temel-ozellikler-nelerdir?locale=ru" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.robotpos.com/restoran-pos-sisteminin-sahip-olmasi-gereken-temel-ozellikler-nelerdir?locale=ar" />
+    <xhtml:link rel="alternate" hreflang="az" href="https://www.robotpos.com/restoran-pos-sisteminin-sahip-olmasi-gereken-temel-ozellikler-nelerdir?locale=az" />
     <lastmod>2019-02-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -843,9 +927,10 @@
   <url>
     <loc>https://www.robotpos.com/restoran-pos-sistemi</loc>
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.robotpos.com/restoran-pos-sistemi" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.robotpos.com/en/restoran-pos-sistemi" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://www.robotpos.com/ru/restoran-pos-sistemi" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://www.robotpos.com/ar/restoran-pos-sistemi" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.robotpos.com/restoran-pos-sistemi?locale=en" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.robotpos.com/restoran-pos-sistemi?locale=ru" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.robotpos.com/restoran-pos-sistemi?locale=ar" />
+    <xhtml:link rel="alternate" hreflang="az" href="https://www.robotpos.com/restoran-pos-sistemi?locale=az" />
     <lastmod>2019-07-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -853,9 +938,10 @@
   <url>
     <loc>https://www.robotpos.com/restoran-pos-sistemi-ornek-restoran</loc>
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.robotpos.com/restoran-pos-sistemi-ornek-restoran" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.robotpos.com/en/restoran-pos-sistemi-ornek-restoran" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://www.robotpos.com/ru/restoran-pos-sistemi-ornek-restoran" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://www.robotpos.com/ar/restoran-pos-sistemi-ornek-restoran" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.robotpos.com/restoran-pos-sistemi-ornek-restoran?locale=en" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.robotpos.com/restoran-pos-sistemi-ornek-restoran?locale=ru" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.robotpos.com/restoran-pos-sistemi-ornek-restoran?locale=ar" />
+    <xhtml:link rel="alternate" hreflang="az" href="https://www.robotpos.com/restoran-pos-sistemi-ornek-restoran?locale=az" />
     <lastmod>2019-07-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -863,9 +949,10 @@
   <url>
     <loc>https://www.robotpos.com/restoran-otomasyonu</loc>
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.robotpos.com/restoran-otomasyonu" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.robotpos.com/en/restoran-otomasyonu" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://www.robotpos.com/ru/restoran-otomasyonu" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://www.robotpos.com/ar/restoran-otomasyonu" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.robotpos.com/restoran-otomasyonu?locale=en" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.robotpos.com/restoran-otomasyonu?locale=ru" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.robotpos.com/restoran-otomasyonu?locale=ar" />
+    <xhtml:link rel="alternate" hreflang="az" href="https://www.robotpos.com/restoran-otomasyonu?locale=az" />
     <lastmod>2019-07-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -873,9 +960,10 @@
   <url>
     <loc>https://www.robotpos.com/masa-servis-restoran-otomasyonu</loc>
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.robotpos.com/masa-servis-restoran-otomasyonu" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.robotpos.com/en/masa-servis-restoran-otomasyonu" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://www.robotpos.com/ru/masa-servis-restoran-otomasyonu" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://www.robotpos.com/ar/masa-servis-restoran-otomasyonu" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.robotpos.com/masa-servis-restoran-otomasyonu?locale=en" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.robotpos.com/masa-servis-restoran-otomasyonu?locale=ru" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.robotpos.com/masa-servis-restoran-otomasyonu?locale=ar" />
+    <xhtml:link rel="alternate" hreflang="az" href="https://www.robotpos.com/masa-servis-restoran-otomasyonu?locale=az" />
     <lastmod>2019-07-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -883,9 +971,10 @@
   <url>
     <loc>https://www.robotpos.com/restoran-otomasyonu-al-gotur</loc>
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.robotpos.com/restoran-otomasyonu-al-gotur" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.robotpos.com/en/restoran-otomasyonu-al-gotur" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://www.robotpos.com/ru/restoran-otomasyonu-al-gotur" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://www.robotpos.com/ar/restoran-otomasyonu-al-gotur" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.robotpos.com/restoran-otomasyonu-al-gotur?locale=en" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.robotpos.com/restoran-otomasyonu-al-gotur?locale=ru" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.robotpos.com/restoran-otomasyonu-al-gotur?locale=ar" />
+    <xhtml:link rel="alternate" hreflang="az" href="https://www.robotpos.com/restoran-otomasyonu-al-gotur?locale=az" />
     <lastmod>2019-07-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -893,9 +982,10 @@
   <url>
     <loc>https://www.robotpos.com/restoran-otomasyonu-paket-servis</loc>
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.robotpos.com/restoran-otomasyonu-paket-servis" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.robotpos.com/en/restoran-otomasyonu-paket-servis" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://www.robotpos.com/ru/restoran-otomasyonu-paket-servis" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://www.robotpos.com/ar/restoran-otomasyonu-paket-servis" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.robotpos.com/restoran-otomasyonu-paket-servis?locale=en" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.robotpos.com/restoran-otomasyonu-paket-servis?locale=ru" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.robotpos.com/restoran-otomasyonu-paket-servis?locale=ar" />
+    <xhtml:link rel="alternate" hreflang="az" href="https://www.robotpos.com/restoran-otomasyonu-paket-servis?locale=az" />
     <lastmod>2019-07-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -903,9 +993,10 @@
   <url>
     <loc>https://www.robotpos.com/adisyon-programi-2</loc>
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.robotpos.com/adisyon-programi-2" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.robotpos.com/en/adisyon-programi-2" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://www.robotpos.com/ru/adisyon-programi-2" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://www.robotpos.com/ar/adisyon-programi-2" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.robotpos.com/adisyon-programi-2?locale=en" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.robotpos.com/adisyon-programi-2?locale=ru" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.robotpos.com/adisyon-programi-2?locale=ar" />
+    <xhtml:link rel="alternate" hreflang="az" href="https://www.robotpos.com/adisyon-programi-2?locale=az" />
     <lastmod>2019-07-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -913,9 +1004,10 @@
   <url>
     <loc>https://www.robotpos.com/pos-sistemi-temek-ozellikler</loc>
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.robotpos.com/pos-sistemi-temek-ozellikler" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.robotpos.com/en/pos-sistemi-temek-ozellikler" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://www.robotpos.com/ru/pos-sistemi-temek-ozellikler" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://www.robotpos.com/ar/pos-sistemi-temek-ozellikler" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.robotpos.com/pos-sistemi-temek-ozellikler?locale=en" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.robotpos.com/pos-sistemi-temek-ozellikler?locale=ru" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.robotpos.com/pos-sistemi-temek-ozellikler?locale=ar" />
+    <xhtml:link rel="alternate" hreflang="az" href="https://www.robotpos.com/pos-sistemi-temek-ozellikler?locale=az" />
     <lastmod>2019-07-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -923,9 +1015,10 @@
   <url>
     <loc>https://www.robotpos.com/restoran-otomasyon-adisyon</loc>
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.robotpos.com/restoran-otomasyon-adisyon" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.robotpos.com/en/restoran-otomasyon-adisyon" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://www.robotpos.com/ru/restoran-otomasyon-adisyon" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://www.robotpos.com/ar/restoran-otomasyon-adisyon" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.robotpos.com/restoran-otomasyon-adisyon?locale=en" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.robotpos.com/restoran-otomasyon-adisyon?locale=ru" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.robotpos.com/restoran-otomasyon-adisyon?locale=ar" />
+    <xhtml:link rel="alternate" hreflang="az" href="https://www.robotpos.com/restoran-otomasyon-adisyon?locale=az" />
     <lastmod>2019-09-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -933,9 +1026,10 @@
   <url>
     <loc>https://www.robotpos.com/restoran-programi-2</loc>
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.robotpos.com/restoran-programi-2" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.robotpos.com/en/restoran-programi-2" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://www.robotpos.com/ru/restoran-programi-2" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://www.robotpos.com/ar/restoran-programi-2" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.robotpos.com/restoran-programi-2?locale=en" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.robotpos.com/restoran-programi-2?locale=ru" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.robotpos.com/restoran-programi-2?locale=ar" />
+    <xhtml:link rel="alternate" hreflang="az" href="https://www.robotpos.com/restoran-programi-2?locale=az" />
     <lastmod>2024-06-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -943,9 +1037,10 @@
   <url>
     <loc>https://www.robotpos.com/restaurant-pos-software</loc>
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.robotpos.com/restaurant-pos-software" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.robotpos.com/en/restaurant-pos-software" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://www.robotpos.com/ru/restaurant-pos-software" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://www.robotpos.com/ar/restaurant-pos-software" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.robotpos.com/restaurant-pos-software?locale=en" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.robotpos.com/restaurant-pos-software?locale=ru" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.robotpos.com/restaurant-pos-software?locale=ar" />
+    <xhtml:link rel="alternate" hreflang="az" href="https://www.robotpos.com/restaurant-pos-software?locale=az" />
     <lastmod>2024-06-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -953,9 +1048,10 @@
   <url>
     <loc>https://www.robotpos.com/restoran-yazilimi-ve-yeni-nesil-restoran-otomasyonu-cozumlerinin-gelecegi</loc>
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.robotpos.com/restoran-yazilimi-ve-yeni-nesil-restoran-otomasyonu-cozumlerinin-gelecegi" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.robotpos.com/en/restoran-yazilimi-ve-yeni-nesil-restoran-otomasyonu-cozumlerinin-gelecegi" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://www.robotpos.com/ru/restoran-yazilimi-ve-yeni-nesil-restoran-otomasyonu-cozumlerinin-gelecegi" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://www.robotpos.com/ar/restoran-yazilimi-ve-yeni-nesil-restoran-otomasyonu-cozumlerinin-gelecegi" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.robotpos.com/restoran-yazilimi-ve-yeni-nesil-restoran-otomasyonu-cozumlerinin-gelecegi?locale=en" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.robotpos.com/restoran-yazilimi-ve-yeni-nesil-restoran-otomasyonu-cozumlerinin-gelecegi?locale=ru" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.robotpos.com/restoran-yazilimi-ve-yeni-nesil-restoran-otomasyonu-cozumlerinin-gelecegi?locale=ar" />
+    <xhtml:link rel="alternate" hreflang="az" href="https://www.robotpos.com/restoran-yazilimi-ve-yeni-nesil-restoran-otomasyonu-cozumlerinin-gelecegi?locale=az" />
     <lastmod>2024-06-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -963,9 +1059,10 @@
   <url>
     <loc>https://www.robotpos.com/restoran-maliyet-kontrolu-nasil-yapilir</loc>
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.robotpos.com/restoran-maliyet-kontrolu-nasil-yapilir" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.robotpos.com/en/restoran-maliyet-kontrolu-nasil-yapilir" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://www.robotpos.com/ru/restoran-maliyet-kontrolu-nasil-yapilir" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://www.robotpos.com/ar/restoran-maliyet-kontrolu-nasil-yapilir" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.robotpos.com/restoran-maliyet-kontrolu-nasil-yapilir?locale=en" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.robotpos.com/restoran-maliyet-kontrolu-nasil-yapilir?locale=ru" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.robotpos.com/restoran-maliyet-kontrolu-nasil-yapilir?locale=ar" />
+    <xhtml:link rel="alternate" hreflang="az" href="https://www.robotpos.com/restoran-maliyet-kontrolu-nasil-yapilir?locale=az" />
     <lastmod>2024-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -973,9 +1070,10 @@
   <url>
     <loc>https://www.robotpos.com/yazarkasa-entegrasyonlu-restoran-programi</loc>
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.robotpos.com/yazarkasa-entegrasyonlu-restoran-programi" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.robotpos.com/en/yazarkasa-entegrasyonlu-restoran-programi" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://www.robotpos.com/ru/yazarkasa-entegrasyonlu-restoran-programi" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://www.robotpos.com/ar/yazarkasa-entegrasyonlu-restoran-programi" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.robotpos.com/yazarkasa-entegrasyonlu-restoran-programi?locale=en" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.robotpos.com/yazarkasa-entegrasyonlu-restoran-programi?locale=ru" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.robotpos.com/yazarkasa-entegrasyonlu-restoran-programi?locale=ar" />
+    <xhtml:link rel="alternate" hreflang="az" href="https://www.robotpos.com/yazarkasa-entegrasyonlu-restoran-programi?locale=az" />
     <lastmod>2024-08-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -983,9 +1081,10 @@
   <url>
     <loc>https://www.robotpos.com/restoran-adisyon-sistemi</loc>
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.robotpos.com/restoran-adisyon-sistemi" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.robotpos.com/en/restoran-adisyon-sistemi" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://www.robotpos.com/ru/restoran-adisyon-sistemi" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://www.robotpos.com/ar/restoran-adisyon-sistemi" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.robotpos.com/restoran-adisyon-sistemi?locale=en" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.robotpos.com/restoran-adisyon-sistemi?locale=ru" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.robotpos.com/restoran-adisyon-sistemi?locale=ar" />
+    <xhtml:link rel="alternate" hreflang="az" href="https://www.robotpos.com/restoran-adisyon-sistemi?locale=az" />
     <lastmod>2019-09-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -993,9 +1092,10 @@
   <url>
     <loc>https://www.robotpos.com/iyi-bir-adisyon-programi</loc>
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.robotpos.com/iyi-bir-adisyon-programi" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.robotpos.com/en/iyi-bir-adisyon-programi" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://www.robotpos.com/ru/iyi-bir-adisyon-programi" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://www.robotpos.com/ar/iyi-bir-adisyon-programi" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.robotpos.com/iyi-bir-adisyon-programi?locale=en" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.robotpos.com/iyi-bir-adisyon-programi?locale=ru" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.robotpos.com/iyi-bir-adisyon-programi?locale=ar" />
+    <xhtml:link rel="alternate" hreflang="az" href="https://www.robotpos.com/iyi-bir-adisyon-programi?locale=az" />
     <lastmod>2019-10-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>

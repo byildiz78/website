@@ -5,7 +5,7 @@ Allow: /
 Allow: /en/
 Allow: /ru/
 Allow: /ar/
-
+Allow: /az/
 # Özel sayfalar
 Allow: /blog/
 Allow: /urunler/
@@ -14,7 +14,8 @@ Allow: /iletisim/
 Allow: /referanslar/
 Allow: /sss/
 Allow: /demo-talebi/
-
+Allow: /haberler/
+Allow: /kurumsal/
 # Sitemap
 Sitemap: https://www.robotpos.com/sitemap.xml
 

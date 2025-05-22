@@ -59,12 +59,6 @@ export function middleware(request: NextRequest) {
     return response;
   }
 
-  // Test-sitemap.xml için doğru içerik türünü ayarla
-  if (pathname === '/test-sitemap.xml' || pathname.endsWith('/test-sitemap.xml')) {
-    response.headers.set('Content-Type', 'application/xml');
-    return response;
-  }
-
   return response;
 }
 
