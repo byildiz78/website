@@ -8,18 +8,6 @@ const RATE_LIMIT = 100; // 5 dakika içinde maksimum istek sayısı
 const RATE_LIMIT_WINDOW = 5 * 60 * 1000; // 5 dakika (milisaniye cinsinden)
 
 export function middleware(request: NextRequest) {
-  // GTranslate subdomainlerini kontrol et
-  const hostname = request.headers.get('host') || '';
-  const languageSubdomains = ['en', 'ru', 'az', 'ar'];
-  const isLanguageSubdomain = languageSubdomains.some(lang => 
-    hostname.startsWith(`${lang}.`)
-  );
-
-  if (isLanguageSubdomain) {
-    // Subdomain varsa client-side routing'i devre dışı bırak
-    return NextResponse.rewrite(new URL(request.url));
-  }
-
   const { pathname } = request.nextUrl;
   const response = NextResponse.next();
   

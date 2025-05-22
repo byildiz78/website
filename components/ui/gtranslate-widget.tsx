@@ -16,13 +16,13 @@ export default function GTranslateWidget() {
     settingsScript.innerHTML = `window.gtranslateSettings = {
       "default_language":"tr",
       "native_language_names":true,
-      "url_structure":"sub_domain",
+      "url_structure":"none",
       "languages":["tr","en","ru","az","ar"],
       "wrapper_selector":".gtranslate_wrapper",
       "switcher_horizontal_position":"inline",
       "float_switcher_open_direction":"bottom",
       "flag_style":"3d",
-      "auto_switch":true
+      "detect_browser_language":true
     }`;
     document.head.appendChild(settingsScript);
     
