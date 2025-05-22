@@ -152,6 +152,14 @@ export default function RootLayout({
             gtag('config', 'G-7XYGT311WK');
           `}
         </Script>
+        
+        {/* ConveyThis Script Start */}
+        <Script
+          id="conveythis-script"
+          src="//cdn.conveythis.com/javascript/conveythis.js?api_key=pub_0b22031a44cebcac6853f3e26e605e53"
+          strategy="afterInteractive"
+        />
+        {/* ConveyThis Script End */}
       </head>
       <body className={inter.className}>
         

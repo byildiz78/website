@@ -40,7 +40,6 @@ import {
   Cpu,
   HardDrive,
 } from "lucide-react";
-import GTranslateWidget from "@/components/ui/gtranslate-widget";
 
 type NavItem = {
   title: string;
@@ -379,7 +378,7 @@ function Header() {
         <div className="flex justify-between items-center">
           <div className="flex items-center">
             <div className="mr-4">
-              <GTranslateWidget />
+              
             </div>
             <a href="/" className="flex items-center">
               <Image
