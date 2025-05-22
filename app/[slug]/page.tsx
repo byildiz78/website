@@ -31,10 +31,9 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
     // If the slug is an ignored language code, don't treat it as a blog post
     if (ignoredSlugs.includes(params.slug)) {
       setLoading(false);
-      // Optionally, set an error or a specific state to indicate this is not a blog page
-      // For now, we'll just prevent fetching and let ConveyThis handle the page
-      // You might want to show a generic loading or a blank page here if ConveyThis hasn't translated yet
-      setError("Bu bir blog sayfası değildir."); // Or set a different message or behavior
+      // Instead of setting an error that renders UI, we'll prepare to return null or a minimal loader.
+      // We can set a specific state if needed, or just let the render condition handle it.
+      // For now, we'll rely on the loading state and a check in the return statement.
       return;
     }
 
@@ -98,6 +97,11 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
     } catch (error) {
       return dateString;
     }
+  }
+
+  // If it's an ignored slug, return null to let ConveyThis control the page
+  if (ignoredSlugs.includes(params.slug)) {
+    return null; // Or a <div className="min-h-screen"></div> to provide a basic layout container
   }
 
   if (loading) {
